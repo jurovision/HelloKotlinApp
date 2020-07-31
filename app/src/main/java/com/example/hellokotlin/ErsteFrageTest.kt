@@ -21,6 +21,10 @@ import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answe
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
 class ErsteFrageTest : Fragment(), View.OnClickListener {
+    // Richtige Antwort festlegen
+    var correctAnswer = 3
+    // answer == gewählte Antwort
+    var answer = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -47,6 +51,9 @@ class ErsteFrageTest : Fragment(), View.OnClickListener {
         option3.text = "three"
         option4.text = "four"
 
+
+
+
         option1.setOnClickListener(this)
         option2.setOnClickListener(this)
         option3.setOnClickListener(this)
@@ -60,29 +67,57 @@ class ErsteFrageTest : Fragment(), View.OnClickListener {
                 option1.setTextColor(Color.BLACK)
                 option1.textSize = 20F
                 option2.setTextColor(-7829368)
+                option2.textSize = 14F
                 option3.setTextColor(-7829368)
+                option3.textSize = 14F
                 option4.setTextColor(-7829368)
+                option4.textSize = 14F
+                answer = 1
             }
 
             R.id.option2 -> {
                 option1.setTextColor(-7829368)
+                option1.textSize = 14F
                 option2.setTextColor(Color.BLACK)
+                option2.textSize = 20F
                 option3.setTextColor(-7829368)
+                option3.textSize = 14F
                 option4.setTextColor(-7829368)
+                option4.textSize = 14F
+                answer = 2
             }
 
             R.id.option3 -> {
                 option1.setTextColor(-7829368)
+                option1.textSize = 14F
                 option2.setTextColor(-7829368)
+                option2.textSize = 14F
                 option3.setTextColor(Color.BLACK)
+                option3.textSize = 20F
                 option4.setTextColor(-7829368)
+                option4.textSize = 14F
+                answer = 3
             }
 
             R.id.option4 -> {
                 option1.setTextColor(-7829368)
+                option1.textSize = 14F
                 option2.setTextColor(-7829368)
+                option2.textSize = 14F
                 option3.setTextColor(-7829368)
+                option3.textSize = 14F
                 option4.setTextColor(Color.BLACK)
+                option4.textSize = 20F
+                answer = 4
+            }
+            R.id.button_forward -> {
+         /*   if (answer == correctAnswer)*/
+                findNavController().navigate(R.id.action_ersteFrageTest_to_fragmentFirstCorrect)
+
+  /*              else {
+                findNavController().navigate(R.id.action_ersteFrageTest_to_fragmentFirstWrong)
+            }*/
+
             }
         }
 

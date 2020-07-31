@@ -33,6 +33,33 @@
         android:id="@+id/ersteFrageTest"
         android:name="ErsteFrageTest"
         android:label="ErsteFrageTest"
-        tools:layout="@layout/fragment_multiple_choice_default_one_answer" />
+        tools:layout="@layout/fragment_multiple_choice_default_one_answer" >
+        <action
+            android:id="@+id/action_ersteFrageTest_to_fragmentFirstWrong"
+            app:destination="@id/fragmentFirstWrong" />
+        <action
+            android:id="@+id/action_ersteFrageTest_to_fragmentFirstCorrect"
+            app:destination="@id/fragmentFirstCorrect" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFirstWrong"
+        android:name="com.example.hellokotlin.FragmentFirstWrong"
+        android:label="FragmentFirstWrong"
+        tools:layout="@layout/fragment_multiple_choice_default_one_answer"
+    >
+        <action
+            android:id="@+id/action_fragmentFirstWrong_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFirstCorrect"
+        android:name="com.example.hellokotlin.FragmentFirstCorrect"
+        android:label="FragmentFirstCorrect"
+        tools:layout="@layout/fragment_multiple_choice_default_one_answer"
+    >
+        <action
+            android:id="@+id/action_fragmentFirstCorrect_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
     />
 </navigation>
