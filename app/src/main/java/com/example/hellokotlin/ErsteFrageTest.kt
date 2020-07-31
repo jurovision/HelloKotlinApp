@@ -1,4 +1,5 @@
 
+
 import android.graphics.Color
 import android.graphics.Color.BLACK
 import android.graphics.Typeface
@@ -20,7 +21,7 @@ import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answe
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class ErsteFrageTest : Fragment(), View.OnClickListener {
+class ErsteFrageTest : Fragment(), View.OnClickListener{
     // Richtige Antwort festlegen
     var correctAnswer = 3
     // answer == gewählte Antwort
@@ -40,6 +41,8 @@ class ErsteFrageTest : Fragment(), View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+
         val text =
             "<p><span style=\"color: #0000ff;\">fun</span> main(args: Array&lt;String&gt;) {<br />&nbsp;&nbsp;&nbsp; println(<span style=\"color: #339966;\">\"Hello World!\"</span>)<br />}</p>"
         question.text = Html.fromHtml(text)
@@ -52,13 +55,21 @@ class ErsteFrageTest : Fragment(), View.OnClickListener {
         option4.text = "four"
 
 
-
-
         option1.setOnClickListener(this)
         option2.setOnClickListener(this)
         option3.setOnClickListener(this)
         option4.setOnClickListener(this)
-        button_forward.setOnClickListener(this)
+        //button_forward.setOnClickListener(this)
+        view.findViewById<Button>(R.id.button_forward).setOnClickListener {
+
+            if (answer == correctAnswer) {
+
+            findNavController().navigate(R.id.action_ersteFrageTest_to_fragmentFirstCorrect)
+            } else {
+                findNavController().navigate(R.id.action_ersteFrageTest_to_fragmentFirstWrong)
+            }
+
+        }
     }
 
     override fun onClick(v: View?) {
@@ -110,18 +121,23 @@ class ErsteFrageTest : Fragment(), View.OnClickListener {
                 option4.textSize = 20F
                 answer = 4
             }
-            R.id.button_forward -> {
-         /*   if (answer == correctAnswer)*/
+/*            R.id.button_forward -> {
+                   if (answer == correctAnswer)
                 findNavController().navigate(R.id.action_ersteFrageTest_to_fragmentFirstCorrect)
 
-  /*              else {
-                findNavController().navigate(R.id.action_ersteFrageTest_to_fragmentFirstWrong)
-            }*/
+                              else {
+                              findNavController().navigate(R.id.action_ersteFrageTest_to_fragmentFirstWrong)
+                          }
 
-            }
+            }*/
         }
 
         // neu
 
     }
 }
+
+
+        // neu
+
+

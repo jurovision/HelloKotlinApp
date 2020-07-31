@@ -35,17 +35,17 @@
         android:label="ErsteFrageTest"
         tools:layout="@layout/fragment_multiple_choice_default_one_answer" >
         <action
-            android:id="@+id/action_ersteFrageTest_to_fragmentFirstWrong"
-            app:destination="@id/fragmentFirstWrong" />
-        <action
             android:id="@+id/action_ersteFrageTest_to_fragmentFirstCorrect"
             app:destination="@id/fragmentFirstCorrect" />
+        <action
+            android:id="@+id/action_ersteFrageTest_to_fragmentFirstWrong"
+            app:destination="@id/fragmentFirstWrong" />
     </fragment>
     <fragment
         android:id="@+id/fragmentFirstWrong"
         android:name="com.example.hellokotlin.FragmentFirstWrong"
         android:label="FragmentFirstWrong"
-        tools:layout="@layout/fragment_multiple_choice_default_one_answer"
+        tools:layout="@layout/fragment_first_wrong"
     >
         <action
             android:id="@+id/action_fragmentFirstWrong_to_FirstFragment"
@@ -55,7 +55,7 @@
         android:id="@+id/fragmentFirstCorrect"
         android:name="com.example.hellokotlin.FragmentFirstCorrect"
         android:label="FragmentFirstCorrect"
-        tools:layout="@layout/fragment_multiple_choice_default_one_answer"
+        tools:layout="@layout/fragment_first_correct"
     >
         <action
             android:id="@+id/action_fragmentFirstCorrect_to_FirstFragment"
