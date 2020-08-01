@@ -11,8 +11,8 @@
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
         <action
-            android:id="@+id/action_FirstFragment_to_ersteFrageTest"
-            app:destination="@id/ersteFrageTest" />
+            android:id="@+id/action_FirstFragment_to_instruction1_1"
+            app:destination="@id/instruction1_1" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -28,7 +28,7 @@
         android:id="@+id/oneMC1FirstRight"
         android:name="com.example.hellokotlin.OneMC1FirstRight"
         android:label="fragment_1_mc_first_right"
-        tools:layout="@layout/fragment_1_mc_first_right" />
+        tools:layout="@layout/fragment_question_purplequiz" />
     <fragment
         android:id="@+id/ersteFrageTest"
         android:name="ErsteFrageTest"
@@ -61,5 +61,21 @@
             android:id="@+id/action_fragmentFirstCorrect_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
-    />
+    <fragment
+        android:id="@+id/instruction1_1"
+        android:name="com.example.hellokotlin.Instruction1_1"
+        android:label="Instruction1_1"
+        tools:layout="@layout/fragment_instruction"
+        >
+        <action
+            android:id="@+id/action_instruction1_1_to_instruction1_2"
+            app:destination="@id/instruction1_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/instruction1_2"
+        android:name="com.example.hellokotlin.Instruction1_2"
+        android:label="Instruction1_2"
+        tools:layout="@layout/fragment_instruction"
+        />
+
 </navigation>

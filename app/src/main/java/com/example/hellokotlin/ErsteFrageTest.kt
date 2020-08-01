@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import com.example.hellokotlin.R
-import kotlinx.android.synthetic.main.fragment_1_mc_first_right.*
+import kotlinx.android.synthetic.main.fragment_question_purplequiz.*
 import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answer.*
 
 /**
@@ -78,45 +78,45 @@ class ErsteFrageTest : Fragment(), View.OnClickListener{
                 option1.setTextColor(Color.BLACK)
                 option1.textSize = 20F
                 option2.setTextColor(-7829368)
-                option2.textSize = 14F
+                option2.textSize = 16F
                 option3.setTextColor(-7829368)
-                option3.textSize = 14F
+                option3.textSize = 16F
                 option4.setTextColor(-7829368)
-                option4.textSize = 14F
+                option4.textSize = 16F
                 answer = 1
             }
 
             R.id.option2 -> {
                 option1.setTextColor(-7829368)
-                option1.textSize = 14F
+                option1.textSize = 16F
                 option2.setTextColor(Color.BLACK)
                 option2.textSize = 20F
                 option3.setTextColor(-7829368)
-                option3.textSize = 14F
+                option3.textSize = 16F
                 option4.setTextColor(-7829368)
-                option4.textSize = 14F
+                option4.textSize = 16F
                 answer = 2
             }
 
             R.id.option3 -> {
                 option1.setTextColor(-7829368)
-                option1.textSize = 14F
+                option1.textSize = 16F
                 option2.setTextColor(-7829368)
-                option2.textSize = 14F
+                option2.textSize = 16F
                 option3.setTextColor(Color.BLACK)
                 option3.textSize = 20F
                 option4.setTextColor(-7829368)
-                option4.textSize = 14F
+                option4.textSize = 16F
                 answer = 3
             }
 
             R.id.option4 -> {
                 option1.setTextColor(-7829368)
-                option1.textSize = 14F
+                option1.textSize = 16F
                 option2.setTextColor(-7829368)
-                option2.textSize = 14F
+                option2.textSize = 16F
                 option3.setTextColor(-7829368)
-                option3.textSize = 14F
+                option3.textSize = 16F
                 option4.setTextColor(Color.BLACK)
                 option4.textSize = 20F
                 answer = 4

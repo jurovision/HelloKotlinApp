@@ -7,7 +7,7 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.fragment_1_mc_first_right.*
+import kotlinx.android.synthetic.main.fragment_question_purplequiz.*
 
 class MainActivity : AppCompatActivity() {
 

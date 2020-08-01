@@ -1,19 +1,12 @@
 package com.example.hellokotlin
 
-import android.graphics.Color
-import android.graphics.Typeface
 import android.os.Bundle
 import android.text.Html
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.navigation.fragment.findNavController
-import kotlinx.android.synthetic.main.fragment_1_mc_first_right.*
+import kotlinx.android.synthetic.main.fragment_question_purplequiz.*
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -25,7 +18,7 @@ class OneMC1FirstRight : Fragment(), View.OnClickListener {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_1_mc_first_right, container, false)
+        return inflater.inflate(R.layout.fragment_question_purplequiz, container, false)
 
 
     }
