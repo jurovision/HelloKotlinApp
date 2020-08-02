@@ -76,6 +76,16 @@
         android:name="com.example.hellokotlin.Instruction1_2"
         android:label="Instruction1_2"
         tools:layout="@layout/fragment_instruction"
+        >
+        <action
+            android:id="@+id/action_instruction1_2_to_instruction1_3"
+            app:destination="@id/instruction1_3" />
+    </fragment>
+    <fragment
+        android:id="@+id/instruction1_3"
+        android:name="com.example.hellokotlin.Instruction1_3"
+        android:label="Instruction1_3"
+        tools:layout="@layout/fragment_instruction"
         />
 
 </navigation>

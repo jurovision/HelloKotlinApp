@@ -22,24 +22,17 @@ class Instruction1_2 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text = "<div style=\"-en-clipboard: true;\">Kotlin ist eine statisch getypte Programmiersprache, die auf der Java Virtual Machine l&auml;uft. Kotlin bietet dir viele Vorteile, z.B.:</div>\n" +
-                "<ul>\n" +
-                "<li>\n" +
-                "<div>Kotlin <strong><span style=\"color: #000000;\">spart Codezeilen</span></strong> und bleibt dabei gut lesbar</div>\n" +
-                "</li>\n" +
-                "<li>\n" +
-                "<div>Getter und Setter werden in den Compiler verschoben</div>\n" +
-                "</li>\n" +
-                "<li>\n" +
-                "<div>(Fast) keine NullPointerExceptions mehr n&ouml;tig</div>\n" +
-                "</li>\n" +
-                "<li>\n" +
-                "<div>Kotlin-Code ist&nbsp;<strong><span style=\"color: #000000;\">hochkompatibel mit Java</span></strong></div>\n" +
-                "</li>\n" +
-                "</ul>"
+        val text = "<p style='margin:0cm;margin-bottom:.0001pt;line-height:107%;font-size:15px;font-family:\"Calibri\",sans-serif;'>Kotlin ist eine statisch getypte Programmiersprache, die auf der Java Virtual Machine l&auml;uft. Kotlin bietet dir viele Vorteile, z.B.:</p>\n" +
+                "<ul style=\"list-style-type: disc;\">\n" +
+                "    <li>Kotlin <strong>spart Codezeilen</strong> und bleibt dabei gut lesbar</li>\n" +
+                "    <li>Getter und Setter werden in den Compiler verschoben</li>\n" +
+                "    <li>(Fast) keine NullPointerExceptions mehr n&ouml;tig</li>\n" +
+                "    <li>Kotlin-Code ist <strong>hochkompatibel mit Java</strong></li>\n" +
+                "</ul>\n" +
+                "<p style='margin:0cm;margin-bottom:.0001pt;line-height:107%;font-size:15px;font-family:\"Calibri\",sans-serif;'>&nbsp;</p>"
         instruction.text = Html.fromHtml(text)
-     //   view.findViewById<Button>(R.id.button_weiter).setOnClickListener {
-     //       findNavController().navigate(R.id.action_instruction1_1_to_ersteFrageTest)
-     //   }
+           view.findViewById<Button>(R.id.button_weiter).setOnClickListener {
+               findNavController().navigate(R.id.action_instruction1_2_to_instruction1_3)
+           }
     }
 }

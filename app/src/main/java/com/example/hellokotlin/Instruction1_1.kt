@@ -1,6 +1,7 @@
 package com.example.hellokotlin
 
 import android.os.Bundle
+import android.text.Html
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -24,10 +25,8 @@ class Instruction1_1 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        instruction.text = "Willkommen in der ersten Lektion! Schön, dass du dich für Kotlin " +
-                "interessierst. Kotlin ist eine relativ neue Programmiersprache, die viele Vorteile " +
-                "bietet. Seit 2017 unterstützt Google sie für Android Apps und seit 2019 ist sie " +
-                "sogar die offiziell bevorzugte Sprache für Android. "
+        val text = "<div>Willkommen in der ersten Lektion! Sch&ouml;n, dass du dich f&uuml;r Kotlin interessierst. Kotlin ist eine relativ neue Programmiersprache, die viele Vorteile bietet. Seit 2017 unterst&uuml;tzt Google sie f&uuml;r Android Apps und seit 2019 ist sie sogar die offiziell bevorzugte Sprache f&uuml;r Android.&nbsp;</div>"
+        instruction.text = Html.fromHtml(text)
         view.findViewById<Button>(R.id.button_weiter).setOnClickListener {
             findNavController().navigate(R.id.action_instruction1_1_to_instruction1_2)
         }
