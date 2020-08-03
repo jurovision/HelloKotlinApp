@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_forward_dd"
+        android:layout_width="212dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/forward_button_border_bg"
+        android:hapticFeedbackEnabled="true"
+        android:text="Antworten"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instruction"
+        app:layout_constraintVertical_bias="0.48000002" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_instruction"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="316dp"
+        android:layout_height="4.5dp"
+        android:layout_marginTop="8dp"
+        android:max="10"
+        android:progress="2"
+        android:progressDrawable="@drawable/progress"
+        app:layout_constraintBottom_toTopOf="@+id/question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="298dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="50dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="308dp"
+        android:layout_height="434dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_forward_dd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question"/>
+
+    <com.ernestoyaquello.dragdropswiperecyclerview.DragDropSwipeRecyclerView
+        android:id="@+id/list"
+        android:layout_width="299dp"
+        android:layout_height="430dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_forward_dd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        app:behind_swiped_item_bg_color="#E53935"
+        app:behind_swiped_item_bg_color_secondary="#1E88E5"
+        app:behind_swiped_item_icon_margin="16dp"
+        app:divider="@drawable/divider"
+        app:item_layout="@layout/list_item_layout"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="-14dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
