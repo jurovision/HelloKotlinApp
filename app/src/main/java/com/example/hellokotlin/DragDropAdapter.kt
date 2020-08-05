@@ -5,7 +5,10 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.recyclerview.widget.ItemTouchHelper
+import androidx.recyclerview.widget.RecyclerView
 import com.ernestoyaquello.dragdropswiperecyclerview.DragDropSwipeAdapter
+
 
 class DragDropAdapter(dataSet: MutableList<String>) :
     DragDropSwipeAdapter<String, DragDropAdapter.ViewHolder>(dataSet)  {
@@ -13,7 +16,7 @@ class DragDropAdapter(dataSet: MutableList<String>) :
     private var list: MutableList<String> = this.dataSet as MutableList<String>
 
     inner class ViewHolder(itemView: View) : DragDropSwipeAdapter.ViewHolder(itemView) {
-        val itemText: TextView = itemView.findViewById(R.id.item_text)
+        val itemText: TextView = itemView.findViewById(R.id.text)
         val dragIcon: ImageView = itemView.findViewById(R.id.drag_icon)
 
         init {
@@ -52,4 +55,5 @@ class DragDropAdapter(dataSet: MutableList<String>) :
 
         Log.d("MyAdapter", "$list")
     }
+
 }

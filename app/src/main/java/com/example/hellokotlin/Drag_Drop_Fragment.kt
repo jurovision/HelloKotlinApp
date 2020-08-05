@@ -12,13 +12,14 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ernestoyaquello.dragdropswiperecyclerview.DragDropSwipeRecyclerView
 import kotlinx.android.synthetic.main.fragment_instruction.*
 
 
-class Drag_Drop_Fragment: Fragment() {
+class Drag_Drop_Fragment: Fragment()  {
 
     private lateinit var dragDropAdapter: DragDropAdapter
     private var itemsList = mutableListOf<String>()
@@ -33,21 +34,15 @@ class Drag_Drop_Fragment: Fragment() {
 
     }
 
-/*    private fun setUpRecyclerView(){
-        dragDropAdapter = DragDropAdapter(itemsList)
-        val myList: DragDropSwipeRecyclerView = findViewById(R.id.list)
-        myList.layoutManager = LinearLayoutManager(this)
-        myList.adapter = dragDropAdapter
-        myList.orientation = DragDropSwipeRecyclerView.ListOrientation.VERTICAL_LIST_WITH_VERTICAL_DRAGGING
-        myList.reduceItemAlphaOnSwiping = true
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        view.findViewById<Button>(R.id.button_weiter).setOnClickListener {
+            findNavController().navigate(R.id.action_instruction1_2_to_instruction1_3)
+        }
 
-        // val onItemSwipeListener
-    }*/
-
-    private fun createFakeItems(){
-        for (i in 0..4)
-            itemsList.add("item $i")
     }
+
+
 
     private fun fabAddItem(){
 

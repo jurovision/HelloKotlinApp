@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/mainFragment">
 
     <fragment
         android:id="@+id/FirstFragment"
@@ -91,12 +91,18 @@
             android:id="@+id/action_instruction1_3_to_ersteFrageTest"
             app:destination="@id/ersteFrageTest" />
     </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.hellokotlin.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
     <fragment
-        android:id="@+id/drag_DropTest"
-        android:name="com.example.hellokotlin.Drag_DropTest"
-        android:label="Drag_DropTest"
-        tools:layout="@layout/fragment_drag_and_drop"
-
-        />
+        android:id="@+id/pertanyaanFragment"
+        android:name="com.example.hellokotlin.PertanyaanFragment"
+        android:label="PertanyaanFragment" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.hellokotlin.MainFragment"
+        android:label="MainFragment" />
 
 </navigation>
