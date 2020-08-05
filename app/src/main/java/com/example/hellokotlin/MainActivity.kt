@@ -13,8 +13,6 @@ import kotlinx.android.synthetic.main.fragment_question_purplequiz.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var dragDropAdapter: DragDropAdapter
-    private var itemsList = mutableListOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -103,6 +103,13 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.hellokotlin.MainFragment"
-        android:label="MainFragment" />
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentFirstWrong"
+            app:destination="@id/fragmentFirstWrong" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentFirstCorrect"
+            app:destination="@id/fragmentFirstCorrect" />
+    </fragment>
 
 </navigation>
