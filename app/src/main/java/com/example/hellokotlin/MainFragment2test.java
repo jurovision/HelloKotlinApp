@@ -25,8 +25,8 @@ public class MainFragment2test extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        RecyclerListAdapter.STRINGS[0] = "<li><strong>Drei</strong></li>\n";
-        RecyclerListAdapter.resetIntArray();
+        RecyclerListAdapter4.STRINGS[0] = "<li><strong>Drei</strong></li>\n";
+        RecyclerListAdapter4.resetIntArray();
 
 
 
@@ -35,7 +35,7 @@ public class MainFragment2test extends Fragment {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        RecyclerListAdapter adapter = new RecyclerListAdapter();
+        RecyclerListAdapter4 adapter = new RecyclerListAdapter4();
         recyclerView.setAdapter(adapter);
 
         ItemTouchHelper.Callback callback =
@@ -47,7 +47,7 @@ public class MainFragment2test extends Fragment {
         view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (RecyclerListAdapter.AnswerCheck0() == 2) {
+                if (RecyclerListAdapter4.AnswerCheck0() == 2) {
                     NavHostFragment.findNavController(MainFragment2test.this)
                             .navigate(R.id.action_mainFragment2test_to_fragmentFirstCorrect);
                 } else {

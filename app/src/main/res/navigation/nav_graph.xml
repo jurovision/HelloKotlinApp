@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/DD1_4">
 
     <fragment
         android:id="@+id/FirstFragment"
@@ -24,11 +24,6 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/oneMC1FirstRight"
-        android:name="com.example.hellokotlin.OneMC1FirstRight"
-        android:label="fragment_1_mc_first_right"
-        tools:layout="@layout/fragment_question_purplequiz" />
     <fragment
         android:id="@+id/ersteFrageTest"
         android:name="ErsteFrageTest"
@@ -91,18 +86,9 @@
         tools:layout="@layout/fragment_instruction"
         >
         <action
-            android:id="@+id/action_instruction1_3_to_ersteFrageTest"
-            app:destination="@id/ersteFrageTest" />
+            android:id="@+id/action_instruction1_3_to_DD1_4"
+            app:destination="@id/DD1_4" />
     </fragment>
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.hellokotlin.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
-    <fragment
-        android:id="@+id/pertanyaanFragment"
-        android:name="com.example.hellokotlin.PertanyaanFragment"
-        android:label="PertanyaanFragment" />
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.hellokotlin.MainFragment"
@@ -125,5 +111,19 @@
             android:id="@+id/action_mainFragment2test_to_fragmentFirstWrong"
             app:destination="@id/fragmentFirstWrong" />
     </fragment>
+    <fragment
+        android:id="@+id/DD1_4"
+        android:name="com.example.hellokotlin.DD1_4"
+        android:label="DD1_4"
+        tools:layout="@layout/fragment_drag_and_drop"
+        >
+        <action
+            android:id="@+id/action_DD1_4_to_fragmentFirstCorrect"
+            app:destination="@id/fragmentFirstCorrect" />
+        <action
+            android:id="@+id/action_DD1_4_to_fragmentFirstWrong"
+            app:destination="@id/fragmentFirstWrong" />
+    </fragment>
+
 
 </navigation>

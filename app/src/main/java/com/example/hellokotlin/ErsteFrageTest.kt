@@ -44,7 +44,7 @@ class ErsteFrageTest : Fragment(), View.OnClickListener{
 
 
         val text =
-            "<p><span style=\"color: #0000ff;\">fun</span> main(args: Array&lt;String&gt;) {<br />&nbsp;&nbsp;&nbsp; println(<span style=\"color: #339966;\">\"Hello World!\"</span>)<br />}</p>"
+            "<p><span style=\"color: #ff00ff;\">fun</span> main(args: <span style=\"color: #0000ff;\">Array&lt;String&gt;</span>) {<br />&nbsp;&nbsp;&nbsp; println(<span style=\"color: #008000;\">\"Hello World!\"</span>)<br />}</p>"
         question.text = Html.fromHtml(text)
 
         //tv_question.text = question.question

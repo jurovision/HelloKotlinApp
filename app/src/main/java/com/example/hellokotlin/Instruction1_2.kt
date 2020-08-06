@@ -22,14 +22,14 @@ class Instruction1_2 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text = "<p style='margin:0cm;margin-bottom:.0001pt;line-height:107%;font-size:15px;font-family:\"Calibri\",sans-serif;'>Kotlin ist eine statisch getypte Programmiersprache, die auf der Java Virtual Machine l&auml;uft. Kotlin bietet dir viele Vorteile, z.B.:</p>\n" +
-                "<ul style=\"list-style-type: disc;\">\n" +
-                "    <li>Kotlin <strong>spart Codezeilen</strong> und bleibt dabei gut lesbar</li>\n" +
-                "    <li>Getter und Setter werden in den Compiler verschoben</li>\n" +
-                "    <li>(Fast) keine NullPointerExceptions mehr n&ouml;tig</li>\n" +
-                "    <li>Kotlin-Code ist <strong>hochkompatibel mit Java</strong></li>\n" +
+        val text = "<p>Kotlin ist eine statisch getypte Programmiersprache, die auf der Java Virtual Machine l&auml;uft. Kotlin bietet dir viele Vorteile, z.B.:</p>\n" +
+                "<ul>\n" +
+                "<li>Kotlin<strong> spart Codezeilen</strong> und bleibt dabei gut lesbar</li>\n" +
+                "<li>Getter und Setter werden in den Compiler verschoben </li>\n" +
+                "<li>(Fast) keine NullPointerExceptions mehr n&ouml;tig</li>\n" +
+                "<li>Kotlin-Code ist<strong> hochkompatibel mit Java</strong></li>\n" +
                 "</ul>\n" +
-                "<p style='margin:0cm;margin-bottom:.0001pt;line-height:107%;font-size:15px;font-family:\"Calibri\",sans-serif;'>&nbsp;</p>"
+                "<p>&nbsp;</p>"
         instruction.text = Html.fromHtml(text)
            view.findViewById<Button>(R.id.button_weiter).setOnClickListener {
                findNavController().navigate(R.id.action_instruction1_2_to_instruction1_3)

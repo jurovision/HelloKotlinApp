@@ -36,7 +36,7 @@ import co.paulburke.android.itemtouchhelperdemo.helper.ItemTouchHelperViewHolder
 /*
  * @author Paul Burke (ipaulpro)
  */
-public class RecyclerListAdapter extends RecyclerView.Adapter<RecyclerListAdapter.ItemViewHolder>
+public class RecyclerListAdapter4 extends RecyclerView.Adapter<RecyclerListAdapter4.ItemViewHolder>
         implements ItemTouchHelperAdapter {
 
     public static String[] STRINGS = new String[]{
@@ -44,14 +44,14 @@ public class RecyclerListAdapter extends RecyclerView.Adapter<RecyclerListAdapte
     };
 
     public static Integer[] INTS = new Integer[]{
-        1,2,3,4
+        0,1,2,3
     };
 
     public static void resetIntArray(){
-        INTS[0] = 1;
-        INTS[1] = 2;
-        INTS[2] = 3;
-        INTS[3] = 4;
+        INTS[0] = 0;
+        INTS[1] = 1;
+        INTS[2] = 2;
+        INTS[3] = 3;
     }
     // Hier weitermachen
 
@@ -59,7 +59,7 @@ public class RecyclerListAdapter extends RecyclerView.Adapter<RecyclerListAdapte
     public static List<Integer> mAnswers = new ArrayList<>();
 
 
-    public RecyclerListAdapter() {
+    public RecyclerListAdapter4() {
         mItems.addAll(Arrays.asList(STRINGS));
         mAnswers.addAll(Arrays.asList(INTS));
     }

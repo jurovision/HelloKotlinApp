@@ -36,7 +36,7 @@ public class RecyclerListFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        RecyclerListAdapter adapter = new RecyclerListAdapter();
+        RecyclerListAdapter4 adapter = new RecyclerListAdapter4();
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);

@@ -22,7 +22,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
@@ -37,7 +36,7 @@ public class MainFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        RecyclerListAdapter.STRINGS[0] = "<li><strong>Drei</strong></li>\n";
+        RecyclerListAdapter4.STRINGS[0] = "<li><strong>Drei</strong></li>\n";
         return inflater.inflate(R.layout.fragment_main, container, false);
     }
 
@@ -53,9 +52,10 @@ public class MainFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        RecyclerListAdapter adapter = new RecyclerListAdapter();
+        RecyclerListAdapter4 adapter = new RecyclerListAdapter4();
         recyclerView.setAdapter(adapter);
 
+        //Itemrouchhelper Funktionen auskommentieren, um drag & drop zu deaktivieren
         ItemTouchHelper.Callback callback =
                 new SimpleItemTouchHelperCallback(adapter);
         ItemTouchHelper touchHelper = new ItemTouchHelper(callback);
@@ -64,12 +64,12 @@ public class MainFragment extends Fragment {
             view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (RecyclerListAdapter.AnswerCheck0() == 2) {
-                        RecyclerListAdapter.resetIntArray();
+                    if (RecyclerListAdapter4.AnswerCheck0() == 2) {
+                        RecyclerListAdapter4.resetIntArray();
                         NavHostFragment.findNavController(MainFragment.this)
                                 .navigate(R.id.action_mainFragment_to_fragmentFirstCorrect);
                     } else {
-                        RecyclerListAdapter.resetIntArray();
+                        RecyclerListAdapter4.resetIntArray();
                         NavHostFragment.findNavController(MainFragment.this)
                                 .navigate(R.id.action_mainFragment_to_fragmentFirstWrong);
                       }
