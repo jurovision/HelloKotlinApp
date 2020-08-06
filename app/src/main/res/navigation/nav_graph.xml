@@ -60,6 +60,9 @@
         <action
             android:id="@+id/action_fragmentFirstCorrect_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_fragmentFirstCorrect_to_mainFragment2test"
+            app:destination="@id/mainFragment2test" />
     </fragment>
     <fragment
         android:id="@+id/instruction1_1"
@@ -110,6 +113,17 @@
         <action
             android:id="@+id/action_mainFragment_to_fragmentFirstCorrect"
             app:destination="@id/fragmentFirstCorrect" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment2test"
+        android:name="com.example.hellokotlin.MainFragment2test"
+        android:label="MainFragment2test" >
+        <action
+            android:id="@+id/action_mainFragment2test_to_fragmentFirstCorrect"
+            app:destination="@id/fragmentFirstCorrect" />
+        <action
+            android:id="@+id/action_mainFragment2test_to_fragmentFirstWrong"
+            app:destination="@id/fragmentFirstWrong" />
     </fragment>
 
 </navigation>

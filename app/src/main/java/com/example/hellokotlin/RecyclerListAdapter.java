@@ -43,16 +43,27 @@ public class RecyclerListAdapter extends RecyclerView.Adapter<RecyclerListAdapte
             "One", "Two", "Three", "Four"
     };
 
-    public Integer[] INTS = new Integer[]{
-        3,2,1,4
+    public static Integer[] INTS = new Integer[]{
+        1,2,3,4
     };
+
+    public static void resetIntArray(){
+        INTS[0] = 1;
+        INTS[1] = 2;
+        INTS[2] = 3;
+        INTS[3] = 4;
+    }
     // Hier weitermachen
 
     private final List<String> mItems = new ArrayList<>();
+    public static List<Integer> mAnswers = new ArrayList<>();
+
 
     public RecyclerListAdapter() {
         mItems.addAll(Arrays.asList(STRINGS));
+        mAnswers.addAll(Arrays.asList(INTS));
     }
+
 
     @Override
     public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -77,6 +88,32 @@ public class RecyclerListAdapter extends RecyclerView.Adapter<RecyclerListAdapte
         String prev = mItems.remove(fromPosition);
         mItems.add(toPosition > fromPosition ? toPosition - 1 : toPosition, prev);
         notifyItemMoved(fromPosition, toPosition);
+        // Integer Feld auch vertauschen, zur einfacheren Kontrolle der Reihenfolge der Antworten
+        Integer tempNum = INTS[toPosition];
+        INTS[toPosition] = INTS[fromPosition];
+        INTS[fromPosition] = tempNum;
+ /*       Integer prevInt = mAnswers.remove(fromPosition);
+        mAnswers.add(toPosition > fromPosition ? toPosition - 1 : toPosition, prevInt);
+        notifyItemMoved(fromPosition, toPosition);
+        System.out.println("ArrayList in Reihenfolge: " + mAnswers.get(0) + " " + mAnswers.get(1) + " " + mAnswers.get(2) + " " + mAnswers.get(3));*/
+        System.out.println("Int Array in Reihenfolge: " + INTS[0] + " " + INTS[1]  + " " + INTS[2] + " " + INTS[3]);
+
+    }
+
+    public static Integer AnswerCheck0(){
+        return INTS[0];
+    }
+
+    public static Integer AnswerCheck1(){
+        return INTS[0];
+    }
+
+    public static Integer AnswerCheck2(){
+        return INTS[0];
+    }
+
+    public static Integer AnswerCheck3(){
+        return INTS[0];
     }
 
     @Override

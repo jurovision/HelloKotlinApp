@@ -37,6 +37,7 @@ public class MainFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        RecyclerListAdapter.STRINGS[0] = "<li><strong>Drei</strong></li>\n";
         return inflater.inflate(R.layout.fragment_main, container, false);
     }
 
@@ -44,7 +45,7 @@ public class MainFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        RecyclerListAdapter.STRINGS[0] = "<li><strong>Drei</strong></li>\n";
+
 
 
 
@@ -60,23 +61,20 @@ public class MainFragment extends Fragment {
         ItemTouchHelper touchHelper = new ItemTouchHelper(callback);
         touchHelper.attachToRecyclerView(recyclerView);
 
-        if (RecyclerListAdapter.STRINGS[2].equals("<li><strong>Drei</strong></li>\n")) {
             view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    NavHostFragment.findNavController(MainFragment.this)
-                            .navigate(R.id.action_mainFragment_to_fragmentFirstCorrect);
-                }
-            });
-        } else {
-            view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    NavHostFragment.findNavController(MainFragment.this)
-                            .navigate(R.id.action_mainFragment_to_fragmentFirstWrong);
+                    if (RecyclerListAdapter.AnswerCheck0() == 2) {
+                        RecyclerListAdapter.resetIntArray();
+                        NavHostFragment.findNavController(MainFragment.this)
+                                .navigate(R.id.action_mainFragment_to_fragmentFirstCorrect);
+                    } else {
+                        RecyclerListAdapter.resetIntArray();
+                        NavHostFragment.findNavController(MainFragment.this)
+                                .navigate(R.id.action_mainFragment_to_fragmentFirstWrong);
+                      }
                  }
-              });
-           }
+        });
 
     }
 

@@ -25,7 +25,7 @@ class FragmentFirstCorrect : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         textview_first.text = "Correct"
         view.findViewById<Button>(R.id.button_first).setOnClickListener {
-            findNavController().navigate(R.id.action_fragmentFirstCorrect_to_FirstFragment)
+            findNavController().navigate(R.id.action_fragmentFirstCorrect_to_mainFragment2test)
         }
     }
 }
