@@ -1,8 +1,6 @@
 
 
 import android.graphics.Color
-import android.graphics.Color.BLACK
-import android.graphics.Typeface
 import android.os.Bundle
 import android.text.Html
 import androidx.fragment.app.Fragment
@@ -10,12 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import com.example.hellokotlin.R
-import kotlinx.android.synthetic.main.fragment_question_purplequiz.*
 import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answer.*
 
 /**
@@ -45,7 +39,7 @@ class ErsteFrageTest : Fragment(), View.OnClickListener{
 
         val text =
             "<p><span style=\"color: #ff00ff;\">fun</span> main(args: <span style=\"color: #0000ff;\">Array&lt;String&gt;</span>) {<br />&nbsp;&nbsp;&nbsp; println(<span style=\"color: #008000;\">\"Hello World!\"</span>)<br />}</p>"
-        question.text = Html.fromHtml(text)
+        dd_text.text = Html.fromHtml(text)
 
         //tv_question.text = question.question
         //iv_image.setImageResource(question.image)
