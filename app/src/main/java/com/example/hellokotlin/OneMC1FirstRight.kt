@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.fragment_instruction.*
 import kotlinx.android.synthetic.main.fragment_question_purplequiz.*
 
 /**
@@ -37,6 +38,8 @@ class OneMC1FirstRight : Fragment(), View.OnClickListener {
         tv_option_two.text = "two"
         tv_option_three.text = "three"
         tv_option_four.text = "four"
+        progressbar_instruction.progress = 1
+
 
         tv_option_one.setOnClickListener(this)
         tv_option_two.setOnClickListener(this)
