@@ -77,6 +77,7 @@ public class F_DD_1_5_wrong extends Fragment {
         textview.setText(Html.fromHtml(text));
     }
     public void changeTextProperties_button(String text_button) { textview_button.setText(text_button); }
+    
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {

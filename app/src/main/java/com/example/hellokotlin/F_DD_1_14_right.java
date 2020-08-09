@@ -29,9 +29,9 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class changed_F_DD_1_14_right extends Fragment {
+public class F_DD_1_14_right extends Fragment {
 
-    public changed_F_DD_1_14_right() {
+    public F_DD_1_14_right() {
     }
 
 
@@ -101,8 +101,8 @@ public class changed_F_DD_1_14_right extends Fragment {
             // korrekte reihenfolge: 1,2,3,0
             @Override
             public void onClick(View view) {
-/*                NavHostFragment.findNavController(F_DD_1_11_right.this)
-                        .navigate(R.id.action_f_DD_1_5_wrong_to_MC_1_6);*/
+                NavHostFragment.findNavController(F_DD_1_14_right.this)
+                        .navigate(R.id.action_f_DD_1_11_right_to_finish_1_15);
             }
 
         });

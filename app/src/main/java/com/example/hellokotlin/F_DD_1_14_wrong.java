@@ -22,34 +22,34 @@ import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
-import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class changed_DD_1_13 extends Fragment {
+public class F_DD_1_14_wrong extends Fragment {
 
-    public changed_DD_1_13() {
+    public F_DD_1_14_wrong() {
     }
 
-    TextView textview;
-    String text = "Mittels // können einzeilige Kommentare im Code untergebracht werden. So " +
-            "können wir unseren Code später besser verstehen. Kannst du die Fragmente Anhand der Kommentare anordnen?";
 
+    TextView textview;
+    String text = "<p><span style=\"color: #ff0000;\">Nicht ganz.</span> Weil wir Variable a1 erst <strong>anlegen</strong> m&uuml;ssen, bevor wir sie in a2 <strong>verwenden</strong> und dann das<strong> Ergebnis ausgeben</strong>, stimmt nur diese Reihenfolge. Mehrere Zeilen kannst du &uuml;brigens mit <strong>/*</strong> ... <strong>*/</strong> auskommentieren.</p>";
+    Button textview_button;
+    String text_button = "Weiter";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        RecyclerListAdapter3.STRINGS3[0] = "<div style=\"-en-clipboard: true;\"><span style=\"color: #003300;\"><em>println</em></span>(a2) <span style=\"color: #808080;\">// Schritt 3</span></div>";
-        RecyclerListAdapter3.STRINGS3[2] = "<p><span style=\"color: #0000ff;\">var</span> a1 = " +
+        RecyclerListAdapter3.STRINGS3[2] = "<div style=\"-en-clipboard: true;\"><span style=\"color: #003300;\"><em>println</em></span>(a2) <span style=\"color: #808080;\">// Schritt 3</span></div>";
+        RecyclerListAdapter3.STRINGS3[0] = "<p><span style=\"color: #0000ff;\">var</span> a1 = " +
                 "<span style=\"color: #3366ff;\">40</span> + <span style=\"color: #3366ff;\">5</span> " +
                 "<span style=\"color: #808080;\">// Schritt 1</span></p> ";
         RecyclerListAdapter3.STRINGS3[1] ="<div style=\"-en-clipboard: true;\"><span style=\"color:" +
                 " #0000ff;\">var</span> a2 = a1+ <span style=\"color: #3366ff;\">44</span> <span style=\"" +
                 "color: #808080;\">// Schritt 2</span></div>";
-
 
 
 
@@ -59,7 +59,9 @@ public class changed_DD_1_13 extends Fragment {
         View view = inflater.inflate(R.layout.fragment_drag_and_drop,
                 container, false);
         textview = (TextView) view.findViewById(R.id.dd_text);
+        textview_button = (Button) view.findViewById(R.id.button_forward_dd);
         changeTextProperties(text);
+        changeTextProperties_button(text_button);
         return view;
 
 
@@ -70,14 +72,14 @@ public class changed_DD_1_13 extends Fragment {
     {
         textview.setText(Html.fromHtml(text));
     }
-
-
-
-
+    public void changeTextProperties_button(String text_button) { textview_button.setText(text_button); }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+
+
 
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
@@ -88,30 +90,19 @@ public class changed_DD_1_13 extends Fragment {
         recyclerView.setAdapter(adapter);
 
         //Itemrouchhelper Funktionen auskommentieren, um drag & drop zu deaktivieren
-        ItemTouchHelper.Callback callback =
+  /*      ItemTouchHelper.Callback callback =
                 new SimpleItemTouchHelperCallback(adapter);
         ItemTouchHelper touchHelper = new ItemTouchHelper(callback);
-        touchHelper.attachToRecyclerView(recyclerView);
+        touchHelper.attachToRecyclerView(recyclerView);*/
 
         view.findViewById(R.id.button_forward_dd).setOnClickListener(new View.OnClickListener() {
             // korrekte reihenfolge: 1,2,3,0
             @Override
             public void onClick(View view) {
-                if (
-                        RecyclerListAdapter3.INTS3[0] == 2  &&
-                        RecyclerListAdapter3.INTS3[1] == 1  &&
-                        RecyclerListAdapter3.INTS3[2] == 0
-
-                ) {
-                    RecyclerListAdapter3.resetIntArray();
-                    NavHostFragment.findNavController(changed_DD_1_13.this)
-                            .navigate(R.id.action_DD_1_10_to_f_DD_1_11_right);
-                } else {
-                    RecyclerListAdapter3.resetIntArray();
-                    NavHostFragment.findNavController(changed_DD_1_13.this)
-                            .navigate(R.id.action_DD_1_10_to_f_DD_1_11_wrong);
-                }
+                NavHostFragment.findNavController(F_DD_1_14_wrong.this)
+                        .navigate(R.id.action_f_DD_1_11_wrong_to_finish_1_15);
             }
+
         });
 
     }

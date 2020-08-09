@@ -1,6 +1,7 @@
 package com.example.hellokotlin
 
 
+
 import android.graphics.Color
 import android.os.Bundle
 import android.text.Html
@@ -16,9 +17,9 @@ import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answe
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class changed_MC_1_11 : Fragment(), View.OnClickListener{
+class MC_1_9 : Fragment(), View.OnClickListener{
     // Richtige Antwort festlegen
-    var correctAnswer = 1
+    var correctAnswer = 4
     // answer == gewählte Antwort
     var answer = 0
 
@@ -39,19 +40,19 @@ class changed_MC_1_11 : Fragment(), View.OnClickListener{
 
 
         val text =
-            "<p>Es w&auml;re doch langweilig, 2 Zahlen zu haben und nichts mit ihnen zu tun. " +
-                    "Kannst du die Zahlen addieren?</p>\n" +
-                    "<p>var a = 1000<br />var b = 337<br />println(a ____ b)</p>"
+            "<p>Was glaubst du, wie wir eine Zahl anlegen und ihr einen Wert geben?</p>\n" +
+                    "<p><span style=\"color: #0000ff;\">var</span> Antwort_auf_die Frage_nach_dem " +
+                    "Leben_dem_Universum_und_dem_ganzen_Rest =</p>"
         dd_text.text = Html.fromHtml(text)
-        progressBar_mc.progress = 11
+        progressBar_mc.progress = 9
 
 
         //tv_question.text = question.question
         //iv_image.setImageResource(question.image)
-        option1.text = "+"
-        option2.text = "/"
-        option3.text = "plus"
-        option4.text = ".add()"
+        option1.text = "'11880'"
+        option2.text = "\"1349\""
+        option3.text = "\"Zwölf\""
+        option4.text = "42"
 
 
         option1.setOnClickListener(this)
@@ -63,9 +64,9 @@ class changed_MC_1_11 : Fragment(), View.OnClickListener{
 
             if (answer == correctAnswer) {
 
-                findNavController().navigate(R.id.action_MC_1_8_to_f_MC_1_9_right)
+                findNavController().navigate(R.id.action_MC_1_6_to_f_MC_1_7_right)
             } else {
-                findNavController().navigate(R.id.action_MC_1_8_to_f_MC_1_9_wrong)
+                findNavController().navigate(R.id.action_MC_1_6_to_f_MC_1_7_wrong)
             }
 
         }

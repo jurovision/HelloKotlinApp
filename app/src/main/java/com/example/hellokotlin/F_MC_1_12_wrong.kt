@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answe
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class changed_MC_1_12_wrong : Fragment() {
+class F_MC_1_12_wrong : Fragment() {
     // Richtige Antwort festlegen
     var correctAnswer = 4
     // answer == gewählte Antwort
@@ -52,6 +52,8 @@ class changed_MC_1_12_wrong : Fragment() {
         option2.text = "/"
         option3.text = "plus"
         option4.text = ".add()"
+        button_forward.text = "Weiter"
+
 
         // 1te Antwort richtig
         option1.setTextColor(Color.BLACK)
