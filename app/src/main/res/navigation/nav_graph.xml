@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_instruction1_1"
             app:destination="@id/instruction1_1" />
+        <action
+            android:id="@+id/action_FirstFragment_to_webViewFragment15"
+            app:destination="@id/webViewFragment15" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -264,6 +267,10 @@
             android:id="@+id/action_finish_1_15_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/webViewFragment15"
+        android:name="com.example.hellokotlin.WebViewFragment15"
+        android:label="WebViewFragment15" />
 
 
 </navigation>

@@ -1,15 +1,12 @@
 package com.example.hellokotlin
 
-import android.graphics.Color
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.ernestoyaquello.dragdropswiperecyclerview.DragDropSwipeRecyclerView
-import kotlinx.android.synthetic.main.fragment_question_purplequiz.*
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,6 +17,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
 
+    }
+
+    class WebViewActivity15 : AppCompatActivity() {
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.fragment_web_view_fragment15)
+            val mFragmentManager: FragmentManager = supportFragmentManager
+            val fragmentTransaction: FragmentTransaction = mFragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.relativeLayout, WebViewFragment15()).commit()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
