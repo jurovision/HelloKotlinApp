@@ -28,7 +28,7 @@ class I_1_6 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val text = "<p>Mit dem Schl&uuml;sselbegriff <strong>var</strong> hast du gerade bereits eine Variable angelegt. Wenn wir in Kotlin nicht manuell den Datentyp festlegen wollen, m&uuml;ssen wir ihn nicht angeben. Er wird automatisch abgeleitet. Wir k&ouml;nnen alle &uuml;blichen Datentypen einfach mittels <strong>var name =</strong> anlegen</p>"
         instruction.text = Html.fromHtml(text)
-        view.findViewById<Button>(R.id.button_weiter).setOnClickListener {
+        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
             findNavController().navigate(R.id.action_i_1_6_to_DD_1_7)
         }
     }

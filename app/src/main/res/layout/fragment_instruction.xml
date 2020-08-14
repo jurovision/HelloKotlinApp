@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_weiter"
+        android:id="@+id/button_inputanswer"
         android:layout_width="212dp"
         android:layout_height="43dp"
         android:layout_marginTop="8dp"

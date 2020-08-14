@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/userInput_Test">
 
     <fragment
         android:id="@+id/FirstFragment"
@@ -271,6 +271,17 @@
         android:id="@+id/webViewFragment15"
         android:name="com.example.hellokotlin.WebViewFragment15"
         android:label="WebViewFragment15" />
+    <fragment
+        android:id="@+id/userInput_Test"
+        android:name="com.example.hellokotlin.UserInput_Test"
+        android:label="UserInput_Test" >
+        <action
+            android:id="@+id/action_userInput_Test_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_userInput_Test_to_finish_1_15"
+            app:destination="@id/finish_1_15" />
+    </fragment>
 
 
 </navigation>

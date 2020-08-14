@@ -32,7 +32,7 @@ class I_1_2 : Fragment() {
                 "<p>&nbsp;</p>"
         instruction.text = Html.fromHtml(text)
         progressbar_instruction.progress = 2
-        view.findViewById<Button>(R.id.button_weiter).setOnClickListener {
+        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
                findNavController().navigate(R.id.action_instruction1_2_to_instruction1_3)
            }
     }
