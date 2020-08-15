@@ -12,7 +12,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.hellokotlin.R
+import kotlinx.android.synthetic.main.fragment_instruction.*
 import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answer.*
+import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answer.progress
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -44,7 +46,9 @@ class MC_1_9 : Fragment(), View.OnClickListener{
                     "<p><span style=\"color: #0000ff;\">var</span> Antwort_auf_die Frage_nach_dem " +
                     "Leben_dem_Universum_und_dem_ganzen_Rest =</p>"
         dd_text.text = Html.fromHtml(text)
-        progressBar_mc.progress = 9
+        progress.text = "9 / 15"
+
+
 
 
         //tv_question.text = question.question

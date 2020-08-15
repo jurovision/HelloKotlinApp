@@ -32,18 +32,18 @@
         app:layout_constraintTop_toBottomOf="@+id/instruction"
         app:layout_constraintVertical_bias="0.48000002" />
 
-    <ProgressBar
-        android:id="@+id/progressbar_instruction"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="316dp"
-        android:layout_height="4.5dp"
-        android:layout_marginTop="8dp"
-        android:max="10"
-        android:progress="2"
-        android:progressDrawable="@drawable/progress"
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="X/XX"
+        android:textColor="#808080"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/instruction"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

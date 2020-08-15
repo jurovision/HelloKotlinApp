@@ -10,7 +10,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.hellokotlin.R
+import kotlinx.android.synthetic.main.fragment_instruction.*
 import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answer.*
+import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answer.progress
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -41,7 +43,7 @@ class F_MC_1_12_right : Fragment() {
             "<p><span style=\"color: #008000;\">So ist es.</span> Mit den Operatoren <strong>+ - " +
                     "/ *</strong> k&ouml;nnen wir Berechnungen mit Variablen anstellen.</p>"
         dd_text.text = Html.fromHtml(text)
-        progressBar_mc.progress = 10
+        progress.text = "12 / 15"
 
 
         //tv_question.text = question.question

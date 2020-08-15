@@ -38,7 +38,6 @@ class OneMC1FirstRight : Fragment(), View.OnClickListener {
         tv_option_two.text = "two"
         tv_option_three.text = "three"
         tv_option_four.text = "four"
-        progressbar_instruction.progress = 1
 
 
         tv_option_one.setOnClickListener(this)

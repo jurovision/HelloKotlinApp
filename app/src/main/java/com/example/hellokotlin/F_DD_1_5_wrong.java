@@ -45,6 +45,10 @@ public class F_DD_1_5_wrong extends Fragment {
     Button textview_button;
     String text_button = "Weiter";
 
+    //Progress Text
+    TextView progressText;
+    String progress = "5 / 15";
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         RecyclerListAdapter4.STRINGS[0] = "<p><span style=\"color: #0000ff;\">fun</span> " +
@@ -65,6 +69,10 @@ public class F_DD_1_5_wrong extends Fragment {
         textview_button = (Button) view.findViewById(R.id.button_forward_dd);
         changeTextProperties(text);
         changeTextProperties_button(text_button);
+        //Progress Text
+        progressText = (TextView) view.findViewById(R.id.progress);
+        changeProgress(progress);
+
 
         return view;
 
@@ -77,7 +85,11 @@ public class F_DD_1_5_wrong extends Fragment {
         textview.setText(Html.fromHtml(text));
     }
     public void changeTextProperties_button(String text_button) { textview_button.setText(text_button); }
-    
+    //Progress Text
+    public void changeProgress(String progress)
+    {
+        progressText.setText(progress);
+    }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {

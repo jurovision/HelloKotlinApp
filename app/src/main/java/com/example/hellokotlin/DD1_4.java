@@ -38,6 +38,9 @@ public class DD1_4 extends Fragment {
     TextView textview;
     String text = "Kannst du den Code so anordnen, dass der Gruß ausgegeben wird?";
 
+    //Progress Text
+    TextView progressText;
+    String progress = "4 / 15";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -58,6 +61,11 @@ public class DD1_4 extends Fragment {
                 container, false);
         textview = (TextView) view.findViewById(R.id.dd_text);
         changeTextProperties(text);
+
+        //Progress Text
+        progressText = (TextView) view.findViewById(R.id.progress);
+        changeProgress(progress);
+
         return view;
 
 
@@ -68,6 +76,12 @@ public class DD1_4 extends Fragment {
     {
         textview.setText(Html.fromHtml(text));
     }
+    //Progress Text
+    public void changeProgress(String progress)
+    {
+        progressText.setText(progress);
+    }
+
 
 
 

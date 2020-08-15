@@ -31,7 +31,6 @@ class UserInput_Test : Fragment() {
         val text =
             "<div>Willkommen in der ersten Lektion! Sch&ouml;n, dass du dich f&uuml;r Kotlin interessierst. Kotlin ist eine relativ neue Programmiersprache, die viele Vorteile bietet. Seit 2017 unterst&uuml;tzt Google sie f&uuml;r Android Apps und seit 2019 ist sie sogar die offiziell bevorzugte Sprache f&uuml;r Android.&nbsp;</div>"
         instruction.text = Html.fromHtml(text)
-        progressbar_instruction.progress = 1
 
 
 

@@ -38,7 +38,9 @@ public class DD_1_7 extends Fragment {
 
     TextView textview;
     String text = "<p>Alle Werte, die wir mit <em><strong>var</strong> </em>anlegen sind ebenfalls beliebig oft <strong>&auml;nderbar</strong>. Kannst du unsere Gru&szlig;-Variable so &auml;ndern, dass sie besser zum Ende des Tages passt und danach ausgeben?</p>";
-
+    //Progress Text
+    TextView progressText;
+    String progress = "7 / 15";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -56,6 +58,11 @@ public class DD_1_7 extends Fragment {
                 container, false);
         textview = (TextView) view.findViewById(R.id.dd_text);
         changeTextProperties(text);
+        //Progress Text
+        progressText = (TextView) view.findViewById(R.id.progress);
+        changeProgress(progress);
+
+
         return view;
 
 
@@ -65,6 +72,11 @@ public class DD_1_7 extends Fragment {
     public void changeTextProperties(String text)
     {
         textview.setText(Html.fromHtml(text));
+    }
+    //Progress Text
+    public void changeProgress(String progress)
+    {
+        progressText.setText(progress);
     }
 
 

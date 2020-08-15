@@ -11,7 +11,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.hellokotlin.R
+import kotlinx.android.synthetic.main.fragment_instruction.*
 import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answer.*
+import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answer.progress
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -43,7 +45,7 @@ class MC_1_11 : Fragment(), View.OnClickListener{
                     "Kannst du die Zahlen addieren?</p>\n" +
                     "<p>var a = 1000<br />var b = 337<br />println(a ____ b)</p>"
         dd_text.text = Html.fromHtml(text)
-        progressBar_mc.progress = 11
+        progress.text = "11 / 15"
 
 
         //tv_question.text = question.question

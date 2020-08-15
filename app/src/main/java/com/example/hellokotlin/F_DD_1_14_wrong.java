@@ -40,6 +40,9 @@ public class F_DD_1_14_wrong extends Fragment {
     String text = "<p><span style=\"color: #ff0000;\">Nicht ganz.</span> Weil wir Variable a1 erst <strong>anlegen</strong> m&uuml;ssen, bevor wir sie in a2 <strong>verwenden</strong> und dann das<strong> Ergebnis ausgeben</strong>, stimmt nur diese Reihenfolge. Mehrere Zeilen kannst du &uuml;brigens mit <strong>/*</strong> ... <strong>*/</strong> auskommentieren.</p>";
     Button textview_button;
     String text_button = "Weiter";
+    //Progress Text
+    TextView progressText;
+    String progress = "14 / 15";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -62,6 +65,11 @@ public class F_DD_1_14_wrong extends Fragment {
         textview_button = (Button) view.findViewById(R.id.button_forward_dd);
         changeTextProperties(text);
         changeTextProperties_button(text_button);
+
+        //Progress Text
+        progressText = (TextView) view.findViewById(R.id.progress);
+        changeProgress(progress);
+
         return view;
 
 
@@ -73,6 +81,11 @@ public class F_DD_1_14_wrong extends Fragment {
         textview.setText(Html.fromHtml(text));
     }
     public void changeTextProperties_button(String text_button) { textview_button.setText(text_button); }
+    //Progress Text
+    public void changeProgress(String progress)
+    {
+        progressText.setText(progress);
+    }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {

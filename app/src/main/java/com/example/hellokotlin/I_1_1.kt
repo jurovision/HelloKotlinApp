@@ -27,7 +27,7 @@ class I_1_1 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val text = "<div>Willkommen in der ersten Lektion! Sch&ouml;n, dass du dich f&uuml;r Kotlin interessierst. Kotlin ist eine relativ neue Programmiersprache, die viele Vorteile bietet. Seit 2017 unterst&uuml;tzt Google sie f&uuml;r Android Apps und seit 2019 ist sie sogar die offiziell bevorzugte Sprache f&uuml;r Android.&nbsp;</div>"
         instruction.text = Html.fromHtml(text)
-        progressbar_instruction.progress = 1
+        progress.text = "1 / 15"
         view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
             findNavController().navigate(R.id.action_instruction1_1_to_instruction1_2)
         }

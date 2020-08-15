@@ -12,7 +12,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.hellokotlin.R
-import kotlinx.android.synthetic.main.fragment_instruction.*
 import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answer.*
 
 /**
@@ -44,7 +43,8 @@ class F_MC_1_10_right : Fragment() {
             "<p><span style=\"color: #008000;\">Stimmt. </span>Zahlen, egal welcher Art, " +
                     "legen wir <strong>ohne Anf&uuml;hrungszeichen</strong> an.</p>"
         dd_text.text = Html.fromHtml(text)
-        progressBar_mc.progress = 10
+        progress.text = "10 / 15"
+
 
 
         //tv_question.text = question.question
@@ -55,6 +55,7 @@ class F_MC_1_10_right : Fragment() {
         option4.text = "42"
 
         button_forward.text = "Weiter"
+
 
         // 4te Antwort richtig
         option1.setTextColor(-7829368)

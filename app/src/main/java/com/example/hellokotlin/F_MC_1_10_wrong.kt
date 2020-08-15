@@ -14,6 +14,7 @@ import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.hellokotlin.R
 import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answer.*
+import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answer.progress
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -44,7 +45,8 @@ class F_MC_1_10_wrong : Fragment() {
             "<p><span style=\"color: #ff0000;\">Leider nein. </span>Zahlen, egal welcher Art, " +
                     "legen wir <strong>ohne Anf&uuml;hrungszeichen</strong> an.</p>"
         dd_text.text = Html.fromHtml(text)
-        progressBar_mc.progress = 10
+        progress.text = "10 / 15"
+
 
 
         //tv_question.text = question.question
