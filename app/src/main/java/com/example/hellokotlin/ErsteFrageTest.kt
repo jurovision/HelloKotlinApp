@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.hellokotlin.R
-import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answer.*
+import kotlinx.android.synthetic.main.fragment_multiple_choice_4.*
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -26,7 +26,7 @@ class ErsteFrageTest : Fragment(), View.OnClickListener{
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_multiple_choice_default_one_answer, container, false)
+        return inflater.inflate(R.layout.fragment_multiple_choice_4, container, false)
 
 
     }

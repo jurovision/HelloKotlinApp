@@ -11,10 +11,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
-import com.example.hellokotlin.R
-import kotlinx.android.synthetic.main.fragment_instruction.*
-import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answer.*
-import kotlinx.android.synthetic.main.fragment_multiple_choice_default_one_answer.progress
+import kotlinx.android.synthetic.main.fragment_multiple_choice_4.*
+import kotlinx.android.synthetic.main.fragment_multiple_choice_4.progress
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -30,7 +28,7 @@ class F_MC_1_12_wrong : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_multiple_choice_default_one_answer, container, false)
+        return inflater.inflate(R.layout.fragment_multiple_choice_4, container, false)
 
 
     }

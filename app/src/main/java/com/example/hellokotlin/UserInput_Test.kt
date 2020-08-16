@@ -37,6 +37,8 @@ class UserInput_Test : Fragment() {
         view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
             var Input = view.findViewById<EditText>(R.id.Input)
             var string = Input.text.toString()
+            // Alle Leerzeichen entfernen
+            string = string.replace("\\s".toRegex(), "")
             if (string == "Banane")
                 findNavController().navigate(R.id.action_userInput_Test_to_FirstFragment)
                 else {
