@@ -37,7 +37,7 @@ public class DD_1_13 extends Fragment {
 
     TextView textview;
     String text = "Mittels // können einzeilige Kommentare im Code untergebracht werden. So " +
-            "können wir unseren Code später besser verstehen. Kannst du die Fragmente Anhand der Kommentare anordnen?";
+            "können wir unseren Code später besser verstehen. Kannst du die Fragmente anhand der Kommentare anordnen?";
     //Progress Text
     TextView progressText;
     String progress = "13 / 15";

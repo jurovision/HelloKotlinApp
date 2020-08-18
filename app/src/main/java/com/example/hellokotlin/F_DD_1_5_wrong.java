@@ -41,7 +41,7 @@ public class F_DD_1_5_wrong extends Fragment {
 
     //Zu ändernden Text festlegen
     TextView textview;
-    String text = "<p><span style=\"color: #ff0000;\">Fast.</span> Wir m&uuml;ssen nat&uuml;rlich zuerst die <strong>Variable <em>var</em> anlegen</strong>, bevor wir sie ausgeben k&ouml;nnen. Au&szlig;erdem beginnt das Programm immer mit <em><strong>fun main</strong></em> und der Code muss zwischen den geschwungenen Klammern <strong>{</strong>...<strong>}</strong> stehen.</p>";
+    String text = "<p><span style=\"color: #ff0000;\">Fast.</span> Wir m&uuml;ssen nat&uuml;rlich zuerst die <strong>Variable <em>var</em> anlegen</strong>, bevor wir sie ausgeben k&ouml;nnen. Au&szlig;erdem beginnt das Programm immer mit <em><strong>fun main</strong></em> und der Code muss zwischen den geschwungenen Klammern <em><strong>{</strong></em>...<em><strong>}</strong></em> stehen.</p>";
     Button textview_button;
     String text_button = "Weiter";
 

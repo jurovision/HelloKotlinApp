@@ -39,9 +39,8 @@ class MC_1_11 : Fragment(), View.OnClickListener{
 
 
         val text =
-            "<p>Es w&auml;re doch langweilig, 2 Zahlen zu haben und nichts mit ihnen zu tun. " +
-                    "Kannst du die Zahlen addieren?</p>\n" +
-                    "<p>var a = 1000<br />var b = 337<br />println(a ____ b)</p>"
+            "<p>Es w&auml;re doch langweilig, 2 Zahlen zu haben und nichts mit ihnen zu tun. Kannst du die Zahlen <strong>addieren</strong>?</p>\n" +
+                    "<p><span style=\"color: #0000ff;\">var</span> a = <span style=\"color: #3366ff;\">1000</span><br /><span style=\"color: #0000ff;\">var</span> b = <span style=\"color: #3366ff;\">337</span><br /><span style=\"color: #003300;\"><em>println</em></span>(a ____ b)</p>"
         dd_text.text = Html.fromHtml(text)
         progress.text = "11 / 15"
 
