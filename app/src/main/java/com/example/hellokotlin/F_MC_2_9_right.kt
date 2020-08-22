@@ -1,7 +1,5 @@
 package com.example.hellokotlin
 
-
-
 import android.graphics.Color
 import android.os.Bundle
 import android.text.Html
@@ -12,11 +10,12 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_multiple_choice_4.*
+import kotlinx.android.synthetic.main.fragment_multiple_choice_4.progress
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class F_MC_2_7_right : Fragment() {
+class F_MC_2_9_right : Fragment() {
     // Richtige Antwort festlegen
     var correctAnswer = 4
     // answer == gewählte Antwort
@@ -27,7 +26,7 @@ class F_MC_2_7_right : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_multiple_choice_3, container, false)
+        return inflater.inflate(R.layout.fragment_multiple_choice_4, container, false)
 
 
     }
@@ -39,37 +38,37 @@ class F_MC_2_7_right : Fragment() {
 
 
         val text =
-            "<p><span style=\"color: #008000;\">Richtig,</span> da wir die Variable schon <strong>als Ganzzahl initialisiert</strong> haben, kann sie nur noch einen entsprechenden Wert annehmen - und keinen Double- oder String-Wert.</p>\n" +
-                    "<p><span style=\"color: #0000ff;\">var</span> zahl = <span style=\"color: #3366ff;\">27</span></p>"
+            "<p><span style=\"color: #008000;\">Ganz genau.</span> Wenn wir den Wert hinter dem = entsprechend anpassen, sind zwar alle Antworten korrekt, aber in diesem Beispiel ist nur ein <strong>String</strong> richtig.</p>\n" +
+                    "<p><span style=\"color: #0000ff;\">var</span> hero<span style=\"color: #808080;\">: String</span> = <span style=\"color: #008000;\">\"Superman\"</span></p>"
         dd_text.text = Html.fromHtml(text)
-        progress.text = "7 / 16"
-
+        progress.text = "12 / 15"
 
 
         //tv_question.text = question.question
         //iv_image.setImageResource(question.image)
-        option1.text = "zahl = \"28\""
-        option2.text = "zahl = 14.14"
-        option3.text =  "zahl =13"
-
+        option1.text = ": Int"
+        option2.text = ": String"
+        option3.text = ": Character"
+        option4.text = ": Double"
         button_forward.text = "Weiter"
 
 
-        // Antwort richtig
+        // 2te Antwort richtig
         option1.setTextColor(-7829368)
         option1.textSize = 16F
-        option2.setTextColor(-7829368)
-        option2.textSize = 16F
-        option3.setTextColor(Color.BLACK)
-        option3.textSize = 20F
-
+        option2.setTextColor(Color.BLACK)
+        option2.textSize = 20F
+        option3.setTextColor(-7829368)
+        option3.textSize = 16F
+        option4.setTextColor(-7829368)
+        option4.textSize = 16F
 
 
         //button_forward.setOnClickListener(this)
         view.findViewById<Button>(R.id.button_forward).setOnClickListener {
 
 
-            findNavController().navigate(R.id.action_f_MC_2_7_right_to_MC_2_8)
+            findNavController().navigate(R.id.action_f_MC_1_9_right_to_DD_1_10)
         }
 
 
