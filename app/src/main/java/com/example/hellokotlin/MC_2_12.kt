@@ -48,10 +48,10 @@ class MC_2_12 : Fragment(), View.OnClickListener{
 
         //tv_question.text = question.question
         //iv_image.setImageResource(question.image)
-        option1.text = "Der Typ ist später nicht änderbar"
-        option2.text = "Ihr Wert ist begrenzt oft änderbar"
-        option3.text = "Sie können ihren Typ selbst erkennen"
-        option4.text = "Wir können den Typ selbst festlegen"
+        option1.text = "Typ ist später nicht änderbar"
+        option2.text = "Wert ist begrenzt oft änderbar"
+        option3.text = "Können ihren Typ selbst erkennen"
+        option4.text = "Typ manuell festlegbar"
 
 
         option1.setOnClickListener(this)
@@ -63,9 +63,9 @@ class MC_2_12 : Fragment(), View.OnClickListener{
 
             if (answer == correctAnswer) {
 
-                findNavController().navigate(R.id.action_MC_2_8_to_f_MC_2_9_right)
+                findNavController().navigate(R.id.action_MC_2_12_to_f_MC_2_13_right)
             } else {
-                findNavController().navigate(R.id.action_MC_2_8_to_f_MC_2_9_wrong)
+                findNavController().navigate(R.id.action_MC_2_12_to_f_MC_2_13_wrong)
             }
 
         }
@@ -75,7 +75,7 @@ class MC_2_12 : Fragment(), View.OnClickListener{
         when (v?.id) {
             R.id.option1 -> {
                 option1.setTextColor(Color.BLACK)
-                option1.textSize = 20F
+                option1.textSize = 17F
                 option2.setTextColor(-7829368)
                 option2.textSize = 16F
                 option3.setTextColor(-7829368)
@@ -89,7 +89,7 @@ class MC_2_12 : Fragment(), View.OnClickListener{
                 option1.setTextColor(-7829368)
                 option1.textSize = 16F
                 option2.setTextColor(Color.BLACK)
-                option2.textSize = 20F
+                option2.textSize = 17F
                 option3.setTextColor(-7829368)
                 option3.textSize = 16F
                 option4.setTextColor(-7829368)
@@ -103,7 +103,7 @@ class MC_2_12 : Fragment(), View.OnClickListener{
                 option2.setTextColor(-7829368)
                 option2.textSize = 16F
                 option3.setTextColor(Color.BLACK)
-                option3.textSize = 20F
+                option3.textSize = 17F
                 option4.setTextColor(-7829368)
                 option4.textSize = 16F
                 answer = 3
@@ -117,7 +117,7 @@ class MC_2_12 : Fragment(), View.OnClickListener{
                 option3.setTextColor(-7829368)
                 option3.textSize = 16F
                 option4.setTextColor(Color.BLACK)
-                option4.textSize = 20F
+                option4.textSize = 17F
                 answer = 4
             }
 

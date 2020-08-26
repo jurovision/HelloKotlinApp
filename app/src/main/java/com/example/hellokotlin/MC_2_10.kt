@@ -20,7 +20,7 @@ import kotlinx.android.synthetic.main.fragment_multiple_choice_4.progress
  */
 class MC_2_10 : Fragment(), View.OnClickListener{
     // Richtige Antwort festlegen
-    var correctAnswer = 3
+    var correctAnswer = 4
     // answer == gewählte Antwort
     var answer = 0
 

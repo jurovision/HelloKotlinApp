@@ -22,6 +22,7 @@ class F_MC_2_7_right : Fragment() {
     // answer == gewählte Antwort
     var answer = 0
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

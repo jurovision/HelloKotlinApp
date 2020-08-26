@@ -54,15 +54,15 @@ class F_MC_2_11_wrong : Fragment() {
         button_forward.text = "Weiter"
 
 
-// 4te Antwort richtig
-        option1.setTextColor(-7829368)
-        option1.textSize = 16F
-        option2.setTextColor(-7829368)
-        option2.textSize = 16F
-        option3.setTextColor(-7829368)
-        option3.textSize = 16F
-        option4.setTextColor(Color.BLACK)
-        option4.textSize = 20F
+// 3te Antwort richtig
+        option1.setTextColor(Color.BLACK)
+        option1.textSize = 20F
+        option2.setTextColor(Color.BLACK)
+        option2.textSize = 20F
+        option3.setTextColor(Color.BLACK)
+        option3.textSize = 20F
+        option4.setTextColor(-7829368)
+        option4.textSize = 16F
 
 
         //button_forward.setOnClickListener(this)
