@@ -2,6 +2,7 @@ package com.example.hellokotlin
 
 
 
+
 import android.graphics.Color
 import android.os.Bundle
 import android.text.Html
@@ -17,9 +18,9 @@ import kotlinx.android.synthetic.main.fragment_multiple_choice_4.progress
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class MC_2_8 : Fragment(), View.OnClickListener{
+class MC_2_10 : Fragment(), View.OnClickListener{
     // Richtige Antwort festlegen
-    var correctAnswer = 2
+    var correctAnswer = 3
     // answer == gewählte Antwort
     var answer = 0
 
@@ -40,20 +41,20 @@ class MC_2_8 : Fragment(), View.OnClickListener{
 
 
         val text =
-            "<p>Zwar m&uuml;ssen wir meistens keinen Datentyp <strong>manuell festlegen</strong>, aber wir k&ouml;nnen es durchaus. Wie k&ouml;nnen wir den Typ dieser Variable explizit festlegen?</p>\n" +
-                    "<p><span style=\"color: #0000ff;\">var</span> hero ____ = <span style=\"color: #008000;\">\"Superman\"</span></p>"
+            "<p>Es gibt in Kotlin verschiedene Wege, eine <strong>Zahl um 1 zu erh&ouml;hen</strong>. Welche der Antworten funktioniert <strong>nicht</strong>?</p>\n" +
+                    "<p><span style=\"color: #0000ff;\">var </span>tore = <span style=\"color: #3366ff;\">4</span></p>"
         dd_text.text = Html.fromHtml(text)
-        progress.text = "8 / 16"
+        progress.text = "10 / 16"
 
 
 
 
         //tv_question.text = question.question
         //iv_image.setImageResource(question.image)
-        option1.text = ": Int"
-        option2.text = ": String"
-        option3.text = ": Character"
-        option4.text = ": Double"
+        option1.text = "tore += 1"
+        option2.text = "tore = tore +1"
+        option3.text = "tore++"
+        option4.text = "tore = -(tore - 1)"
 
 
         option1.setOnClickListener(this)
@@ -65,9 +66,9 @@ class MC_2_8 : Fragment(), View.OnClickListener{
 
             if (answer == correctAnswer) {
 
-                findNavController().navigate(R.id.action_MC_2_8_to_f_MC_2_9_right)
+                findNavController().navigate(R.id.action_MC_2_10_to_f_MC_2_11_right)
             } else {
-                findNavController().navigate(R.id.action_MC_2_8_to_f_MC_2_9_wrong)
+                findNavController().navigate(R.id.action_MC_2_10_to_f_MC_2_11_wrong)
             }
 
         }

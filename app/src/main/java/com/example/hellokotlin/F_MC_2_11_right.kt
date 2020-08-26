@@ -1,5 +1,7 @@
 package com.example.hellokotlin
 
+
+
 import android.graphics.Color
 import android.os.Bundle
 import android.text.Html
@@ -15,7 +17,7 @@ import kotlinx.android.synthetic.main.fragment_multiple_choice_4.progress
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class F_MC_2_9_right : Fragment() {
+class F_MC_2_11_right : Fragment() {
     // Richtige Antwort festlegen
     var correctAnswer = 4
     // answer == gewählte Antwort
@@ -38,37 +40,36 @@ class F_MC_2_9_right : Fragment() {
 
 
         val text =
-            "<p><span style=\"color: #008000;\">Ganz genau.</span> Wenn wir den Wert hinter dem = entsprechend anpassen, sind zwar alle Antworten korrekt, aber in diesem Beispiel ist nur ein <strong>String</strong> richtig.</p>\n" +
-                    "<p><span style=\"color: #0000ff;\">var</span> hero<span style=\"color: #808080;\">: String</span> = <span style=\"color: #008000;\">\"Superman\"</span></p>"
+            "<div style=\"-en-clipboard: true;\"><span style=\"color: #008000;\">Stimmt.</span> tore = -(tore -<span style=\"color: #0000ff;\">1</span>) ergibt wenig Sinn. <strong>Alle anderen Wege funktionieren</strong> und k&ouml;nnen gleicherma&szlig;en zum Verringern um 1 mit - umgesetzt werden. </div>"
         dd_text.text = Html.fromHtml(text)
-        progress.text = "9 / 16"
+        progress.text = "11 / 16"
 
 
         //tv_question.text = question.question
         //iv_image.setImageResource(question.image)
-        option1.text = ": Int"
-        option2.text = ": String"
-        option3.text = ": Character"
-        option4.text = ": Double"
+        option1.text = "tore += 1"
+        option2.text = "tore = tore +1"
+        option3.text = "tore++"
+        option4.text = "tore = -(tore - 1)"
         button_forward.text = "Weiter"
 
 
-        // 2te Antwort richtig
+// 4te Antwort richtig
         option1.setTextColor(-7829368)
         option1.textSize = 16F
-        option2.setTextColor(Color.BLACK)
-        option2.textSize = 20F
+        option2.setTextColor(-7829368)
+        option2.textSize = 16F
         option3.setTextColor(-7829368)
         option3.textSize = 16F
-        option4.setTextColor(-7829368)
-        option4.textSize = 16F
+        option4.setTextColor(Color.BLACK)
+        option4.textSize = 20F
 
 
         //button_forward.setOnClickListener(this)
         view.findViewById<Button>(R.id.button_forward).setOnClickListener {
 
 
-            findNavController().navigate(R.id.action_f_MC_2_9_right_to_MC_2_10)
+            findNavController().navigate(R.id.action_f_MC_2_11_right_to_MC_2_12)
         }
 
 

@@ -41,7 +41,7 @@ class F_MC_2_9_wrong : Fragment() {
             "<p><span style=\"color: #ff0000;\">Leider nicht richtig.</span> Wenn wir den Wert hinter dem = entsprechend anpassen, sind zwar alle Antworten korrekt, aber in diesem Beispiel ist nur ein <strong>String</strong> richtig.</p>\n" +
                     "<p><span style=\"color: #0000ff;\">var</span> hero<span style=\"color: #808080;\">: String</span> = <span style=\"color: #008000;\">\"Superman\"</span></p>"
         dd_text.text = Html.fromHtml(text)
-        progress.text = "12 / 15"
+        progress.text = "9 / 16"
 
 
         //tv_question.text = question.question
@@ -68,7 +68,7 @@ class F_MC_2_9_wrong : Fragment() {
         view.findViewById<Button>(R.id.button_forward).setOnClickListener {
 
 
-            findNavController().navigate(R.id.action_f_MC_1_9_right_to_DD_1_10)
+            findNavController().navigate(R.id.action_f_MC_2_9_wrong_to_MC_2_10)
         }
 
 
