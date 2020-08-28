@@ -15,11 +15,68 @@
 
 
     <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="162dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="36dp"
+        android:id="@+id/imageButton4"
+        android:layout_width="185dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="#DEEFEE"
+        android:src="@android:drawable/ic_media_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lesson_1"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="185dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="#DEEFEE"
+        android:src="@android:drawable/ic_media_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="185dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="#DEEFEE"
+        android:src="@android:drawable/ic_media_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lesson_1"
+        app:layout_constraintTop_toBottomOf="@+id/kotlinEditor"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="185dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="#DEEFEE"
+        android:src="@android:drawable/ic_media_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotlinEditor"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="185dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="#DEEFEE"
         android:src="@android:drawable/ic_media_play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,26 +85,29 @@
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="162dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="24dp"
+        android:layout_width="185dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="#DEEFEE"
         android:src="@android:drawable/ic_media_play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toEndOf="@+id/lesson_1"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/lesson2"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="162dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="24dp"
+        android:id="@+id/lesson2"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="185dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="190dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="#DEEFEE"
         android:src="@android:drawable/ic_media_play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,16 +115,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="TextView"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="@+id/lesson_1"
-        app:layout_constraintStart_toStartOf="@+id/lesson_1" />
+
 
     <TextView
         android:id="@+id/textView9"
@@ -72,32 +123,22 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Lektion 2 - Variablen"
+        android:text="2 - Variablen"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintBottom_toBottomOf="@+id/lesson2"
+        app:layout_constraintEnd_toEndOf="@+id/lesson2"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton4" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="200sp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+        app:layout_constraintStart_toStartOf="@+id/lesson2" />
 
     <ImageButton
         android:id="@+id/lesson_1"
-        android:layout_width="162dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="36dp"
+        android:layout_width="185dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="190dp"
+        android:background="#DEEFEE"
         android:src="@android:drawable/ic_media_play"
+        android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -109,21 +150,49 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Lektion 1 - Hello Kotlin"
+        android:text="1 - Hello Kotlin"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@+id/lesson_1"
         app:layout_constraintEnd_toEndOf="@+id/lesson_1"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/lesson_1" />
 
+
+
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="162dp"
-        android:layout_height="257dp"
+        android:layout_width="152dp"
+        android:layout_height="203dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/happy2" />
+
+    <ImageButton
+        android:id="@+id/kotlinEditor"
+        android:layout_width="385dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="4dp"
+        android:background="#92D6D0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Kotlin Editor"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kotlinEditor"
+        app:layout_constraintEnd_toEndOf="@+id/kotlinEditor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/kotlinEditor" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

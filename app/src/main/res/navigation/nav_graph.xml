@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_webViewFragment15"
             app:destination="@id/webViewFragment15" />
+        <action
+            android:id="@+id/action_FirstFragment_to_MC_2_1"
+            app:destination="@id/MC_2_1" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
