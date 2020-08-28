@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_first.*
 
@@ -24,9 +25,8 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        button_first.text = "Kapitel 1"
         button2.text = "Kotlin Editor"
-        view.findViewById<Button>(R.id.button_first).setOnClickListener {
+        view.findViewById<ImageButton>(R.id.lesson_1).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_instruction1_1)
         }
         view.findViewById<Button>(R.id.button2).setOnClickListener {
