@@ -1,5 +1,6 @@
 package com.example.hellokotlin
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -25,13 +26,16 @@ class FirstFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        lesson_1.setBackgroundColor(3161835)
+        //Farben ändern, wenn Kapitel abgeschlossen
+        //lesson_1.setBackgroundColor(Color.parseColor("#009C7C"))
         view.findViewById<ImageButton>(R.id.lesson_1).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_instruction1_1)
         }
         view.findViewById<ImageButton>(R.id.lesson2).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_MC_2_1)
+        }
+        view.findViewById<ImageButton>(R.id.lesson_3).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_i_3_1)
         }
         view.findViewById<ImageButton>(R.id.kotlinEditor).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_webViewFragment15)
