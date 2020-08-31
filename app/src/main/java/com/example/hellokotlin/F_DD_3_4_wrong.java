@@ -18,46 +18,49 @@ package com.example.hellokotlin;
          * limitations under the License.
          */
 
+
         import android.os.Bundle;
         import android.text.Html;
         import android.view.LayoutInflater;
         import android.view.View;
         import android.view.ViewGroup;
-        import android.widget.ProgressBar;
+        import android.widget.Button;
         import android.widget.TextView;
 
         import androidx.fragment.app.Fragment;
         import androidx.navigation.fragment.NavHostFragment;
-        import androidx.recyclerview.widget.ItemTouchHelper;
         import androidx.recyclerview.widget.LinearLayoutManager;
         import androidx.recyclerview.widget.RecyclerView;
 
-public class DD_3_3 extends Fragment {
+        import org.w3c.dom.Text;
 
-    public DD_3_3() {
+public class F_DD_3_4_wrong extends Fragment {
+
+    public F_DD_3_4_wrong() {
     }
 
+    //Zu ändernden Text festlegen
     TextView textview;
-    String text = "<div style=\"-en-clipboard: true;\">\n" +
-            "<div style=\"-en-clipboard: true;\">Kannst du den Code so anordnen, dass er \"<strong>true</strong>\" ausgibt?</div>\n" +
-            "</div>";
+    String text = "<p><span style=\"color: #ff0000;\">Fast. </span>Weil x und y beim Anlegen je den Wert 12 haben, <strong>verschieben</strong> wir den Codeblock mit <em>y+=1</em> einfach <strong>hinter</strong> das Anlegen von <em>var ergebnis</em>.</p>";
+    Button textview_button;
+    String text_button = "Weiter";
 
     //Progress Text
     TextView progressText;
-    String progress = "3 / 13";
+    String progress = "4 / 13";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        RecyclerListAdapter4.STRINGS[0] = "<div style=\"-en-clipboard: true;\">\n" +
+        RecyclerListAdapter4.STRINGS[1] = "<div style=\"-en-clipboard: true;\">\n" +
                 "<div style=\"-en-clipboard: true;\">\n" +
                 "<div style=\"-en-clipboard: true;\"><span style=\"color: #0000ff;\">var</span> ergebnis = x == y</div>\n" +
                 "</div>\n" +
                 "</div>";
-        RecyclerListAdapter4.STRINGS[1] = "<div style=\"-en-clipboard: true;\">y += <span style=\"color: #3366ff;\">1</span></div>";
-        RecyclerListAdapter4.STRINGS[2] ="<div style=\"-en-clipboard: true;\">\n" +
+        RecyclerListAdapter4.STRINGS[2] = "<div style=\"-en-clipboard: true;\">y += <span style=\"color: #3366ff;\">1</span></div>";
+        RecyclerListAdapter4.STRINGS[3] ="<div style=\"-en-clipboard: true;\">\n" +
                 "<div style=\"-en-clipboard: true;\"><span style=\"color: #003300;\"><em>println</em></span>(ergebnis)</div>\n" +
                 "</div>";
-        RecyclerListAdapter4.STRINGS[3] ="<div style=\"-en-clipboard: true;\">\n" +
+        RecyclerListAdapter4.STRINGS[0] ="<div style=\"-en-clipboard: true;\">\n" +
                 "<div style=\"-en-clipboard: true;\">\n" +
                 "<div style=\"-en-clipboard: true;\">\n" +
                 "<div style=\"-en-clipboard: true;\"><span style=\"color: #0000ff;\">var</span> x = <span style=\"color: #3366ff;\">12</span></div>\n" +
@@ -67,19 +70,18 @@ public class DD_3_3 extends Fragment {
                 "</div>";
 
 
-
-
-        //return inflater.inflate(R.layout.fragment_drag_and_drop, container, false);
-
-        // Versuch, Text zu ändern
         View view = inflater.inflate(R.layout.fragment_drag_and_drop,
                 container, false);
-        textview = (TextView) view.findViewById(R.id.dd_text);
-        changeTextProperties(text);
 
+        //Textelemente finden und Änderungen vornehmen
+        textview = (TextView) view.findViewById(R.id.dd_text);
+        textview_button = (Button) view.findViewById(R.id.button_forward_dd);
+        changeTextProperties(text);
+        changeTextProperties_button(text_button);
         //Progress Text
         progressText = (TextView) view.findViewById(R.id.progress);
         changeProgress(progress);
+
 
         return view;
 
@@ -91,21 +93,19 @@ public class DD_3_3 extends Fragment {
     {
         textview.setText(Html.fromHtml(text));
     }
+    public void changeTextProperties_button(String text_button) { textview_button.setText(text_button); }
     //Progress Text
     public void changeProgress(String progress)
     {
         progressText.setText(progress);
     }
 
-
-
-
-
-
-
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+
+
 
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
@@ -116,31 +116,19 @@ public class DD_3_3 extends Fragment {
         recyclerView.setAdapter(adapter);
 
         //Itemrouchhelper Funktionen auskommentieren, um drag & drop zu deaktivieren
-        ItemTouchHelper.Callback callback =
+  /*      ItemTouchHelper.Callback callback =
                 new SimpleItemTouchHelperCallback(adapter);
         ItemTouchHelper touchHelper = new ItemTouchHelper(callback);
-        touchHelper.attachToRecyclerView(recyclerView);
+        touchHelper.attachToRecyclerView(recyclerView);*/
 
         view.findViewById(R.id.button_forward_dd).setOnClickListener(new View.OnClickListener() {
             // korrekte reihenfolge: 1,2,3,0
             @Override
             public void onClick(View view) {
-                if (
-                        RecyclerListAdapter4.INTS[0] == 3  &&
-                                RecyclerListAdapter4.INTS[1] == 0  &&
-                                RecyclerListAdapter4.INTS[2] == 1  &&
-                                RecyclerListAdapter4.INTS[3] == 2
-
-                ) {
-                    RecyclerListAdapter4.resetIntArray();
-                    NavHostFragment.findNavController(DD_3_3.this)
-                            .navigate(R.id.action_DD_3_3_to_f_DD_3_4_right);
-                } else {
-                    RecyclerListAdapter4.resetIntArray();
-                    NavHostFragment.findNavController(DD_3_3.this)
-                            .navigate(R.id.action_DD_3_3_to_f_DD_3_4_wrong);
-                }
+                NavHostFragment.findNavController(F_DD_3_4_wrong.this)
+                        .navigate(R.id.action_f_DD_3_4_wrong_to_i_3_5);
             }
+
         });
 
     }
