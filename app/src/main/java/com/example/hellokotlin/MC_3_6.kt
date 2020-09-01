@@ -65,9 +65,9 @@ class MC_3_6 : Fragment(), View.OnClickListener{
 
             if (answer == correctAnswer) {
 
-                findNavController().navigate(R.id.action_MC_2_6_to_f_MC_2_7_right)
+                findNavController().navigate(R.id.action_MC_3_6_to_f_MC_3_7_right)
             } else {
-                findNavController().navigate(R.id.action_MC_2_6_to_f_MC_2_7_wrong)
+                findNavController().navigate(R.id.action_MC_3_6_to_f_MC_3_7_wrong)
             }
 
         }
