@@ -1,5 +1,4 @@
 
-
 package com.example.hellokotlin
 
 
@@ -18,11 +17,8 @@ import kotlinx.android.synthetic.main.fragment_multiple_choice_4.*
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class F_MC_3_7_right : Fragment() {
-    // Richtige Antwort festlegen
-    var correctAnswer = 4
-    // answer == gewählte Antwort
-    var answer = 0
+class F_MC_3_10_right : Fragment() {
+
 
 
     override fun onCreateView(
@@ -42,28 +38,28 @@ class F_MC_3_7_right : Fragment() {
 
 
         val text =
-            "<p><span style=\"color: #008000;\">Genau. </span>Mit <em><strong>!=</strong></em> k&ouml;nnen wir &uuml;berpr&uuml;fen, ob Werte des selben Typs <strong>nicht gleich</strong> sind.</p>\n" +
-                    "<p><span style=\"color: #0000ff;\"> var</span> ergebnis = <span style=\"color: #3366ff;\">3.0</span> != <span style=\"color: #3366ff;\">3.1415926535&nbsp;</span> </p>"
+            "<div style=\"-en-clipboard: true;\"><span style=\"color: #008000;\">Richtig.</span> Addition, Subtraktion und Co. haben nichts mit Boolschen Werten zu tun \uD83D\uDE09</div>"
         dd_text.text = Html.fromHtml(text)
-        progress.text = "7 / 13"
+        progress.text = "10 / 13"
 
 
 
         //tv_question.text = question.question
-        option1.text = "isNot"
-        option2.text = "!="
-        option3.text =  "<"
+        //iv_image.setImageResource(question.image)
+        option1.text = "+ und - geben Boolsche Werte zurück."
+        option2.text = "< und > geben Boolsche Werte zurück. "
+        option3.text =  "Sie haben nur 2 Zustände."
 
         button_forward.text = "Weiter"
 
 
-        // Antwort richtig
+// 1te Antwort richtig
         option1.setTextColor(-7829368)
         option1.textSize = 16F
         option2.setTextColor(Color.BLACK)
-        option2.textSize = 20F
-        option3.setTextColor(-7829368)
-        option3.textSize = 16F
+        option2.textSize = 17F
+        option3.setTextColor(Color.BLACK)
+        option3.textSize = 17F
 
 
 
@@ -71,7 +67,7 @@ class F_MC_3_7_right : Fragment() {
         view.findViewById<Button>(R.id.button_forward).setOnClickListener {
 
 
-            findNavController().navigate(R.id.action_f_MC_3_7_right_to_i_3_8)
+            findNavController().navigate(R.id.action_f_MC_3_10_right_to_DD_3_11)
         }
 
 
