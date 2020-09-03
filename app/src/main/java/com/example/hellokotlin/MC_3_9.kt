@@ -40,7 +40,7 @@ class MC_3_9 : Fragment(), View.OnClickListener{
 
 
         val text =
-            "<p>Welche dieser Aussagen &uuml;ber Boolsche Werte stimmen <strong>nicht</strong>?</p>\n" +
+            "<p>Welche dieser Aussagen &uuml;ber Boolsche Werte stimmt <strong>nicht</strong>?</p>\n" +
                     "<p>&nbsp;</p>"
         dd_text.text = Html.fromHtml(text)
         progress.text = "9 / 13"

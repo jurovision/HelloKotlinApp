@@ -83,6 +83,20 @@
         app:layout_constraintTop_toBottomOf="@+id/lesson_1"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="3 - Boolsche Variablen"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lesson_3"
+        app:layout_constraintEnd_toEndOf="@+id/lesson_3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lesson_3" />
+
     <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="185dp"
@@ -129,6 +143,20 @@
         app:layout_constraintEnd_toEndOf="@+id/lesson2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/lesson2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="4 - Bedingungen und Arrays"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageButton5" />
 
     <ImageButton
         android:id="@+id/lesson_1"

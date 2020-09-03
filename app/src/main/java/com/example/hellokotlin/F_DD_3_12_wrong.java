@@ -42,7 +42,7 @@ public class F_DD_3_12_wrong extends Fragment {
 
     //Zu ändernden Text festlegen
     TextView textview;
-    String text = "<p><span style=\"color: #ff0000;\">Nicht ganz.</span> a, b und c m&uuml;ssen zuerst <strong>angelegt</strong> werden. Danach k&ouml;nnen a und b beide <strong>auf</strong> \"<strong>wahr</strong>\" <strong>gesetzt</strong> werden indem sie ihnen \"nicht falsch\" zugeordnet wird. Damit werden nacheinander auch die <strong>and Verkn&uuml;pfungen</strong> f&uuml;r c und d wahr.</p>";
+    String text = "<p><span style=\"color: #ff0000;\">Nicht ganz. </span>a, b und c m&uuml;ssen zuerst <strong>angelegt</strong> werden. Danach k&ouml;nnen a und b beide <strong>auf \"wahr\"</strong> <strong>gesetzt</strong> werden indem ihnen \"nicht falsch\" zugeordnet wird. Damit werden nacheinander auch die <strong><em>and</em> Verkn&uuml;pfungen</strong> f&uuml;r c und d wahr.</p>";
     Button textview_button;
     String text_button = "Weiter";
 

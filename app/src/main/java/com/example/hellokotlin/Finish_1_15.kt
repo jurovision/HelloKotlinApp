@@ -1,12 +1,15 @@
 package com.example.hellokotlin
 
+import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import kotlinx.android.synthetic.main.fragment_chapter_finish.*
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -23,8 +26,9 @@ class Finish_1_15 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-/*        val text = "<div>Willkommen in der ersten Lektion! Sch&ouml;n, dass du dich f&uuml;r Kotlin interessierst. Kotlin ist eine relativ neue Programmiersprache, die viele Vorteile bietet. Seit 2017 unterst&uuml;tzt Google sie f&uuml;r Android Apps und seit 2019 ist sie sogar die offiziell bevorzugte Sprache f&uuml;r Android.&nbsp;</div>"
-        instruction.text = Html.fromHtml(text)*/
+        val chapter = "1 - Hello Kotlin"
+        val text = "<p>Herzlichen Gl&uuml;ckwunsch, du hast <span style=\"color: #339966;\"><strong>Kapitel</strong> <strong>$chapter</strong> </span>abgeschlossen!</p>"
+        instruction.text = Html.fromHtml(text)
 
         view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
             findNavController().navigate(R.id.action_finish_1_15_to_FirstFragment)
