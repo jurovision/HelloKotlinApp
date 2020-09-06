@@ -37,6 +37,9 @@ class FirstFragment : Fragment() {
         view.findViewById<ImageButton>(R.id.lesson_3).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_i_3_1)
         }
+        view.findViewById<ImageButton>(R.id.lesson_4).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_i_4_1)
+        }
         view.findViewById<ImageButton>(R.id.kotlinEditor).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_webViewFragment15)
         }

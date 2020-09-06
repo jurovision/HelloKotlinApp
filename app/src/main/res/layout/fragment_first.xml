@@ -100,7 +100,7 @@
         app:layout_constraintStart_toStartOf="@+id/lesson_3" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/lesson_4"
         android:layout_width="185dp"
         android:layout_height="142dp"
         android:layout_marginStart="8dp"
@@ -159,10 +159,10 @@
         android:layout_marginBottom="8dp"
         android:text="4 - Bedingungen und Arrays"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton5"
+        app:layout_constraintBottom_toBottomOf="@+id/lesson_4"
+        app:layout_constraintEnd_toEndOf="@+id/lesson_4"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton5" />
+        app:layout_constraintStart_toStartOf="@+id/lesson_4" />
 
     <ImageButton
         android:id="@+id/lesson_1"

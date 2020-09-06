@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_i_3_1"
             app:destination="@id/i_3_1" />
+        <action
+            android:id="@+id/action_FirstFragment_to_i_4_1"
+            app:destination="@id/i_4_1" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -573,6 +576,41 @@
             android:id="@+id/action_finish_3_13_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/i_4_1"
+        android:name="com.example.hellokotlin.I_4_1"
+        android:label="I_4_1" >
+        <action
+            android:id="@+id/action_i_4_1_to_i_4_2"
+            app:destination="@id/i_4_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/i_4_2"
+        android:name="com.example.hellokotlin.I_4_2"
+        android:label="I_4_2" >
+        <action
+            android:id="@+id/action_i_4_2_to_MC_4_3"
+            app:destination="@id/MC_4_3" />
+    </fragment>
+    <fragment
+        android:id="@+id/MC_4_3"
+        android:name="com.example.hellokotlin.MC_4_3"
+        android:label="MC_4_3" >
+        <action
+            android:id="@+id/action_MC_4_3_to_f_MC_4_4_right"
+            app:destination="@id/f_MC_4_4_right" />
+        <action
+            android:id="@+id/action_MC_4_3_to_f_MC_4_4_wrong"
+            app:destination="@id/f_MC_4_4_wrong" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_MC_4_4_right"
+        android:name="com.example.hellokotlin.F_MC_4_4_right"
+        android:label="F_MC_4_4_right" />
+    <fragment
+        android:id="@+id/f_MC_4_4_wrong"
+        android:name="com.example.hellokotlin.F_MC_4_4_wrong"
+        android:label="F_MC_4_4_wrong" />
 
 
 </navigation>
