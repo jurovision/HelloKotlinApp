@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/instruction"
-        android:layout_width="315dp"
+        android:layout_width="330dp"
         android:layout_height="296dp"
         android:layout_marginTop="50dp"
         android:text="TextView"
@@ -21,7 +21,7 @@
         android:id="@+id/button_inputanswer"
         android:layout_width="212dp"
         android:layout_height="43dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/forward_button_border_bg"
         android:hapticFeedbackEnabled="true"
         android:text="Antworten"
@@ -34,14 +34,15 @@
         android:id="@+id/Input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
-        android:layout_marginBottom="184dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/button_inputanswer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instruction" />
+        app:layout_constraintTop_toBottomOf="@+id/instruction"
+        app:layout_constraintVertical_bias="0.22000003" />
 
     <TextView
         android:id="@+id/textView2"
@@ -60,8 +61,8 @@
         android:id="@+id/progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
         android:text="X/XX"
         android:textColor="#808080"
         android:textSize="16sp"

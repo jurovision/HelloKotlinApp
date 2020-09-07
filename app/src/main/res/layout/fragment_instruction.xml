@@ -7,8 +7,8 @@
 
     <TextView
         android:id="@+id/instruction"
-        android:layout_width="312dp"
-        android:layout_height="491dp"
+        android:layout_width="330dp"
+        android:layout_height="370dp"
         android:layout_marginTop="50dp"
         android:text="TextView"
         android:textColor="#000000"
@@ -22,7 +22,7 @@
         android:layout_width="212dp"
         android:layout_height="43dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/forward_button_border_bg"
         android:hapticFeedbackEnabled="true"
         android:text="Weiter"
@@ -31,14 +31,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/instruction"
-        app:layout_constraintVertical_bias="0.48000002" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
         android:text="X/XX"
         android:textColor="#808080"
         android:textSize="16sp"
