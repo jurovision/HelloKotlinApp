@@ -68,7 +68,7 @@ class F_MC_4_4_wrong : Fragment() {
         view.findViewById<Button>(R.id.button_forward).setOnClickListener {
 
 
-            findNavController().navigate(R.id.action_f_MC_3_7_right_to_i_3_8)
+            findNavController().navigate(R.id.action_f_MC_4_4_wrong_to_i_4_5)
         }
 
 
