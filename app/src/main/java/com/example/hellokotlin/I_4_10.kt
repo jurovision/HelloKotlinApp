@@ -1,4 +1,5 @@
 
+
 package com.example.hellokotlin
 
 import android.os.Bundle
@@ -14,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_instruction.*
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class I_4_2 : Fragment() {
+class I_4_10 : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,12 +27,12 @@ class I_4_2 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text = "<p>Wollen wir in einer <em>if</em> oder <em>else</em> Bedingung <strong>mehrere Anweisungen</strong> ausf&uuml;hren, schreiben wir sie in<strong> geschwungene Klammern</strong> <em><strong>{</strong></em>...<em><strong>}</strong></em>. F&uuml;r nur eine Anweisung sind keine Klammern n&ouml;tig.</p>\n" +
-                "<p><span style=\"color: #0000ff;\">var</span> bedingung = <span style=\"color: #0000ff;\">false</span><br /><span style=\"color: #0000ff;\">if</span> (!bedingung){<br />&nbsp;&nbsp; <em><span style=\"color: #003300;\">println</span></em>(<span style=\"color: #008000;\">\"Hallo\"</span>)<br />&nbsp;&nbsp; <em><span style=\"color: #003300;\">println</span></em>(<span style=\"color: #008000;\">\"Welt\"</span>)<br /><span>}</span></p>"
+        val text = "<p>Wir legen Arrays mit <em><strong>arrayOf(</strong></em>...<em><strong>)</strong></em> an. Ihr Index beginnt immer bei <strong>0</strong> und auf Elemente zugreifen k&ouml;nnen wir mit dem Arraynamen und eckigen Klammern<em><strong> [</strong></em>...<em><strong>]</strong></em>.</p>\n" +
+                "<p><span style=\"color: #0000ff;\">var</span> array = arrayOf(<span style=\"color: #3366ff;\">1</span>,<span style=\"color: #3366ff;\">2</span>,<span style=\"color: #3366ff;\">3</span>,<span style=\"color: #3366ff;\">4</span>,<span style=\"color: #3366ff;\">5</span>)<br /><span style=\"color: #0000ff;\">var</span> zwei = array[<span style=\"color: #3366ff;\">1</span>]</p>"
         instruction.text = Html.fromHtml(text)
-        progress.text = "2 / 16"
+        progress.text = "10 / 16"
         view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
-            findNavController().navigate(R.id.action_i_4_2_to_MC_4_3)
+            findNavController().navigate(R.id.action_i_4_10_to_t_4_11)
         }
     }
 }
