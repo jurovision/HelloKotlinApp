@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.fragment_multiple_choice_4.*
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class T_4_11 : Fragment() {
+class T_5_2 : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,10 +32,10 @@ class T_4_11 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val text =
-            "<p>Kannst du so wie gerade gezeigt auf das dritte Element des Arrays zugreifen?</p>\n" +
-                    "<p><span style=\"color: #0000ff;\">var </span>namen = arrayOf(<span style=\"color: #008000;\">\"Leonard\"</span>, <span style=\"color: #008000;\">\"Penny\"</span>, <span style=\"color: #008000;\">\"Sheldon\"</span>)<br /><span style=\"color: #0000ff;\">var</span> sheldon = namen____</p>"
+            "<p>Kannst du den Text so <strong>wie gerade gezeigt</strong> 4-mal ausgeben?</p>\n" +
+                    "<p>______ {<br /><span style=\"color: #003300;\"><em>println</em></span>(<span style=\"color: #008000;\">\"Nur noch einen letzten.\"</span>)<br />}</p>"
         instruction.text = Html.fromHtml(text)
-        progress.text = "11 / 16"
+        progress.text = "2 / 14"
 
 
 
@@ -44,10 +44,10 @@ class T_4_11 : Fragment() {
             var string = Input.text.toString()
             // Alle Leerzeichen entfernen
             string = string.replace("\\s".toRegex(), "")
-            if (string == "[2]")
-                findNavController().navigate(R.id.action_t_4_11_to_f_T_4_12_right)
+            if (string == "repeat(4)")
+                findNavController().navigate(R.id.action_t_5_2_to_f_T_5_3_right)
             else {
-                findNavController().navigate(R.id.action_t_4_11_to_f_T_4_12_wrong)
+                findNavController().navigate(R.id.action_t_5_2_to_f_T_5_3_wrong)
             }
         }
     }

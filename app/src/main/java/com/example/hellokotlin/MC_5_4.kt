@@ -1,5 +1,4 @@
 
-
 package com.example.hellokotlin
 
 
@@ -19,9 +18,9 @@ import kotlinx.android.synthetic.main.fragment_multiple_choice_4.progress
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class MC_4_8 : Fragment(), View.OnClickListener{
+class MC_5_4 : Fragment(), View.OnClickListener{
     // Richtige Antwort festlegen
-    var correctAnswer = 3
+    var correctAnswer = 2
     // answer == gewählte Antwort
     var answer = 0
 
@@ -30,7 +29,7 @@ class MC_4_8 : Fragment(), View.OnClickListener{
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_multiple_choice_4, container, false)
+        return inflater.inflate(R.layout.fragment_multiple_choice_3, container, false)
 
 
     }
@@ -42,33 +41,32 @@ class MC_4_8 : Fragment(), View.OnClickListener{
 
 
         val text =
-            "<p><strong>Arrays</strong> sind Sammlungen von Variablen oder Werten. Drei dieser Kombinationen von Werten sind in Kotlin korrekt. Welche stimmt <strong>nicht</strong>?</p>"
+            "<p>Kannst du i 3-mal ausgeben?</p>\n" +
+                    "<p><span style=\"color: #0000ff;\">var</span> i = <span style=\"color: #3366ff;\">1</span><br /><span style=\"color: #0000ff;\">while</span> (i &lt; 4){<br />&nbsp;&nbsp;&nbsp; i = _______<br /><span style=\"color: #003300;\"><em>&nbsp;&nbsp;&nbsp; println</em></span>(i)<br />}</p>"
         dd_text.text = Html.fromHtml(text)
-        progress.text = "8 / 16"
+        progress.text = "4 / 14"
 
 
 
 
         //tv_question.text = question.question
         //iv_image.setImageResource(question.image)
-        option1.text = "[\"fünf\", \"4.0\", \"drei\", \"2\"]"
-        option2.text = "[1,2,3,4,5]"
-        option3.text = "[1.0, 10, 10.0, 100]"
-        option4.text = "[11.1, 22.2, 33.3, 7.0]"
+        option1.text = "1"
+        option2.text = "i + 1"
+        option3.text =  "2 * i"
 
 
         option1.setOnClickListener(this)
         option2.setOnClickListener(this)
         option3.setOnClickListener(this)
-        option4.setOnClickListener(this)
         //button_forward.setOnClickListener(this)
         view.findViewById<Button>(R.id.button_forward).setOnClickListener {
 
             if (answer == correctAnswer) {
 
-                findNavController().navigate(R.id.action_MC_4_8_to_f_MC_4_9_right)
+                findNavController().navigate(R.id.action_MC_4_3_to_f_MC_4_4_right)
             } else {
-                findNavController().navigate(R.id.action_MC_4_8_to_f_MC_4_9_wrong)
+                findNavController().navigate(R.id.action_MC_4_3_to_f_MC_4_4_wrong)
             }
 
         }
@@ -83,8 +81,6 @@ class MC_4_8 : Fragment(), View.OnClickListener{
                 option2.textSize = 16F
                 option3.setTextColor(-7829368)
                 option3.textSize = 16F
-                option4.setTextColor(-7829368)
-                option4.textSize = 16F
                 answer = 1
             }
 
@@ -95,8 +91,6 @@ class MC_4_8 : Fragment(), View.OnClickListener{
                 option2.textSize = 20F
                 option3.setTextColor(-7829368)
                 option3.textSize = 16F
-                option4.setTextColor(-7829368)
-                option4.textSize = 16F
                 answer = 2
             }
 
@@ -107,22 +101,9 @@ class MC_4_8 : Fragment(), View.OnClickListener{
                 option2.textSize = 16F
                 option3.setTextColor(Color.BLACK)
                 option3.textSize = 20F
-                option4.setTextColor(-7829368)
-                option4.textSize = 16F
                 answer = 3
             }
 
-            R.id.option4 -> {
-                option1.setTextColor(-7829368)
-                option1.textSize = 16F
-                option2.setTextColor(-7829368)
-                option2.textSize = 16F
-                option3.setTextColor(-7829368)
-                option3.textSize = 16F
-                option4.setTextColor(Color.BLACK)
-                option4.textSize = 20F
-                answer = 4
-            }
 
         }
 
@@ -130,8 +111,3 @@ class MC_4_8 : Fragment(), View.OnClickListener{
 
     }
 }
-
-
-// neu
-
-

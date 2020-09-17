@@ -115,7 +115,7 @@ public class F_DD_4_7_right extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(F_DD_4_7_right.this)
-                        .navigate(R.id.action_f_DD_3_12_right_to_finish_3_13);
+                        .navigate(R.id.action_f_DD_4_7_right_to_MC_4_8);
             }
 
         });
