@@ -1,5 +1,4 @@
 
-
 package com.example.hellokotlin
 
 import android.os.Bundle
@@ -15,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_instruction.*
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class I_5_1 : Fragment() {
+class I_5_4 : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,12 +26,13 @@ class I_5_1 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text = "<p>Zeit f&uuml;r Schleifen! <strong>Schleifen f&uuml;hren</strong> die zwischen den geschweiften Klammern stehenden <strong>Anweisungen</strong> (meistens) <strong>mehrmals</strong> <strong>aus</strong>. Diese Anweisung gibt 3 mal den enthaltenen Text aus.</p>\n" +
-                "<p><span style=\"color: #003300;\"><em>repeat</em></span>(<span style=\"color: #3366ff;\">3</span>){<br /><em><span style=\"color: #003300;\">&nbsp;&nbsp;&nbsp; println</span></em>(<span style=\"color: #008000;\">\"Aller guten Dinge sind drei.\"</span>)<br />}</p>"
+        val text = "<p>Eine <em><strong>while</strong> </em>Schleife f&uuml;hrt die enthaltenen Befehle so lange aus, wie die <strong>Bedingung</strong> in den runden Klammern <strong>wahr</strong> ist.</p>\n" +
+                "<p><span style=\"color: #0000ff;\">var</span> j = <span style=\"color: #3366ff;\">0</span><br /><span style=\"color: #0000ff;\">while</span> (i&lt;<span style=\"color: #3366ff;\">3</span>){<br /><span style=\"color: #003300;\"><em>println</em></span>(<span style=\"color: #008000;\">\"Polly will einen Cracker.</span><span style=\"color: #ff6600;\">\\n</span><span style=\"color: #008000;\">\"</span>)<br />}</p>\n" +
+                "<p>Ausgabe:<br /><em>Polly will einen Cracker.</em><br /><em>Polly will einen Cracker.</em><br /><em>Polly will einen Cracker.</em></p>"
         instruction.text = Html.fromHtml(text)
-        progress.text = "1 / 15"
+        progress.text = "4 / 14"
         view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
-            findNavController().navigate(R.id.action_i_5_1_to_t_5_2)
+            findNavController().navigate(R.id.action_i_5_4_to_MC_5_4)
         }
     }
 }

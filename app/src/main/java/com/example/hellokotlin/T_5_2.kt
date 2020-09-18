@@ -33,9 +33,9 @@ class T_5_2 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val text =
             "<p>Kannst du den Text so <strong>wie gerade gezeigt</strong> 4-mal ausgeben?</p>\n" +
-                    "<p>______ {<br /><span style=\"color: #003300;\"><em>println</em></span>(<span style=\"color: #008000;\">\"Nur noch einen letzten.\"</span>)<br />}</p>"
+                    "<p>________ {<br /><em><span style=\"color: #003300;\">&nbsp;&nbsp;&nbsp; println</span></em>(<span style=\"color: #008000;\">\"Nur noch einen letzten.</span><span style=\"color: #ff6600;\">\\n</span><span style=\"color: #008000;\">\"</span>)<br />}</p>"
         instruction.text = Html.fromHtml(text)
-        progress.text = "2 / 14"
+        progress.text = "2 / 15"
 
 
 

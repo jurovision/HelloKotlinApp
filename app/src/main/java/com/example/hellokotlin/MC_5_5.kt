@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.fragment_multiple_choice_4.progress
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class MC_5_4 : Fragment(), View.OnClickListener{
+class MC_5_5 : Fragment(), View.OnClickListener{
     // Richtige Antwort festlegen
     var correctAnswer = 2
     // answer == gewählte Antwort
@@ -44,7 +44,7 @@ class MC_5_4 : Fragment(), View.OnClickListener{
             "<p>Kannst du i 3-mal ausgeben?</p>\n" +
                     "<p><span style=\"color: #0000ff;\">var</span> i = <span style=\"color: #3366ff;\">1</span><br /><span style=\"color: #0000ff;\">while</span> (i &lt; 4){<br />&nbsp;&nbsp;&nbsp; i = _______<br /><span style=\"color: #003300;\"><em>&nbsp;&nbsp;&nbsp; println</em></span>(i)<br />}</p>"
         dd_text.text = Html.fromHtml(text)
-        progress.text = "4 / 14"
+        progress.text = "5 / 15"
 
 
 
@@ -64,9 +64,9 @@ class MC_5_4 : Fragment(), View.OnClickListener{
 
             if (answer == correctAnswer) {
 
-                findNavController().navigate(R.id.action_MC_4_3_to_f_MC_4_4_right)
+                findNavController().navigate(R.id.action_MC_5_4_to_f_MC_5_6_right)
             } else {
-                findNavController().navigate(R.id.action_MC_4_3_to_f_MC_4_4_wrong)
+                findNavController().navigate(R.id.action_MC_5_4_to_f_MC_5_6_wrong)
             }
 
         }
