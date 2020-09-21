@@ -1,5 +1,4 @@
 
-
 package com.example.hellokotlin
 
 import android.os.Bundle
@@ -19,7 +18,7 @@ import kotlinx.android.synthetic.main.fragment_multiple_choice_4.*
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class T_6_2 : Fragment() {
+class T_6_4 : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,10 +32,10 @@ class T_6_2 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val text =
-            "<p>Kannst du die Funktion aufrufen?</p>\n" +
-                    "<p><span style=\"color: #0000ff;\">fun</span> gruss(){<br />&nbsp;&nbsp;&nbsp;&nbsp; <em><span style=\"color: #003300;\">println</span></em>(<span style=\"color: #008000;\">\"Hej v&auml;rlden\"</span>)<br />}<br />______</p>"
+            "<p>Wir k&ouml;nnen Funktionen aber auch <strong>Parameter</strong> bzw. <strong>Argumente</strong>, also Werte, <strong>&uuml;bergeben</strong>. Kannst du du der <em>println()</em> Funktion \"Ol&aacute; mundo\" Als Parameter &uuml;bergeben?</p>\n" +
+                    "<p>_____<span style=\"color: #008000;\">\"Ol&aacute; mundo\"</span>)</p>"
         instruction.text = Html.fromHtml(text)
-        progress.text = "2 / 15"
+        progress.text = "4 / 15"
 
 
 
@@ -45,10 +44,10 @@ class T_6_2 : Fragment() {
             var string = Input.text.toString()
             // Alle Leerzeichen entfernen
             string = string.replace("\\s".toRegex(), "")
-            if (string == "gruss()")
-                findNavController().navigate(R.id.action_t_6_2_to_f_T_6_3_right)
+            if (string == "println(")
+                findNavController().navigate(R.id.action_t_6_4_to_f_T_6_5_right)
             else {
-                findNavController().navigate(R.id.action_t_6_2_to_f_T_6_3_wrong)
+                findNavController().navigate(R.id.action_t_6_4_to_f_T_6_5_wrong)
             }
         }
     }
