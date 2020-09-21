@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_i_5_1"
             app:destination="@id/i_5_1" />
+        <action
+            android:id="@+id/action_FirstFragment_to_i_6_1"
+            app:destination="@id/i_6_1" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -905,7 +908,42 @@
     <fragment
         android:id="@+id/t_5_13"
         android:name="com.example.hellokotlin.T_5_13"
-        android:label="T_5_13" />
+        android:label="T_5_13" >
+        <action
+            android:id="@+id/action_t_5_13_to_f_T_5_14_right"
+            app:destination="@id/f_T_5_14_right" />
+        <action
+            android:id="@+id/action_t_5_13_to_f_T_5_14_wrong"
+            app:destination="@id/f_T_5_14_wrong" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_T_5_14_right"
+        android:name="com.example.hellokotlin.F_T_5_14_right"
+        android:label="F_T_5_14_right" >
+        <action
+            android:id="@+id/action_f_T_5_14_right_to_finish_5_15"
+            app:destination="@id/finish_5_15" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_T_5_14_wrong"
+        android:name="com.example.hellokotlin.F_T_5_14_wrong"
+        android:label="F_T_5_14_wrong" >
+        <action
+            android:id="@+id/action_f_T_5_14_wrong_to_finish_5_15"
+            app:destination="@id/finish_5_15" />
+    </fragment>
+    <fragment
+        android:id="@+id/finish_5_15"
+        android:name="com.example.hellokotlin.Finish_5_15"
+        android:label="Finish_5_15" >
+        <action
+            android:id="@+id/action_finish_5_15_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/i_6_1"
+        android:name="com.example.hellokotlin.I_6_1"
+        android:label="I_6_1" />
 
 
 </navigation>

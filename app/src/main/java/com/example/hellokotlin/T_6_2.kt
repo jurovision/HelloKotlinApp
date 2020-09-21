@@ -1,4 +1,5 @@
 
+
 package com.example.hellokotlin
 
 import android.os.Bundle
@@ -18,7 +19,7 @@ import kotlinx.android.synthetic.main.fragment_multiple_choice_4.*
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class T_5_13 : Fragment() {
+class T_6_2 : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,11 +33,14 @@ class T_5_13 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val text =
-            "<p>Es ist Sylvester und wir wollen die letzten Sekunden bis null Uhr herunterz&auml;hlen. Wie k&ouml;nnen wir den Code korrekt erg&auml;nzen?</p>\n" +
-                    "<p><span style=\"color: #0000ff;\">var</span> countdown= <span style=\"color: #3366ff;\">10</span><br />____ (countdown&gt; <span style=\"color: #3366ff;\">0</span>){<br />&nbsp;&nbsp;&nbsp; <em><span style=\"color: #003300;\">println</span></em>(<span style=\"color: #008000;\">\"</span><span style=\"color: #0000ff;\">\$</span>countdown. <span style=\"color: #008000;\">\"</span>)<br />&nbsp;&nbsp;<span style=\"color: #808080;\">&nbsp; /* Mit dem <strong>\$</strong> Zeichen k&ouml;nnen wir den Wert einer Variable in Text einsetzen */</span> <br />&nbsp;&nbsp;&nbsp; countdown--<br />}<br /><em><span style=\"color: #003300;\">println</span></em>(<span style=\"color: #008000;\">\"Frohes neues Jahr!\"</span>)</p>\n" +
-                    "<p><em>&nbsp;</em></p>"
+            "<div style=\"-en-clipboard: true;\">Kannst du die Funktion aufrufen?</div>\n" +
+                    "<div>&nbsp;</div>\n" +
+                    "<div><span style=\"color: #0000ff;\">fun</span> gruss(){</div>\n" +
+                    "<div>&nbsp;&nbsp;&nbsp; <em><span style=\"color: #003300;\">println</span></em>(<span style=\"color: #008000;\">\"Hej v&auml;rlden\"</span>)</div>\n" +
+                    "<div>}</div>\n" +
+                    "<div>______</div>"
         instruction.text = Html.fromHtml(text)
-        progress.text = "13 / 15"
+        progress.text = "2 / 15"
 
 
 
@@ -45,10 +49,10 @@ class T_5_13 : Fragment() {
             var string = Input.text.toString()
             // Alle Leerzeichen entfernen
             string = string.replace("\\s".toRegex(), "")
-            if (string == "while")
-                findNavController().navigate(R.id.action_t_5_13_to_f_T_5_14_right)
+            if (string == "gruss()")
+                findNavController().navigate(R.id.action_t_5_8_to_f_T_5_9_right)
             else {
-                findNavController().navigate(R.id.action_t_5_13_to_f_T_5_14_wrong)
+                findNavController().navigate(R.id.action_t_5_8_to_f_T_5_9_wrong)
             }
         }
     }
