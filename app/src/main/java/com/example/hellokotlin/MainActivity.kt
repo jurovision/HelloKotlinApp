@@ -6,6 +6,9 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -41,6 +44,8 @@ class MainActivity : AppCompatActivity() {
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_settings -> true
+            R.id.action_home -> true
+            R.id.action_test -> true
             else -> super.onOptionsItemSelected(item)
         }
     }

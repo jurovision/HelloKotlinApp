@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_instruction.*
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class F_T_6_5_right : Fragment() {
+class I_6_6 : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,12 +26,13 @@ class F_T_6_5_right : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text = "<p><span style=\"color: #008000;\">Richtig.</span> Wie wir schon oft gesehen haben, &uuml;bergeben wir der <em>println()</em> Funktion unseren Text zwischen runden Klammern und Anf&uuml;hrungszeichen <em><strong>(\"</strong></em>...<em><strong>\")</strong></em>.</p>\n" +
-                "<p><em><span style=\"color: #003300;\">println</span></em>(<span style=\"color: #008000;\">\"Ol&aacute; mundo\"</span>) <br /><br />Ausgabe:<br /><em>Ol&aacute; mundo</em></p>"
+        val text = "<p>Beim Anlegen einer Funktion k&ouml;nnen wir <strong>zwischen den runden Klammern</strong> festlegen, welche <strong>Argumente</strong> sie annimmt.</p>\n" +
+                "<p><span style=\"color: #0000ff;\">fun</span> istSuper(<span style=\"color: #808080;\">text: String</span>){<br />&nbsp;&nbsp;&nbsp; <em><span style=\"color: #003300;\">println</span></em>(text + <span style=\"color: #008000;\">\" ist super.\"</span>)<br />}<br />istSuper(<span style=\"color: #008000;\">\"Kotlin\"</span>)</p>\n" +
+                "<p>Ausgabe:<br /><em>Kotlin ist super.</em></p>"
         instruction.text = Html.fromHtml(text)
-        progress.text = "5 / 15"
+        progress.text = "6 / 15"
         view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
-            findNavController().navigate(R.id.action_f_T_6_5_right_to_i_6_6)
+            findNavController().navigate(R.id.action_i_6_6_to_MC_6_7)
         }
     }
 }

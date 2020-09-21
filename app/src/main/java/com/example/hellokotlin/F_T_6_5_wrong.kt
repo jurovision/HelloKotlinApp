@@ -32,7 +32,7 @@ class F_T_6_5_wrong : Fragment() {
         instruction.text = Html.fromHtml(text)
         progress.text = "5 / 15"
         view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
-            findNavController().navigate(R.id.action_f_T_6_3_right_to_t_6_4)
+            findNavController().navigate(R.id.action_f_T_6_5_wrong_to_i_6_6)
         }
     }
 }

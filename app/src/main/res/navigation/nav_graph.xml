@@ -989,11 +989,58 @@
     <fragment
         android:id="@+id/f_T_6_5_right"
         android:name="com.example.hellokotlin.F_T_6_5_right"
-        android:label="F_T_6_5_right" />
+        android:label="F_T_6_5_right" >
+        <action
+            android:id="@+id/action_f_T_6_5_right_to_i_6_6"
+            app:destination="@id/i_6_6" />
+    </fragment>
     <fragment
         android:id="@+id/f_T_6_5_wrong"
         android:name="com.example.hellokotlin.F_T_6_5_wrong"
-        android:label="F_T_6_5_wrong" />
+        android:label="F_T_6_5_wrong" >
+        <action
+            android:id="@+id/action_f_T_6_5_wrong_to_i_6_6"
+            app:destination="@id/i_6_6" />
+    </fragment>
+    <fragment
+        android:id="@+id/i_6_6"
+        android:name="com.example.hellokotlin.I_6_6"
+        android:label="I_6_6" >
+        <action
+            android:id="@+id/action_i_6_6_to_MC_6_7"
+            app:destination="@id/MC_6_7" />
+    </fragment>
+    <fragment
+        android:id="@+id/MC_6_7"
+        android:name="com.example.hellokotlin.MC_6_7"
+        android:label="MC_6_7" >
+        <action
+            android:id="@+id/action_MC_6_7_to_f_MC_6_8_right"
+            app:destination="@id/f_MC_6_8_right" />
+        <action
+            android:id="@+id/action_MC_6_7_to_f_MC_6_8_wrong"
+            app:destination="@id/f_MC_6_8_wrong" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_MC_6_8_right"
+        android:name="com.example.hellokotlin.F_MC_6_8_right"
+        android:label="F_MC_6_8_right" >
+        <action
+            android:id="@+id/action_f_MC_6_8_right_to_DD_6_9"
+            app:destination="@id/DD_6_9" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_MC_6_8_wrong"
+        android:name="com.example.hellokotlin.F_MC_6_8_wrong"
+        android:label="F_MC_6_8_wrong" >
+        <action
+            android:id="@+id/action_f_MC_6_8_wrong_to_DD_6_9"
+            app:destination="@id/DD_6_9" />
+    </fragment>
+    <fragment
+        android:id="@+id/DD_6_9"
+        android:name="com.example.hellokotlin.DD_6_9"
+        android:label="DD_6_9" />
 
 
 </navigation>
