@@ -46,9 +46,11 @@ class FirstFragment : Fragment() {
         view.findViewById<ImageButton>(R.id.lesson_5).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_i_5_1)
         }
-
         view.findViewById<ImageButton>(R.id.lesson_6).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_i_6_1)
+        }
+        view.findViewById<ImageButton>(R.id.lesson_7).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_i_7_1)
         }
 
     }
