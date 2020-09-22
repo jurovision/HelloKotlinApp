@@ -40,7 +40,7 @@ class F_MC_6_8_right : Fragment() {
             "<p><span style=\"color: #008000;\">Richtige Antwort.</span> Da wir Text nicht <strong>multiplizieren</strong> k&ouml;nnen, ist Int die richtige L&ouml;sung.</p>\n" +
                     "<p><span style=\"color: #0000ff;\">fun</span> malDrei(<span style=\"color: #808080;\">a:</span> <span style=\"color: #808080;\">Int</span>){<br />&nbsp;&nbsp;&nbsp; <em><span style=\"color: #003300;\">println</span></em>(a * <span style=\"color: #3366ff;\">3</span>)<br />}</p>"
         dd_text.text = Html.fromHtml(text)
-        progress.text = "9 / 15"
+        progress.text = "8 / 15"
 
 
 
