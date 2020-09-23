@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.fragment_instruction.*
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class F_T_7_9_right : Fragment() {
+class F_T_7_11_right : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,13 +26,12 @@ class F_T_7_9_right : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text = "<p><span style=\"color: #008000;\">Gut gemacht.</span> Wir greifen mit dem <strong>Punkt Operator</strong> auf das Objekt zu und &auml;ndern den Wert wie wir es von Variablen kennen.</p>\n" +
-                "<p><span style=\"color: #0000ff;\">class</span> Buch{<br />&nbsp;&nbsp;&nbsp; <span style=\"color: #0000ff;\">var</span> jahr: Int = <span style=\"color: #3366ff;\">0</span><br />&nbsp;&nbsp;&nbsp; <span style=\"color: #0000ff;\">var</span> autor: String =<span style=\"color: #008000;\"> \"\"</span><br />}</p>\n" +
-                "<p><span style=\"color: #0000ff;\">val</span> per_anhalter_durch_die_galaxis = Buch()<br />per_anhalter_durch_die_galaxis.autor = <span style=\"color: #008000;\">\"Douglas Adams\"</span><br />per_anhalter_durch_die_galaxis.jahr = 1979</p>"
+        val text = "<p><span style=\"color: #008000;\">Das stimmt.</span> Ziemlich elegant, oder? Achte darauf, dass wir Objekte mit <em><strong>val</strong> </em>anlegen, damit sie sp&auml;ter nicht in Objekte anderer Klassen ver&auml;nderbar sind.</p>\n" +
+                "<p><span style=\"color: #0000ff;\">class</span> person(<span style=\"color: #3366ff;\">var</span> alter: Int = <span style=\"color: #3366ff;\">0</span>){<br /><span style=\"color: #808080;\">&nbsp;&nbsp;&nbsp; // kein weiterer Code n&ouml;tig</span><br />}<br /><span style=\"color: #0000ff;\">val</span> aaron = person(<span style=\"color: #3366ff;\">41</span>)<br /><span style=\"color: #0000ff;\">val</span> bryan = person (<span style=\"color: #3366ff;\">64</span>)</p>"
         instruction.text = Html.fromHtml(text)
-        progress.text = "9 / 16"
+        progress.text = "11 / 16"
         view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
-            findNavController().navigate(R.id.action_f_T_7_9_right_to_t_7_10)
+            findNavController().navigate(R.id.action_f_T_7_11_right_to_DD_7_12)
         }
     }
 }

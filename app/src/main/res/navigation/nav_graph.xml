@@ -1221,11 +1221,77 @@
     <fragment
         android:id="@+id/f_T_7_9_right"
         android:name="com.example.hellokotlin.F_T_7_9_right"
-        android:label="F_T_7_9_right" />
+        android:label="F_T_7_9_right" >
+        <action
+            android:id="@+id/action_f_T_7_9_right_to_t_7_10"
+            app:destination="@id/t_7_10" />
+    </fragment>
     <fragment
         android:id="@+id/f_T_7_9_wrong"
         android:name="com.example.hellokotlin.F_T_7_9_wrong"
-        android:label="F_T_7_9_wrong" />
+        android:label="F_T_7_9_wrong" >
+        <action
+            android:id="@+id/action_f_T_7_9_wrong_to_t_7_10"
+            app:destination="@id/t_7_10" />
+    </fragment>
+    <fragment
+        android:id="@+id/t_7_10"
+        android:name="com.example.hellokotlin.T_7_10"
+        android:label="T_7_10" >
+        <action
+            android:id="@+id/action_t_7_10_to_f_T_7_11_right"
+            app:destination="@id/f_T_7_11_right" />
+        <action
+            android:id="@+id/action_t_7_10_to_f_T_7_11_wrong"
+            app:destination="@id/f_T_7_11_wrong" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_T_7_11_right"
+        android:name="com.example.hellokotlin.F_T_7_11_right"
+        android:label="F_T_7_11_right" >
+        <action
+            android:id="@+id/action_f_T_7_11_right_to_DD_7_12"
+            app:destination="@id/DD_7_12" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_T_7_11_wrong"
+        android:name="com.example.hellokotlin.F_T_7_11_wrong"
+        android:label="F_T_7_11_wrong" >
+        <action
+            android:id="@+id/action_f_T_7_11_wrong_to_DD_7_12"
+            app:destination="@id/DD_7_12" />
+    </fragment>
+    <fragment
+        android:id="@+id/DD_7_12"
+        android:name="com.example.hellokotlin.DD_7_12"
+        android:label="DD_7_12" >
+        <action
+            android:id="@+id/action_DD_7_12_to_f_DD_7_13_right"
+            app:destination="@id/f_DD_7_13_right" />
+        <action
+            android:id="@+id/action_DD_7_12_to_f_DD_7_13_wrong"
+            app:destination="@id/f_DD_7_13_wrong" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_DD_7_13_right"
+        android:name="com.example.hellokotlin.F_DD_7_13_right"
+        android:label="F_DD_7_13_right" >
+        <action
+            android:id="@+id/action_f_DD_7_13_right_to_t_7_14"
+            app:destination="@id/t_7_14" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_DD_7_13_wrong"
+        android:name="com.example.hellokotlin.F_DD_7_13_wrong"
+        android:label="F_DD_7_13_wrong" >
+        <action
+            android:id="@+id/action_f_DD_7_13_wrong_to_t_7_14"
+            app:destination="@id/t_7_14" />
+    </fragment>
+    <fragment
+        android:id="@+id/t_7_14"
+        android:name="com.example.hellokotlin.T_7_14"
+        android:label="T_7_14" />
 
 
 </navigation>
