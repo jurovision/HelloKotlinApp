@@ -15,6 +15,39 @@
 
 
         <ImageButton
+            android:id="@+id/lesson_9"
+            android:layout_width="175dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="4dp"
+            android:background="#FFD09E"
+            android:scaleType="fitCenter"
+            android:tint="@color/colorGrey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/lesson_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/lesson_2"
+            android:layout_width="175dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFD09E"
+            android:scaleType="fitCenter"
+            android:tint="@color/colorGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/lesson_8" />
+
+        <ImageButton
             android:id="@+id/lesson_8"
             android:layout_width="175dp"
             android:layout_height="142dp"
@@ -22,13 +55,13 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:background="#DEEFEE"
-            android:src="@android:drawable/ic_media_play"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chapter8icon"
+            android:tint="@color/colorGrey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/divider"
-            app:layout_constraintTop_toBottomOf="@+id/lesson_6"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/lesson_6" />
 
         <ImageButton
             android:id="@+id/lesson_7"
@@ -37,14 +70,32 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="4dp"
+            android:background="#DEEFEE"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chapter7icon"
+            android:tint="@color/colorGrey"
+            app:layout_constraintEnd_toStartOf="@+id/divider"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lesson_5" />
+
+        <ImageButton
+            android:id="@+id/lesson_"
+            android:layout_width="175dp"
+            android:layout_height="142dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
             android:layout_marginBottom="4dp"
             android:background="#DEEFEE"
-            android:src="@android:drawable/ic_media_play"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chapter7icon"
+            android:tint="@color/colorGrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/divider"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lesson_5"
+            app:layout_constraintTop_toBottomOf="@+id/lesson_7"
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageButton
@@ -55,13 +106,13 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:background="#DEEFEE"
-            android:src="@android:drawable/ic_media_play"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chapter6icon"
+            android:tint="@color/colorGrey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/divider"
-            app:layout_constraintTop_toBottomOf="@+id/kotlinEditor"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/kotlinEditor" />
 
         <ImageButton
             android:id="@+id/lesson_5"
@@ -71,13 +122,13 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="4dp"
             android:background="#DEEFEE"
-            android:src="@android:drawable/ic_media_play"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chapter5icon"
+            android:tint="@color/colorGrey"
             app:layout_constraintEnd_toStartOf="@+id/divider"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.909"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/kotlinEditor"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/kotlinEditor" />
 
         <ImageButton
             android:id="@+id/lesson_3"
@@ -90,12 +141,10 @@
             android:scaleType="fitCenter"
             android:src="@drawable/chapter3icon"
             android:tint="@color/colorGrey"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/divider"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lesson_1"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/lesson_1" />
 
         <TextView
             android:id="@+id/textView5"
@@ -111,6 +160,62 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/lesson_3" />
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="5 - Schleifen"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/lesson_5"
+            app:layout_constraintEnd_toEndOf="@+id/lesson_5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/lesson_5" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="7 - Klassen"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/lesson_7"
+            app:layout_constraintEnd_toEndOf="@+id/lesson_7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/lesson_7" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="8 - Null Safety"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/lesson_8"
+            app:layout_constraintEnd_toEndOf="@+id/lesson_8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/lesson_8" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="6 - Funktionen"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/lesson_6"
+            app:layout_constraintEnd_toEndOf="@+id/lesson_6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/lesson_6" />
+
         <ImageButton
             android:id="@+id/lesson_4"
             android:layout_width="175dp"
@@ -122,12 +227,10 @@
             android:scaleType="fitCenter"
             android:src="@drawable/chapter4icon"
             android:tint="#818287"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/divider"
-            app:layout_constraintTop_toBottomOf="@+id/lesson2"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/lesson2" />
 
         <ImageButton
             android:id="@+id/lesson2"
@@ -141,12 +244,10 @@
             android:scaleType="fitCenter"
             android:src="@drawable/chapter2icon"
             android:tint="@color/colorGrey"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/divider"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <TextView
@@ -187,12 +288,10 @@
             android:scaleType="centerInside"
             android:src="@drawable/chapter1icon"
             android:tint="@color/colorGrey"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/divider"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView3"
@@ -223,12 +322,12 @@
             android:layout_height="142dp"
             android:layout_marginTop="8dp"
             android:background="#92D6D0"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:scaleType="fitCenter"
+            android:tint="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lesson_3"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/ic_launcher_foreground" />
+            app:srcCompat="@drawable/kotlinicon" />
 
         <TextView
             android:id="@+id/textView4"
@@ -246,7 +345,7 @@
         <View
             android:id="@+id/divider"
             android:layout_width="1dp"
-            android:layout_height="935dp"
+            android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
