@@ -15,7 +15,7 @@
 
 
         <ImageButton
-            android:id="@+id/lesson_9"
+            android:id="@+id/button_about"
             android:layout_width="175dp"
             android:layout_height="66dp"
             android:layout_marginStart="4dp"
@@ -29,11 +29,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/divider"
-            app:layout_constraintTop_toBottomOf="@+id/lesson_2"
+            app:layout_constraintTop_toBottomOf="@+id/button_hinweise"
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageButton
-            android:id="@+id/lesson_2"
+            android:id="@+id/button_hinweise"
             android:layout_width="175dp"
             android:layout_height="66dp"
             android:layout_marginStart="4dp"
@@ -201,6 +201,32 @@
             app:layout_constraintEnd_toEndOf="@+id/lesson_8"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/lesson_8" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Hinweise zur Benutzung"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/button_hinweise"
+            app:layout_constraintEnd_toEndOf="@+id/button_hinweise"
+            app:layout_constraintStart_toStartOf="@+id/button_hinweise" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Über HelloKotlin"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/button_about"
+            app:layout_constraintEnd_toEndOf="@+id/button_about"
+            app:layout_constraintStart_toStartOf="@+id/button_about" />
 
         <TextView
             android:id="@+id/textView10"

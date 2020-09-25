@@ -34,6 +34,12 @@
         <action
             android:id="@+id/action_FirstFragment_to_i_7_1"
             app:destination="@id/i_7_1" />
+        <action
+            android:id="@+id/action_FirstFragment_to_info_about"
+            app:destination="@id/info_about" />
+        <action
+            android:id="@+id/action_FirstFragment_to_info_usage"
+            app:destination="@id/info_usage" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -1292,6 +1298,14 @@
         android:id="@+id/t_7_14"
         android:name="com.example.hellokotlin.T_7_14"
         android:label="T_7_14" />
+    <fragment
+        android:id="@+id/info_about"
+        android:name="com.example.hellokotlin.Info_about"
+        android:label="Info_about" />
+    <fragment
+        android:id="@+id/info_usage"
+        android:name="com.example.hellokotlin.Info_usage"
+        android:label="Info_usage" />
 
 
 </navigation>
