@@ -29,7 +29,7 @@ class I_2_5 : Fragment() {
                 "<p><span style=\"color: #0000ff;\">val</span> KreditkartenNummer = <span style=\"color: #3366ff;\">1234_5678_9012_3456</span></p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "5 / 16"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_i_2_5_to_MC_2_6)
         }
     }

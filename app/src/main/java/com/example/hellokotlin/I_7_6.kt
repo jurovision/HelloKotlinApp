@@ -30,7 +30,7 @@ class I_7_6 : Fragment() {
                 "<p><span style=\"color: #0000ff;\">class</span> Fahrzeug{<br />&nbsp;&nbsp;&nbsp; <span style=\"color: #0000ff;\">var</span> r&auml;der: Int = <span style=\"color: #3366ff;\">0</span><br />&nbsp;&nbsp;&nbsp; <span style=\"color: #0000ff;\">var</span> marke: String = <span style=\"color: #008000;\">\"\"</span><br />&nbsp;&nbsp;&nbsp; <span style=\"color: #0000ff;\">var</span> modell: String = <span style=\"color: #008000;\">\"\"</span><br />}</p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "6 / 16"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_i_7_6_to_i_7_7)
         }
     }

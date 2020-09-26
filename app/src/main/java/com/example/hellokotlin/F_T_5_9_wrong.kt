@@ -31,7 +31,7 @@ class F_T_5_9_wrong : Fragment() {
                 "<p>Ausgabe: <br /><em>Kotlin</em></p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "9 / 15"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_f_T_5_9_wrong_to_i_5_10)
         }
     }

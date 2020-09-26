@@ -30,7 +30,7 @@ class I_7_1 : Fragment() {
                 "<p><span style=\"color: #0000ff;\">class</span> Tier{<br />&nbsp;&nbsp;&nbsp; <span style=\"color: #0000ff;\">var</span> name: String = <span style=\"color: #008000;\">\"\"</span><br />&nbsp;&nbsp;&nbsp; <span style=\"color: #0000ff;\">var</span> ruf: String = <span style=\"color: #008000;\">\"\"</span><br />&nbsp;&nbsp;&nbsp; <span style=\"color: #0000ff;\">fun</span> schlafen(){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=\"color: #003300;\"><em>println</em></span>(<span style=\"color: #008000;\">\"Das Tier schl&auml;ft.\"</span>)<br />&nbsp;&nbsp;&nbsp; }<br />}</p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "1 / 16"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_i_7_1_to_t_7_2)
         }
     }

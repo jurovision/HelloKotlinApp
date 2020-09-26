@@ -32,7 +32,7 @@ class I_5_7 : Fragment() {
                 "<p>Ausgabe: <br /><em>Tick Trick Track</em></p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "7 / 15"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_i_5_7_to_t_5_8)
         }
     }

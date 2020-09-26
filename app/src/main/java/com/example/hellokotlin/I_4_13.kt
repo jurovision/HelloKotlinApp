@@ -30,7 +30,7 @@ class I_4_13 : Fragment() {
                     "<p><span style=\"color: #0000ff;\">var</span> zahlen = arrayOf(<span style=\"color: #3366ff;\">54</span>, <span style=\"color: #3366ff;\">74</span>, <span style=\"color: #3366ff;\">90</span>, <span style=\"color: #3366ff;\">14</span>)<br /><span style=\"color: #0000ff;\">var</span> elemente = zahlen.size<br /><span style=\"color: #0000ff;\">var</span> index_letztes_element = zahlen.size -<span style=\"color: #3366ff;\">1</span></p>"
             instruction.text = Html.fromHtml(text)
             progress.text = "13 / 16"
-            view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+            view.findViewById<Button>(R.id.button3).setOnClickListener {
                 findNavController().navigate(R.id.action_i_4_13_to_t_4_14)
             }
         }

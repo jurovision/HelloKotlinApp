@@ -31,7 +31,7 @@ class I_4_10 : Fragment() {
                 "<p><span style=\"color: #0000ff;\">var</span> array = arrayOf(<span style=\"color: #3366ff;\">1</span>,<span style=\"color: #3366ff;\">2</span>,<span style=\"color: #3366ff;\">3</span>,<span style=\"color: #3366ff;\">4</span>,<span style=\"color: #3366ff;\">5</span>)<br /><span style=\"color: #0000ff;\">var</span> zwei = array[<span style=\"color: #3366ff;\">1</span>]</p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "10 / 16"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_i_4_10_to_t_4_11)
         }
     }

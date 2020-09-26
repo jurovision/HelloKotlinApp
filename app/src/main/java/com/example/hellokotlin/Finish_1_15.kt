@@ -1,6 +1,5 @@
 package com.example.hellokotlin
 
-import android.net.Uri
 import android.os.Bundle
 import android.text.Html
 import android.view.LayoutInflater
@@ -30,7 +29,7 @@ class Finish_1_15 : Fragment() {
         val text = "<p>Herzlichen Gl&uuml;ckwunsch, du hast <span style=\"color: #339966;\"><strong>Kapitel</strong> <strong>$chapter</strong> </span>abgeschlossen!</p>"
         instruction.text = Html.fromHtml(text)
 
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_finish_1_15_to_FirstFragment)
         }
     }

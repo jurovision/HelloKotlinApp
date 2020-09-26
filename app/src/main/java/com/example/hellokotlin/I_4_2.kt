@@ -30,7 +30,7 @@ class I_4_2 : Fragment() {
                 "<p><span style=\"color: #0000ff;\">var</span> bedingung = <span style=\"color: #0000ff;\">false</span><br /><span style=\"color: #0000ff;\">if</span> (!bedingung){<br />&nbsp;&nbsp; <em><span style=\"color: #003300;\">println</span></em>(<span style=\"color: #008000;\">\"Hallo\"</span>)<br />&nbsp;&nbsp; <em><span style=\"color: #003300;\">println</span></em>(<span style=\"color: #008000;\">\"Welt\"</span>)<br /><span>}</span></p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "2 / 16"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_i_4_2_to_MC_4_3)
         }
     }

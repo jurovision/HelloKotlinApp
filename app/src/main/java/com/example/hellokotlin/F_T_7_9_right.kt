@@ -31,7 +31,7 @@ class F_T_7_9_right : Fragment() {
                 "<p><span style=\"color: #0000ff;\">val</span> per_anhalter_durch_die_galaxis = Buch()<br />per_anhalter_durch_die_galaxis.autor = <span style=\"color: #008000;\">\"Douglas Adams\"</span><br />per_anhalter_durch_die_galaxis.jahr = 1979</p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "9 / 16"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_f_T_7_9_right_to_t_7_10)
         }
     }

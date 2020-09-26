@@ -47,7 +47,7 @@
         app:srcCompat="@drawable/default_option_border_bg" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/button_inputanswer"
+        android:id="@+id/button3"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_marginStart="4dp"

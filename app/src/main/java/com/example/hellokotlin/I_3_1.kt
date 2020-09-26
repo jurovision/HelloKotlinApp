@@ -30,7 +30,7 @@ class I_3_1 : Fragment() {
                 "<p><span style=\"color: #0000ff;\">var</span> 2020_ist_anders = <span style=\"color: #0000ff;\">true</span></p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "1 / 13"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_i_3_1_to_i_3_2)
         }
     }

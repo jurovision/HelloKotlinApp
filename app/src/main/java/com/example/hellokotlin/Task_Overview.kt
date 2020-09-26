@@ -1,3 +1,4 @@
+
 package com.example.hellokotlin
 
 import android.os.Bundle
@@ -13,23 +14,29 @@ import kotlinx.android.synthetic.main.fragment_instruction.*
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class I_1_1 : Fragment() {
+class Task_Overview : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_instruction, container, false)
+        return inflater.inflate(R.layout.fragment_aufgaben_uebersicht, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text = "<div>Willkommen in der ersten Lektion! Sch&ouml;n, dass du dich f&uuml;r Kotlin interessierst. Kotlin ist eine relativ neue Programmiersprache, die viele Vorteile bietet. Seit 2017 unterst&uuml;tzt Google sie f&uuml;r Android Apps und seit 2019 ist sie sogar die offiziell bevorzugte Sprache f&uuml;r Android.&nbsp;</div>"
+        val text = "<p>Wenn du alle Lektionen absolviert hast, warten hier noch 3 Aufgaben auf dich. Mit dem Wissen aus den Lektionen kannst du sie problemlos schaffen. Du kannst die Aufgaben entweder hier im Kotlin Editor lösen, oder dir eine Kotlin IDE herunterladen, z.B. IntelliJ IDEA Community.</p>\n" +
+                "<p>Viel Erfolg!</p>"
         instruction.text = Html.fromHtml(text)
-        progress.text = "1 / 15"
-        view.findViewById<Button>(R.id.button3).setOnClickListener {
+        view.findViewById<Button>(R.id.button1).setOnClickListener {
+            findNavController().navigate(R.id.action_task_Overview_to_task_one)
+        }
+/*        view.findViewById<Button>(R.id.button2).setOnClickListener {
             findNavController().navigate(R.id.action_instruction1_1_to_instruction1_2)
         }
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
+            findNavController().navigate(R.id.action_instruction1_1_to_instruction1_2)
+        }*/
     }
 }

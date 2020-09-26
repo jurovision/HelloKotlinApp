@@ -7,13 +7,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.EditText
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.android.synthetic.main.fragment_instruction.*
 import kotlinx.android.synthetic.main.fragment_instruction.progress
-import kotlinx.android.synthetic.main.fragment_multiple_choice_4.*
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -40,7 +38,7 @@ class T_5_13 : Fragment() {
 
 
 
-        view.findViewById<FloatingActionButton>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<FloatingActionButton>(R.id.button3).setOnClickListener {
             var Input = view.findViewById<EditText>(R.id.Input)
             var string = Input.text.toString()
             // Alle Leerzeichen entfernen

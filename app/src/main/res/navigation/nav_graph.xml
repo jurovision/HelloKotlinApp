@@ -40,16 +40,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_info_usage"
             app:destination="@id/info_usage" />
-    </fragment>
-    <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.hellokotlin.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_FirstFragment_to_task_Overview"
+            app:destination="@id/task_Overview" />
     </fragment>
     <fragment
         android:id="@+id/instruction1_1"
@@ -238,17 +231,6 @@
         android:id="@+id/webViewFragment15"
         android:name="com.example.hellokotlin.WebViewFragment15"
         android:label="WebViewFragment15" />
-    <fragment
-        android:id="@+id/userInput_Test"
-        android:name="com.example.hellokotlin.UserInput_Test"
-        android:label="UserInput_Test" >
-        <action
-            android:id="@+id/action_userInput_Test_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-        <action
-            android:id="@+id/action_userInput_Test_to_finish_1_15"
-            app:destination="@id/finish_1_15" />
-    </fragment>
     <fragment
         android:id="@+id/MC_2_1"
         android:name="com.example.hellokotlin.MC_2_1"
@@ -1306,6 +1288,18 @@
         android:id="@+id/info_usage"
         android:name="com.example.hellokotlin.Info_usage"
         android:label="Info_usage" />
+    <fragment
+        android:id="@+id/task_Overview"
+        android:name="com.example.hellokotlin.Task_Overview"
+        android:label="Task_Overview" >
+        <action
+            android:id="@+id/action_task_Overview_to_task_one"
+            app:destination="@id/task_one" />
+    </fragment>
+    <fragment
+        android:id="@+id/task_one"
+        android:name="com.example.hellokotlin.Task_one"
+        android:label="Task_one" />
 
 
 </navigation>

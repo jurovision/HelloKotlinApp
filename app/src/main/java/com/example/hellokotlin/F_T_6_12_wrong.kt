@@ -30,7 +30,7 @@ class F_T_6_12_wrong : Fragment() {
                 "<p><span style=\"color: #0000ff;\">fun</span> gibMirF&uuml;nf(): Int{<br />&nbsp;&nbsp;&nbsp; return <span style=\"color: #3366ff;\">5</span><br />}</p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "12 / 15"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_f_T_6_12_wrong_to_t_6_13)
         }
     }

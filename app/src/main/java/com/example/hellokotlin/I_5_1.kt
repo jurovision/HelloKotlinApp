@@ -31,7 +31,7 @@ class I_5_1 : Fragment() {
                 "<p><span style=\"color: #003300;\"><em>repeat</em></span>(<span style=\"color: #3366ff;\">3</span>){<br /><em><span style=\"color: #003300;\">&nbsp;&nbsp;&nbsp; println</span></em>(<span style=\"color: #008000;\">\"Aller guten Dinge sind drei.\"</span>)<br />}</p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "1 / 15"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_i_5_1_to_t_5_2)
         }
     }

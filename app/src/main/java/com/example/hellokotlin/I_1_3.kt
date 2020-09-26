@@ -29,7 +29,7 @@ class I_1_3 : Fragment() {
         instruction.text = Html.fromHtml(text)
         progress.text = "3 / 15"
 
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
                findNavController().navigate(R.id.action_instruction1_3_to_DD1_4)
            }
     }

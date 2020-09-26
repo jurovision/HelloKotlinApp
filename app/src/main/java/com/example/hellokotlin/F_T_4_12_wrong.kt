@@ -11,7 +11,6 @@ import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_instruction.*
 import kotlinx.android.synthetic.main.fragment_instruction.progress
-import kotlinx.android.synthetic.main.fragment_multiple_choice_4.*
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -32,7 +31,7 @@ class F_T_4_12_wrong : Fragment() {
                 "<p><span style=\"color: #0000ff;\">var</span> namen = arrayOf(<span style=\"color: #008000;\">\"Leonard\"</span>, <span style=\"color: #008000;\">\"Penny\"</span>, <span style=\"color: #008000;\">\"Sheldon\"</span>)<br /><span style=\"color: #0000ff;\">var</span> sheldon = namen[2]</p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "12 / 16"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_f_T_4_12_wrong_to_i_4_13)
         }
     }

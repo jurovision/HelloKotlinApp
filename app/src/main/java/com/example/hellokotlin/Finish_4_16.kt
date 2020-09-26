@@ -30,7 +30,7 @@ class Finish_4_16 : Fragment() {
         val text = "<p>Herzlichen Gl&uuml;ckwunsch, du hast <span style=\"color: #339966;\"><strong>Kapitel</strong> <strong>$chapter</strong> </span>abgeschlossen!</p>"
         instruction.text = Html.fromHtml(text)
 
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_finish_4_16_to_FirstFragment)
         }
     }

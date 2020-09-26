@@ -12,7 +12,6 @@ import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_instruction.*
 import kotlinx.android.synthetic.main.fragment_instruction.progress
-import kotlinx.android.synthetic.main.fragment_multiple_choice_4.*
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -33,7 +32,7 @@ class F_T_2_15_right : Fragment() {
                 "<p><span style=\"color: #0000ff;\"> val</span> kotlins_geburtsjahr = <span style=\"color: #3366ff;\">2011 </span></p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "15 / 16"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_f_T_2_15_right_to_finish_2_16)
         }
     }

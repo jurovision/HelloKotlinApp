@@ -30,7 +30,7 @@ class F_T_7_15_right : Fragment() {
                 "<p><span style=\"color: #0000ff;\"> class</span> Person(<span style=\"color: #0000ff;\">var</span> alter = <span style=\"color: #3366ff;\">0</span>){ <br />&nbsp;&nbsp;&nbsp; <span style=\"color: #0000ff;\">fun</span> gruss(){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=\"color: #003300;\"><em>println</em></span>(<span style=\"color: #008000;\">\"Hallo!\"</span>)<br />&nbsp;&nbsp;&nbsp; }<br />}</p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "15 / 16"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_f_T_7_11_wrong_to_DD_7_12)
         }
     }

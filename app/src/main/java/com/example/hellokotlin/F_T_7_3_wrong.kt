@@ -30,7 +30,7 @@ class F_T_7_3_wrong : Fragment() {
                 "<p><span style=\"color: #0000ff;\">class</span> Film{<br />&nbsp;&nbsp;&nbsp; <span style=\"color: #0000ff;\">var</span> name: String = <span style=\"color: #008000;\">\"\"</span><br />&nbsp;&nbsp;&nbsp; <span style=\"color: #0000ff;\">var</span> regie: String = <span style=\"color: #008000;\">\"\"</span><br />&nbsp;&nbsp;&nbsp; <span style=\"color: #0000ff;\">var</span> jahr: Int = <span style=\"color: #3366ff;\">0</span><br />}</p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "3 / 16"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_f_T_7_3_wrong_to_MC_7_4)
         }
     }

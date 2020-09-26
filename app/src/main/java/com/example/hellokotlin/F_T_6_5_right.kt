@@ -30,7 +30,7 @@ class F_T_6_5_right : Fragment() {
                 "<p><em><span style=\"color: #003300;\">println</span></em>(<span style=\"color: #008000;\">\"Ol&aacute; mundo\"</span>) <br /><br />Ausgabe:<br /><em>Ol&aacute; mundo</em></p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "5 / 15"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_f_T_6_5_right_to_i_6_6)
         }
     }

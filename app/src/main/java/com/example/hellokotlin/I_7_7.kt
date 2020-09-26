@@ -32,7 +32,7 @@ class I_7_7 : Fragment() {
                 "<p><span style=\"color: #0000ff;\">val</span> batmobil = Fahrzeug()<br /><span style=\"color: #808080;\">// <strong>Instanz</strong> / <strong>Objekt</strong> erzeugen</span><br />batmobil.r&auml;der = <span style=\"color: #3366ff;\">4</span><br />batmobile.marke = <span style=\"color: #008000;\">\"unbekannt\"</span><br />batmobil.farbe = <span style=\"color: #008000;\">\"schwarz\"</span><br /><span style=\"color: #808080;\">// Werte festlegen</span></p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "7 / 16"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_i_7_7_to_t_7_8)
         }
     }

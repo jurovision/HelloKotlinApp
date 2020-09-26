@@ -31,7 +31,7 @@ class I_5_4 : Fragment() {
                 "<p>Ausgabe:<br /><em>Polly will einen Cracker.</em><br /><em>Polly will einen Cracker.</em><br /><em>Polly will einen Cracker.</em></p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "4 / 15"
-        view.findViewById<Button>(R.id.button_inputanswer).setOnClickListener {
+        view.findViewById<Button>(R.id.button3).setOnClickListener {
             findNavController().navigate(R.id.action_i_5_4_to_MC_5_4)
         }
     }
