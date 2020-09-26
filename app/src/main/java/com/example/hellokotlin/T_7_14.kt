@@ -44,10 +44,10 @@ class T_7_14 : Fragment() {
             var string = Input.text.toString()
             // Alle Leerzeichen entfernen
             string = string.replace("\\s".toRegex(), "")
-            if (string == "classPerson(varalter=0){")
-                findNavController().navigate(R.id.action_t_6_2_to_f_T_6_3_right)
+            if (string == "classPerson(varalter:Int=0){")
+                findNavController().navigate(R.id.action_t_7_14_to_f_T_7_15_right)
             else {
-                findNavController().navigate(R.id.action_t_6_2_to_f_T_6_3_wrong)
+                findNavController().navigate(R.id.action_t_7_14_to_f_T_7_15_wrong)
             }
         }
     }

@@ -22,13 +22,13 @@ class Finish_2_16 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_chapter_finish, container, false)
+        return inflater.inflate(R.layout.fragment_chapter_finish_two, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val chapter = "2 - Variablen"
-        val text = "<p>Herzlichen Gl&uuml;ckwunsch, du hast <span style=\"color: #339966;\"><strong>Kapitel</strong> <strong>$chapter</strong> </span>abgeschlossen!</p>"
+        val text = "<p>Gut gemacht, du hast <span style=\"color: #339966;\"><strong>Kapitel</strong> <strong>$chapter</strong> </span>abgeschlossen! Im Kotlin Editor kannst du dein neu gewonnenes Wissen gleich festigen. Leg ein paar Variablen an, z.B. deinen Geburtstag oder dein Lieblingszitat \uD83D\uDE09</p>"
         instruction.text = Html.fromHtml(text)
 
         view.findViewById<Button>(R.id.button3).setOnClickListener {

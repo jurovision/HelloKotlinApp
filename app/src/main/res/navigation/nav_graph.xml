@@ -1279,7 +1279,14 @@
     <fragment
         android:id="@+id/t_7_14"
         android:name="com.example.hellokotlin.T_7_14"
-        android:label="T_7_14" />
+        android:label="T_7_14" >
+        <action
+            android:id="@+id/action_t_7_14_to_f_T_7_15_right"
+            app:destination="@id/f_T_7_15_right" />
+        <action
+            android:id="@+id/action_t_7_14_to_f_T_7_15_wrong"
+            app:destination="@id/f_T_7_15_wrong" />
+    </fragment>
     <fragment
         android:id="@+id/info_about"
         android:name="com.example.hellokotlin.Info_about"
@@ -1359,6 +1366,30 @@
         android:id="@+id/task_three_loesung"
         android:name="com.example.hellokotlin.Task_three_loesung"
         android:label="Task_three_loesung" />
+    <fragment
+        android:id="@+id/f_T_7_15_right"
+        android:name="com.example.hellokotlin.F_T_7_15_right"
+        android:label="F_T_7_15_right" >
+        <action
+            android:id="@+id/action_f_T_7_15_right_to_finish_7_16"
+            app:destination="@id/finish_7_16" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_T_7_15_wrong"
+        android:name="com.example.hellokotlin.F_T_7_15_wrong"
+        android:label="F_T_7_15_wrong" >
+        <action
+            android:id="@+id/action_f_T_7_15_wrong_to_finish_7_16"
+            app:destination="@id/finish_7_16" />
+    </fragment>
+    <fragment
+        android:id="@+id/finish_7_16"
+        android:name="com.example.hellokotlin.Finish_7_16"
+        android:label="Finish_7_16" >
+        <action
+            android:id="@+id/action_finish_7_16_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
 
 
 </navigation>

@@ -31,7 +31,7 @@ class T_7_10 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val text =
             "<p>Wir k&ouml;nnen auch direkt in den <strong>runden Klammern</strong> <em><strong>(</strong>...<strong>)</strong></em> Werte f&uuml;r die Klasse anlegen. Dieser Wert wird auch als <strong>Konstruktor</strong> bezeichnet. Kannst du wie hier gezeigt eine weitere Person anlegen, die \"bryan\" hei&szlig;t und 64 ist?</p>\n" +
-                    "<p><span style=\"color: #0000ff;\">class</span> person(var alter: Int = <span style=\"color: #3366ff;\">0</span>){<br /><span style=\"color: #808080;\">&nbsp;&nbsp;&nbsp; // kein weiterer Code n&ouml;tig</span><br />}<br /><span style=\"color: #0000ff;\">val</span> aaron = person(<span style=\"color: #3366ff;\">41</span>)<br />_____________________</p>"
+                    "<p><span style=\"color: #0000ff;\">class</span> Person(<span style=\"color: #3366ff;\">var</span> alter: Int = <span style=\"color: #3366ff;\">0</span>){<br /><span style=\"color: #808080;\">&nbsp;&nbsp;&nbsp; // kein weiterer Code n&ouml;tig</span><br />}<br /><span style=\"color: #0000ff;\">val</span> aaron = Person(<span style=\"color: #3366ff;\">41</span>)<br />_____________________</p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "10 / 16"
 
@@ -42,7 +42,7 @@ class T_7_10 : Fragment() {
             var string = Input.text.toString()
             // Alle Leerzeichen entfernen
             string = string.replace("\\s".toRegex(), "")
-            if (string == "valbryan=person(64)")
+            if (string == "valbryan=Person(64)")
                 findNavController().navigate(R.id.action_t_7_10_to_f_T_7_11_right)
             else {
                 findNavController().navigate(R.id.action_t_7_10_to_f_T_7_11_wrong)
