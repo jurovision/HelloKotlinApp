@@ -1,4 +1,5 @@
 
+
 package com.example.hellokotlin
 
 import android.os.Bundle
@@ -15,7 +16,7 @@ import kotlinx.android.synthetic.main.fragment_instruction.*
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class Task_one : Fragment() {
+class Task_two : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,20 +28,20 @@ class Task_one : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text1 = "<p>Schreibe ein kleines Programm, das einer Person zum Geburtstag gratuliert, wenn dieser heute ist.</p>\n" +
-                "<p>Erstelle das Programm mit einer <strong>Funktion</strong> \"gratulieren\", der du einen <strong>Namen-String</strong> und einen <strong>Boolschen Wert</strong> &uuml;bergibst, der angibt, ob heute der Geburtstag ist. Wenn die Person nicht Geburtstag hat, soll das Programm einen Gru&szlig; ausgeben, z.B. \"Hallo Paul\". Andernfalls soll der Person gratuliert werden und ihr Name soll dabei genannt werden. Als Name soll immer der String verwendet werden, welcher der Funktion &uuml;bergeben wird. </p>"
+        val text1 = "<p>Als N&auml;chstes m&ouml;chten wir gerne einen <strong>minimalistischen Taschenrechner</strong> umsetzen. Setze ihn als Funktion um, der drei Werte &uuml;bergeben werden: <strong>zwei Double Zahlen</strong> und <strong>ein Operant</strong> aus den Zeichen \"<strong>+</strong>,<strong> -</strong>, <strong>*</strong>, <strong>/</strong>\".</p>\n" +
+                "<p>Der Taschenrechner soll das Ergebnis berechnen und auf dem Bildschirm <strong>ausgeben</strong>. Sorge bitte au&szlig;erdem daf&uuml;r, dass bei einer Division durch Null eine <strong>Fehlermeldung</strong> ausgegeben wird und kein Ergebnis berechnet wird. Du kannst davon ausgehen, dass die Funktion nur mit Double Zahlen und den korrekten Operatoren aufgerufen wird.</p>"
         text_gross.text = Html.fromHtml(text1)
-        val text2 = "<ul>\n" +
+/*        val text2 = "<ul>\n" +
                 "<li>Denke daran, dass jedes Programm eine main Funktion enthalten muss, wie in Kapitel 1 gezeigt.</li>\n" +
                 "<li>Den Wert einer String Variable kannst du mit \$Variablenname in Text einbinden</li>\n" +
                 "<li>Mehrere Argumente für eine Funktion trennen wir mit Kommas</li>\n" +
                 "</ul>"
-        text_klein.text = Html.fromHtml(text2)
+        text_klein.text = Html.fromHtml(text2)*/
         view.findViewById<Button>(R.id.button3).setOnClickListener {
-            findNavController().navigate(R.id.action_task_one_to_task_one_tipp)
+            findNavController().navigate(R.id.action_task_two_to_task_two_tipp)
         }
         view.findViewById<Button>(R.id.button_loesung).setOnClickListener {
-            findNavController().navigate(R.id.action_task_one_to_task_one_loesung)
+            findNavController().navigate(R.id.action_task_two_to_task_two_loesung)
         }
     }
 }

@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_instruction.*
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class Task_one : Fragment() {
+class Task_three : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,20 +27,20 @@ class Task_one : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text1 = "<p>Schreibe ein kleines Programm, das einer Person zum Geburtstag gratuliert, wenn dieser heute ist.</p>\n" +
-                "<p>Erstelle das Programm mit einer <strong>Funktion</strong> \"gratulieren\", der du einen <strong>Namen-String</strong> und einen <strong>Boolschen Wert</strong> &uuml;bergibst, der angibt, ob heute der Geburtstag ist. Wenn die Person nicht Geburtstag hat, soll das Programm einen Gru&szlig; ausgeben, z.B. \"Hallo Paul\". Andernfalls soll der Person gratuliert werden und ihr Name soll dabei genannt werden. Als Name soll immer der String verwendet werden, welcher der Funktion &uuml;bergeben wird. </p>"
+        val text1 = "<p><strong>Herzlichen Gl&uuml;ckwunsch</strong>, du hast es bis zur allerletzten Aufgabe geschafft! Und die geht so: Eine Druckerei pr&uuml;ft in regelm&auml;&szlig;igen Abst&auml;nden die <strong>Druckqualit&auml;t</strong> verschiedener Buchstaben. Da die Buchstaben unterschiedlich schwer sauber zu drucken sind, ist auch der Pr&uuml;faufwand verschieden.</p>\n" +
+                "<p>Erstelle eine Funktion, der ein<strong> Array von Strings</strong> &uuml;bergeben wird. Die Funktion soll das erste Element des Arrays einmal drucken und jedes darauffolgende 1 mal mehr (zweites Element 2 mal, drittes 3 mal usw.). Da die Wartungsarbeiten nie ganz gleich ablaufen, soll die Funktion <strong>Arrays verschiedener L&auml;nge</strong> verarbeiten k&ouml;nnen.</p>"
         text_gross.text = Html.fromHtml(text1)
-        val text2 = "<ul>\n" +
+/*        val text2 = "<ul>\n" +
                 "<li>Denke daran, dass jedes Programm eine main Funktion enthalten muss, wie in Kapitel 1 gezeigt.</li>\n" +
                 "<li>Den Wert einer String Variable kannst du mit \$Variablenname in Text einbinden</li>\n" +
                 "<li>Mehrere Argumente für eine Funktion trennen wir mit Kommas</li>\n" +
                 "</ul>"
-        text_klein.text = Html.fromHtml(text2)
+        text_klein.text = Html.fromHtml(text2)*/
         view.findViewById<Button>(R.id.button3).setOnClickListener {
-            findNavController().navigate(R.id.action_task_one_to_task_one_tipp)
+            findNavController().navigate(R.id.action_task_three_to_task_three_tipps)
         }
         view.findViewById<Button>(R.id.button_loesung).setOnClickListener {
-            findNavController().navigate(R.id.action_task_one_to_task_one_loesung)
+            findNavController().navigate(R.id.action_task_three_to_task_three_loesung)
         }
     }
 }

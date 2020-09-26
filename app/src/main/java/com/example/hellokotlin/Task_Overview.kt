@@ -32,11 +32,11 @@ class Task_Overview : Fragment() {
         view.findViewById<Button>(R.id.button1).setOnClickListener {
             findNavController().navigate(R.id.action_task_Overview_to_task_one)
         }
-/*        view.findViewById<Button>(R.id.button2).setOnClickListener {
-            findNavController().navigate(R.id.action_instruction1_1_to_instruction1_2)
+        view.findViewById<Button>(R.id.button2).setOnClickListener {
+            findNavController().navigate(R.id.action_task_Overview_to_task_two)
         }
-        view.findViewById<Button>(R.id.button3).setOnClickListener {
-            findNavController().navigate(R.id.action_instruction1_1_to_instruction1_2)
-        }*/
+        view.findViewById<Button>(R.id.aufgabe3).setOnClickListener {
+            findNavController().navigate(R.id.action_task_Overview_to_task_three)
+        }
     }
 }

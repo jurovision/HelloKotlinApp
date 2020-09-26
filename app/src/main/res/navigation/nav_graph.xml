@@ -1295,11 +1295,70 @@
         <action
             android:id="@+id/action_task_Overview_to_task_one"
             app:destination="@id/task_one" />
+        <action
+            android:id="@+id/action_task_Overview_to_task_two"
+            app:destination="@id/task_two" />
+        <action
+            android:id="@+id/action_task_Overview_to_task_three"
+            app:destination="@id/task_three" />
     </fragment>
     <fragment
         android:id="@+id/task_one"
         android:name="com.example.hellokotlin.Task_one"
-        android:label="Task_one" />
+        android:label="Task_one" >
+        <action
+            android:id="@+id/action_task_one_to_task_one_tipp"
+            app:destination="@id/task_one_tipp" />
+        <action
+            android:id="@+id/action_task_one_to_task_one_loesung"
+            app:destination="@id/task_one_loesung" />
+    </fragment>
+    <fragment
+        android:id="@+id/task_one_loesung"
+        android:name="com.example.hellokotlin.Task_one_loesung"
+        android:label="Task_one_loesung" />
+    <fragment
+        android:id="@+id/task_one_tipp"
+        android:name="com.example.hellokotlin.Task_one_tipp"
+        android:label="Task_one_tipp" />
+    <fragment
+        android:id="@+id/task_two"
+        android:name="com.example.hellokotlin.Task_two"
+        android:label="Task_two" >
+        <action
+            android:id="@+id/action_task_two_to_task_two_tipp"
+            app:destination="@id/task_two_tipp" />
+        <action
+            android:id="@+id/action_task_two_to_task_two_loesung"
+            app:destination="@id/task_two_loesung" />
+    </fragment>
+    <fragment
+        android:id="@+id/task_two_tipp"
+        android:name="com.example.hellokotlin.Task_two_tipp"
+        android:label="Task_two_tipp" />
+    <fragment
+        android:id="@+id/task_two_loesung"
+        android:name="com.example.hellokotlin.Task_two_loesung"
+        android:label="Task_two_loesung" />
+    <fragment
+        android:id="@+id/task_three"
+        android:name="com.example.hellokotlin.Task_three"
+        android:label="Task_three" >
+        <action
+            android:id="@+id/action_task_three_to_task_three_tipps"
+            app:destination="@id/task_three_tipps" />
+        <action
+            android:id="@+id/action_task_three_to_task_three_loesung"
+            app:destination="@id/task_three_loesung" />
+    </fragment>
+    <fragment
+        android:id="@+id/task_three_tipps"
+        android:name="com.example.hellokotlin.Task_three_tipps"
+        android:label="Task_three_tipps" />
+    <fragment
+        android:id="@+id/task_three_loesung"
+        android:name="com.example.hellokotlin.Task_three_loesung"
+        android:label="Task_three_loesung" />
 
 
 </navigation>
