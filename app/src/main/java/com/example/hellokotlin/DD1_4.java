@@ -36,7 +36,7 @@ public class DD1_4 extends Fragment {
     }
 
     TextView textview;
-    String text = "Kannst du den Code so anordnen, dass der Gruß ausgegeben wird?";
+    String text = "Kannst du den Code so anordnen, dass der Gruß ausgegeben wird? Halte die Elemente zum Verschieben lang gedrückt.";
 
     //Progress Text
     TextView progressText;
