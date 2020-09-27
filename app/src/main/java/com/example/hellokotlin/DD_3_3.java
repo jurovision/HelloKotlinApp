@@ -39,7 +39,7 @@ public class DD_3_3 extends Fragment {
 
     TextView textview;
     String text = "<div style=\"-en-clipboard: true;\">\n" +
-            "<div style=\"-en-clipboard: true;\">Kannst du den Code so anordnen, dass er \"<strong>true</strong>\" ausgibt?</div>\n" +
+            "<div style=\"-en-clipboard: true;\">Kannst du den Code so anordnen, dass er \"<strong>true</strong>\" ausgibt? Die Anweisung zur Textausgabe soll am Ende stehen.</div>\n" +
             "</div>";
 
     //Progress Text

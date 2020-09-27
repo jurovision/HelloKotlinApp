@@ -4,19 +4,15 @@ package com.example.hellokotlin
 
 import android.os.Bundle
 import android.text.Html
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_instruction.*
-import kotlinx.android.synthetic.main.fragment_instruction.progress
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
-class F_T_2_15_right : Fragment() {
+class I_1_0 : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,12 +24,12 @@ class F_T_2_15_right : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text = "<p><span style=\"color: #008000;\">Richtig.</span> Wir benutzen <em><strong>val</strong></em> f&uuml;r <strong>unver&auml;nderliche</strong> und var f&uuml;r ver&auml;nderliche Werte. Das l&auml;sst sich &uuml;brigens gut damit merken, das in <strong>var</strong>iabel wie ver&auml;nderlich ein \"var\" steckt \uD83D\uDE09</p>\n" +
-                "<p><span style=\"color: #0000ff;\"> val</span> kotlins_geburtsjahr = <span style=\"color: #3366ff;\">2011 </span></p>"
+        val text = "<p><strong>Willkommen</strong> bei HelloKotlin! Wenn du bereits erste Programmierkenntnisse hast und <strong>Grundlagen von Kotlin</strong> lernen m&ouml;chtest, bist du hier goldrichtig. Solltest du an irgendeinem Punkt Schwierigkeiten haben, lies dir die \"Hinweise zur Benutzung\" auf dem Startbildschirm durch. Viel Spa&szlig; und viel Erfolg!</p>"
         instruction.text = Html.fromHtml(text)
-        progress.text = "15 / 16"
+        progress.text = ""
+
         view.findViewById<Button>(R.id.button3).setOnClickListener {
-            findNavController().navigate(R.id.action_f_T_2_15_right_to_finish_2_16)
+            findNavController().navigate(R.id.action_i_1_0_to_instruction1_1)
         }
     }
 }

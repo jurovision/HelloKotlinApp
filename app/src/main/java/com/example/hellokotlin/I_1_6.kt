@@ -26,7 +26,7 @@ class I_1_6 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text = "<p>Mit dem Schl&uuml;sselbegriff <strong>var</strong> hast du gerade bereits eine Variable angelegt. Wenn wir in Kotlin nicht manuell den Datentyp festlegen wollen, m&uuml;ssen wir ihn nicht angeben. Er wird automatisch abgeleitet. Wir k&ouml;nnen alle &uuml;blichen Datentypen einfach mittels <strong>var name =</strong> anlegen</p>"
+        val text = "<p>Mit dem Schl&uuml;sselbegriff <em><strong>var</strong></em> hast du gerade bereits eine Variable angelegt. Wenn wir in Kotlin nicht manuell den Datentyp festlegen wollen, m&uuml;ssen wir ihn nicht angeben. Er wird automatisch abgeleitet. Wir k&ouml;nnen alle &uuml;blichen Datentypen einfach mittels <em><strong>var name =</strong></em> anlegen</p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "6 / 15"
 

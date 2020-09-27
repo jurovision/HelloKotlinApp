@@ -31,6 +31,7 @@ class Info_usage : Fragment() {
                 "<li>Die Lektionen sind dazu gedacht, in einem Durchgang gel&ouml;st zu werden. Dein Fortschritt wird nicht gespeichert. Falls du deine Sitzung unterbrechen musst, gehe sp&auml;ter einfach wieder dahin, wo du zuletzt aufgeh&ouml;rt hast.</li>\n" +
                 "<li>Um Codefragmente in den entsprechenden Aufgaben zu verschieben, musst du sie erst einen Moment gedr&uuml;ckt halten, bis sie grau werden.</li>\n" +
                 "<li>HelloKotlin wurde optimiert f&uuml;r Ger&auml;te mit einer Aufl&ouml;sung von 768 x 1280 bis 1080 mal 2340 Pixeln, die eine kleine oder normale Anzeigengr&ouml;&szlig;e verwenden. Sollte die App nicht richtig dargestellt werden, verringere bitte die Vergr&ouml;&szlig;erung deiner Anzeige.</li>\n" +
+                "<li>Die App ist für die Benutzung im Hochformat ausgelegt, das Querformat funktioniert jedoch auch. Beachte aber, dass im Kotlin Editor beim Ändern der Bildschirmorientierung deine Eingaben verloren gehen.</li>\n" +
                 "</ul>\n" +
                 "<p>Viel Spa&szlig; bei deinen ersten Schritten in Kotlin!</p>"
         text_gross.text = Html.fromHtml(text1)

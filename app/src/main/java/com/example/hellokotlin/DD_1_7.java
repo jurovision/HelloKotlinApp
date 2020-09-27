@@ -37,7 +37,7 @@ public class DD_1_7 extends Fragment {
     }
 
     TextView textview;
-    String text = "<p>Alle Werte, die wir mit <em><strong>var</strong> </em>anlegen sind ebenfalls beliebig oft <strong>&auml;nderbar</strong>. Kannst du unsere Gru&szlig;-Variable so &auml;ndern, dass sie besser zum Ende des Tages passt und danach ausgeben?</p>";
+    String text = "<p>Alle Werte, die wir mit <em><strong>var</strong> </em>anlegen, sind ebenfalls beliebig oft <strong>&auml;nderbar</strong>. Kannst du unsere Gru&szlig;-Variable so &auml;ndern, dass sie besser zum Ende des Tages passt und danach ausgeben?</p>";
     //Progress Text
     TextView progressText;
     String progress = "7 / 15";

@@ -52,7 +52,7 @@ class MC_6_7 : Fragment(), View.OnClickListener{
         //tv_question.text = question.question
         //iv_image.setImageResource(question.image)
         option1.text = "String"
-        option2.text = "Character"
+        option2.text = "Char"
         option3.text =  "Int"
 
 

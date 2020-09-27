@@ -30,7 +30,7 @@ class T_6_4 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val text =
-            "<p>Wir k&ouml;nnen Funktionen aber auch <strong>Parameter</strong> bzw. <strong>Argumente</strong>, also Werte, <strong>&uuml;bergeben</strong>. Kannst du du der <em>println()</em> Funktion \"Ol&aacute; mundo\" Als Parameter &uuml;bergeben?</p>\n" +
+            "<p>Wir k&ouml;nnen Funktionen aber auch <strong>Parameter</strong> bzw. <strong>Argumente</strong>, also Werte, <strong>&uuml;bergeben</strong>. Kannst du der <em>println()</em> Funktion \"Ol&aacute; mundo\" Als Parameter &uuml;bergeben?</p>\n" +
                     "<p>_____<span style=\"color: #008000;\">\"Ol&aacute; mundo\"</span>)</p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "4 / 15"

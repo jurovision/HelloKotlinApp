@@ -125,7 +125,7 @@
             android:src="@drawable/chapter5icon"
             android:tint="@color/colorGrey"
             app:layout_constraintEnd_toStartOf="@+id/divider"
-            app:layout_constraintHorizontal_bias="0.909"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/kotlinEditor" />
 

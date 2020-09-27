@@ -27,7 +27,7 @@ class I_1_2 : Fragment() {
                 "<li>Kotlin<strong> spart Codezeilen</strong> und bleibt dabei gut lesbar</li>\n" +
                 "<li>Getter und Setter werden in den Compiler verschoben </li>\n" +
                 "<li>(Fast) keine NullPointerExceptions mehr n&ouml;tig</li>\n" +
-                "<li>Kotlin-Code ist<strong> hochkompatibel mit Java</strong></li>\n" +
+                "<li>Kotlin-Code ist<strong> kompatibel mit Java</strong></li>\n" +
                 "</ul>\n" +
                 "<p>&nbsp;</p>"
         instruction.text = Html.fromHtml(text)

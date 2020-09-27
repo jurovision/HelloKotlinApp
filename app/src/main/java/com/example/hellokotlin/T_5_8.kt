@@ -30,7 +30,7 @@ class T_5_8 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val text =
-            "<p>Ganz gleich funktioniert es &uuml;brigens mit <strong>Buchstaben</strong> (Character) eines Strings. Kannst du das Beispiel vervollst&auml;ndigen?</p>\n" +
+            "<p>Ganz gleich funktioniert es &uuml;brigens mit <strong>Buchstaben</strong> (Char) eines Strings. Kannst du das Beispiel vervollst&auml;ndigen?</p>\n" +
                     "<p><span style=\"color: #0000ff;\">var</span> wort = <span style=\"color: #008000;\">\"Kotlin\"</span><br /><span style=\"color: #0000ff;\">for</span> (buchstabe _________<br /><span style=\"color: #003300;\"><em>&nbsp;&nbsp;&nbsp; println</em></span>(buchstabe)<br />}</p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "8 / 15"

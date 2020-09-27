@@ -46,7 +46,7 @@ class F_MC_6_8_right : Fragment() {
 
         //tv_question.text = question.question
         option1.text = "String"
-        option2.text = "Character"
+        option2.text = "Char"
         option3.text =  "Int"
 
 

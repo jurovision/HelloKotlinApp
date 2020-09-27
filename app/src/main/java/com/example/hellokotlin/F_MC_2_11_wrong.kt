@@ -40,7 +40,7 @@ class F_MC_2_11_wrong : Fragment() {
 
 
         val text =
-            "<div style=\"-en-clipboard: true;\"><span style=\"color: #ff0000;\">Nicht ganz.</span> tore = -(tore -<span style=\"color: #0000ff;\">1</span>) ergibt wenig Sinn. <strong>Alle anderen Wege funktionieren</strong> und k&ouml;nnen gleicherma&szlig;en zum Verringern um 1 mit - umgesetzt werden. </div>"
+            "<div style=\"-en-clipboard: true;\"><span style=\"color: #ff0000;\">Nicht ganz.</span><em>tore = -(tore -<span style=\"color: #0000ff;\">1</em></span>) ergibt wenig Sinn. <strong>Alle anderen Wege funktionieren</strong> und k&ouml;nnen gleicherma&szlig;en zum Verringern um 1 mit - umgesetzt werden. </div>"
         dd_text.text = Html.fromHtml(text)
         progress.text = "11 / 16"
 

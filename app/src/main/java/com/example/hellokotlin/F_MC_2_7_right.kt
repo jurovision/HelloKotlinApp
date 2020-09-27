@@ -51,7 +51,7 @@ class F_MC_2_7_right : Fragment() {
         //iv_image.setImageResource(question.image)
         option1.text = "zahl = \"28\""
         option2.text = "zahl = 14.14"
-        option3.text =  "zahl =13"
+        option3.text =  "zahl = 13"
 
         button_forward.text = "Weiter"
 

@@ -29,7 +29,7 @@ class FirstFragment : Fragment() {
         //Farben ändern, wenn Kapitel abgeschlossen
         //lesson_1.setBackgroundColor(Color.parseColor("#009C7C"))
         view.findViewById<ImageButton>(R.id.lesson_1).setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_instruction1_1)
+            findNavController().navigate(R.id.action_FirstFragment_to_i_1_0)
         }
         view.findViewById<ImageButton>(R.id.lesson2).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_MC_2_1)

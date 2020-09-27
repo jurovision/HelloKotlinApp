@@ -31,7 +31,7 @@ class T_2_14 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val text =
-            "<p>Welchen Bezeichner muss du benutzen, damit diese Zahl <strong>unver&auml;nderlich</strong> bleibt?</p>\n" +
+            "<p>Welchen Bezeichner musst du benutzen, damit diese Zahl <strong>unver&auml;nderlich</strong> bleibt?</p>\n" +
                     "<p>____ kotlins_geburtsjahr = <span style=\"color: #3366ff;\">2011</span></p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "14 / 16"

@@ -28,7 +28,7 @@ class F_T_2_15_wrong : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text = "<p><span style=\"color: #ff0000;\">Nein.</span> Wir benutzen <strong>val</strong> f&uuml;r <strong>unver&auml;nderliche</strong> und var f&uuml;r ver&auml;nderliche Werte. Das l&auml;sst sich &uuml;brigens gut damit merken, das in <strong>var</strong>iabel wie ver&auml;nderlich ein \"var\" steckt \uD83D\uDE09</p>\n" +
+        val text = "<p><span style=\"color: #ff0000;\">Nein.</span> Wir benutzen <em><strong>val</strong></em> f&uuml;r <strong>unver&auml;nderliche</strong> und var f&uuml;r ver&auml;nderliche Werte. Das l&auml;sst sich &uuml;brigens gut damit merken, das in <strong>var</strong>iabel wie ver&auml;nderlich ein \"var\" steckt \uD83D\uDE09</p>\n" +
                 "<p><span style=\"color: #0000ff;\"> val</span> kotlins_geburtsjahr = <span style=\"color: #3366ff;\">2011 </span></p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "15 / 16"

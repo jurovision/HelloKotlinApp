@@ -52,7 +52,7 @@ class MC_2_6 : Fragment(), View.OnClickListener{
         //iv_image.setImageResource(question.image)
         option1.text = "zahl = \"28\""
         option2.text = "zahl = 14.14"
-        option3.text =  "zahl =13"
+        option3.text =  "zahl = 13"
 
 
         option1.setOnClickListener(this)

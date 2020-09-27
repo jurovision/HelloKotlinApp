@@ -11,9 +11,6 @@
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
         <action
-            android:id="@+id/action_FirstFragment_to_instruction1_1"
-            app:destination="@id/instruction1_1" />
-        <action
             android:id="@+id/action_FirstFragment_to_webViewFragment15"
             app:destination="@id/webViewFragment15" />
         <action
@@ -43,6 +40,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_task_Overview"
             app:destination="@id/task_Overview" />
+        <action
+            android:id="@+id/action_FirstFragment_to_i_1_0"
+            app:destination="@id/i_1_0" />
     </fragment>
     <fragment
         android:id="@+id/instruction1_1"
@@ -1389,6 +1389,14 @@
         <action
             android:id="@+id/action_finish_7_16_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/i_1_0"
+        android:name="com.example.hellokotlin.I_1_0"
+        android:label="I_1_0" >
+        <action
+            android:id="@+id/action_i_1_0_to_instruction1_1"
+            app:destination="@id/instruction1_1" />
     </fragment>
 
 

@@ -48,7 +48,7 @@ class F_MC_2_9_right : Fragment() {
         //iv_image.setImageResource(question.image)
         option1.text = ": Int"
         option2.text = ": String"
-        option3.text = ": Character"
+        option3.text = ": Char"
         option4.text = ": Double"
         button_forward.text = "Weiter"
 

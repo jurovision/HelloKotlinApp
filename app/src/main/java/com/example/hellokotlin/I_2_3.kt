@@ -25,7 +25,7 @@ class I_2_3 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text = "<p>Wie wir bereits im letzten Kapitel gesehen haben, k&ouml;nnen Variablen ganz verschiedene Datentypen beinhalten. <strong>Strings</strong>, also Zeichenketten, und <strong>Character</strong>, einzelne Buchstaben, legst du folgenderma&szlig;en an:</p>\n" +
+        val text = "<p>Wie wir bereits im letzten Kapitel gesehen haben, k&ouml;nnen Variablen ganz verschiedene Datentypen beinhalten. <strong>Strings</strong>, also Zeichenketten, und <strong>Character</strong> (Char), also einzelne Buchstaben, legst du folgenderma&szlig;en an:</p>\n" +
                 "<p><span style=\"color: #0000ff;\">var</span> ein_string = <span style=\"color: #008000;\">\"Tenacious\"</span><br /><span style=\"color: #0000ff;\">val</span> ein_char = <span style=\"color: #008000;\">'D'</span></p>"
         instruction.text = Html.fromHtml(text)
         progress.text = "3 / 16"
