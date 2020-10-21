@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.hellokotlin.FirstFragment"
+        android:name="com.hellokotlin.hellokotlin.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
         <action
@@ -46,7 +46,7 @@
     </fragment>
     <fragment
         android:id="@+id/instruction1_1"
-        android:name="com.example.hellokotlin.I_1_1"
+        android:name="com.hellokotlin.hellokotlin.I_1_1"
         android:label="Instruction1_1"
         tools:layout="@layout/fragment_instruction"
         >
@@ -56,7 +56,7 @@
     </fragment>
     <fragment
         android:id="@+id/instruction1_2"
-        android:name="com.example.hellokotlin.I_1_2"
+        android:name="com.hellokotlin.hellokotlin.I_1_2"
         android:label="Instruction1_2"
         tools:layout="@layout/fragment_instruction"
         >
@@ -66,7 +66,7 @@
     </fragment>
     <fragment
         android:id="@+id/instruction1_3"
-        android:name="com.example.hellokotlin.I_1_3"
+        android:name="com.hellokotlin.hellokotlin.I_1_3"
         android:label="Instruction1_3"
         tools:layout="@layout/fragment_instruction"
         >
@@ -76,7 +76,7 @@
     </fragment>
     <fragment
         android:id="@+id/DD1_4"
-        android:name="com.example.hellokotlin.DD1_4"
+        android:name="com.hellokotlin.hellokotlin.DD1_4"
         android:label="DD1_4"
         tools:layout="@layout/fragment_drag_and_drop"
         >
@@ -89,7 +89,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_1_5_right"
-        android:name="com.example.hellokotlin.F_DD_1_5_right"
+        android:name="com.hellokotlin.hellokotlin.F_DD_1_5_right"
         android:label="F_DD_1_5_right" >
         <action
             android:id="@+id/action_f_DD_1_5_right_to_i_1_6"
@@ -97,7 +97,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_1_5_wrong"
-        android:name="com.example.hellokotlin.F_DD_1_5_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_DD_1_5_wrong"
         android:label="F_DD_1_5_wrong" >
         <action
             android:id="@+id/action_f_DD_1_5_wrong_to_i_1_6"
@@ -105,7 +105,7 @@
     </fragment>
     <fragment
         android:id="@+id/MC_1_6"
-        android:name="com.example.hellokotlin.MC_1_9"
+        android:name="com.hellokotlin.hellokotlin.MC_1_9"
         android:label="MC_1_6" >
         <action
             android:id="@+id/action_MC_1_6_to_f_MC_1_7_wrong"
@@ -116,7 +116,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_1_7_right"
-        android:name="com.example.hellokotlin.F_MC_1_10_right"
+        android:name="com.hellokotlin.hellokotlin.F_MC_1_10_right"
         android:label="F_MC_1_7_right" >
         <action
             android:id="@+id/action_f_MC_1_7_right_to_MC_1_8"
@@ -124,7 +124,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_1_7_wrong"
-        android:name="com.example.hellokotlin.F_MC_1_10_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_MC_1_10_wrong"
         android:label="F_MC_1_7_wrong" >
         <action
             android:id="@+id/action_f_MC_1_7_wrong_to_MC_1_8"
@@ -132,7 +132,7 @@
     </fragment>
     <fragment
         android:id="@+id/MC_1_8"
-        android:name="com.example.hellokotlin.MC_1_11"
+        android:name="com.hellokotlin.hellokotlin.MC_1_11"
         android:label="MC_1_8" >
         <action
             android:id="@+id/action_MC_1_8_to_f_MC_1_9_right"
@@ -143,7 +143,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_1_9_right"
-        android:name="com.example.hellokotlin.F_MC_1_12_right"
+        android:name="com.hellokotlin.hellokotlin.F_MC_1_12_right"
         android:label="F_MC_1_9_right" >
         <action
             android:id="@+id/action_f_MC_1_9_right_to_DD_1_10"
@@ -151,7 +151,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_1_9_wrong"
-        android:name="com.example.hellokotlin.F_MC_1_12_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_MC_1_12_wrong"
         android:label="F_MC_1_9_wrong" >
         <action
             android:id="@+id/action_f_MC_1_9_wrong_to_DD_1_10"
@@ -159,7 +159,7 @@
     </fragment>
     <fragment
         android:id="@+id/DD_1_10"
-        android:name="com.example.hellokotlin.DD_1_13"
+        android:name="com.hellokotlin.hellokotlin.DD_1_13"
         android:label="DD_1_10" >
         <action
             android:id="@+id/action_DD_1_10_to_f_DD_1_11_right"
@@ -170,7 +170,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_1_11_right"
-        android:name="com.example.hellokotlin.F_DD_1_14_right"
+        android:name="com.hellokotlin.hellokotlin.F_DD_1_14_right"
         android:label="F_DD_1_11_right" >
         <action
             android:id="@+id/action_f_DD_1_11_right_to_finish_1_15"
@@ -178,7 +178,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_1_11_wrong"
-        android:name="com.example.hellokotlin.F_DD_1_14_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_DD_1_14_wrong"
         android:label="F_DD_1_11_wrong" >
         <action
             android:id="@+id/action_f_DD_1_11_wrong_to_finish_1_15"
@@ -186,7 +186,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_1_6"
-        android:name="com.example.hellokotlin.I_1_6"
+        android:name="com.hellokotlin.hellokotlin.I_1_6"
         android:label="I_1_6" >
         <action
             android:id="@+id/action_i_1_6_to_DD_1_7"
@@ -194,7 +194,7 @@
     </fragment>
     <fragment
         android:id="@+id/DD_1_7"
-        android:name="com.example.hellokotlin.DD_1_7"
+        android:name="com.hellokotlin.hellokotlin.DD_1_7"
         android:label="DD_1_7" >
         <action
             android:id="@+id/action_DD_1_7_to_f_DD_1_8_right"
@@ -205,7 +205,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_1_8_right"
-        android:name="com.example.hellokotlin.F_DD_1_8_right"
+        android:name="com.hellokotlin.hellokotlin.F_DD_1_8_right"
         android:label="F_DD_1_8_right" >
         <action
             android:id="@+id/action_f_DD_1_8_right_to_MC_1_6"
@@ -213,7 +213,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_1_8_wrong"
-        android:name="com.example.hellokotlin.F_DD_1_8_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_DD_1_8_wrong"
         android:label="F_DD_1_8_wrong" >
         <action
             android:id="@+id/action_f_DD_1_8_wrong_to_MC_1_6"
@@ -221,7 +221,7 @@
     </fragment>
     <fragment
         android:id="@+id/finish_1_15"
-        android:name="com.example.hellokotlin.Finish_1_15"
+        android:name="com.hellokotlin.hellokotlin.Finish_1_15"
         android:label="Finish_1_15" >
         <action
             android:id="@+id/action_finish_1_15_to_FirstFragment"
@@ -229,11 +229,11 @@
     </fragment>
     <fragment
         android:id="@+id/webViewFragment15"
-        android:name="com.example.hellokotlin.WebViewFragment15"
+        android:name="com.hellokotlin.hellokotlin.WebViewFragment15"
         android:label="WebViewFragment15" />
     <fragment
         android:id="@+id/MC_2_1"
-        android:name="com.example.hellokotlin.MC_2_1"
+        android:name="com.hellokotlin.hellokotlin.MC_2_1"
         android:label="MC_2_1" >
         <action
             android:id="@+id/action_MC_2_1_to_f_MC_2_2_right"
@@ -244,7 +244,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_2_2_right"
-        android:name="com.example.hellokotlin.F_MC_2_2_right"
+        android:name="com.hellokotlin.hellokotlin.F_MC_2_2_right"
         android:label="F_MC_2_2_right" >
         <action
             android:id="@+id/action_f_MC_2_2_right_to_i_2_3"
@@ -252,7 +252,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_2_2_wrong"
-        android:name="com.example.hellokotlin.F_MC_2_2_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_MC_2_2_wrong"
         android:label="F_MC_2_2_wrong" >
         <action
             android:id="@+id/action_f_MC_2_2_wrong_to_i_2_3"
@@ -260,7 +260,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_2_3"
-        android:name="com.example.hellokotlin.I_2_3"
+        android:name="com.hellokotlin.hellokotlin.I_2_3"
         android:label="I_2_3" >
         <action
             android:id="@+id/action_i_2_3_to_i_2_4"
@@ -268,7 +268,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_2_4"
-        android:name="com.example.hellokotlin.I_2_4"
+        android:name="com.hellokotlin.hellokotlin.I_2_4"
         android:label="I_2_4" >
         <action
             android:id="@+id/action_i_2_4_to_i_2_5"
@@ -276,7 +276,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_2_5"
-        android:name="com.example.hellokotlin.I_2_5"
+        android:name="com.hellokotlin.hellokotlin.I_2_5"
         android:label="I_2_5" >
         <action
             android:id="@+id/action_i_2_5_to_MC_2_6"
@@ -284,7 +284,7 @@
     </fragment>
     <fragment
         android:id="@+id/MC_2_6"
-        android:name="com.example.hellokotlin.MC_2_6"
+        android:name="com.hellokotlin.hellokotlin.MC_2_6"
         android:label="MC_2_6" >
         <action
             android:id="@+id/action_MC_2_6_to_f_MC_2_7_right"
@@ -295,7 +295,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_2_7_right"
-        android:name="com.example.hellokotlin.F_MC_2_7_right"
+        android:name="com.hellokotlin.hellokotlin.F_MC_2_7_right"
         android:label="F_MC_2_7_right" >
         <action
             android:id="@+id/action_f_MC_2_7_right_to_MC_2_8"
@@ -303,7 +303,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_2_7_wrong"
-        android:name="com.example.hellokotlin.F_MC_2_7_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_MC_2_7_wrong"
         android:label="F_MC_2_7_wrong" >
         <action
             android:id="@+id/action_f_MC_2_7_wrong_to_MC_2_8"
@@ -311,7 +311,7 @@
     </fragment>
     <fragment
         android:id="@+id/MC_2_8"
-        android:name="com.example.hellokotlin.MC_2_8"
+        android:name="com.hellokotlin.hellokotlin.MC_2_8"
         android:label="MC_2_8" >
         <action
             android:id="@+id/action_MC_2_8_to_f_MC_2_9_right"
@@ -322,7 +322,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_2_9_right"
-        android:name="com.example.hellokotlin.F_MC_2_9_right"
+        android:name="com.hellokotlin.hellokotlin.F_MC_2_9_right"
         android:label="F_MC_2_9_right" >
         <action
             android:id="@+id/action_f_MC_2_9_right_to_MC_2_10"
@@ -330,7 +330,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_2_9_wrong"
-        android:name="com.example.hellokotlin.F_MC_2_9_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_MC_2_9_wrong"
         android:label="F_MC_2_9_wrong" >
         <action
             android:id="@+id/action_f_MC_2_9_wrong_to_MC_2_10"
@@ -338,7 +338,7 @@
     </fragment>
     <fragment
         android:id="@+id/MC_2_10"
-        android:name="com.example.hellokotlin.MC_2_10"
+        android:name="com.hellokotlin.hellokotlin.MC_2_10"
         android:label="MC_2_10" >
         <action
             android:id="@+id/action_MC_2_10_to_f_MC_2_11_right"
@@ -349,7 +349,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_2_11_right"
-        android:name="com.example.hellokotlin.F_MC_2_11_right"
+        android:name="com.hellokotlin.hellokotlin.F_MC_2_11_right"
         android:label="F_MC_2_11_right" >
         <action
             android:id="@+id/action_f_MC_2_11_right_to_MC_2_12"
@@ -357,7 +357,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_2_11_wrong"
-        android:name="com.example.hellokotlin.F_MC_2_11_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_MC_2_11_wrong"
         android:label="F_MC_2_11_wrong" >
         <action
             android:id="@+id/action_f_MC_2_11_wrong_to_MC_2_12"
@@ -365,7 +365,7 @@
     </fragment>
     <fragment
         android:id="@+id/MC_2_12"
-        android:name="com.example.hellokotlin.MC_2_12"
+        android:name="com.hellokotlin.hellokotlin.MC_2_12"
         android:label="MC_2_12" >
         <action
             android:id="@+id/action_MC_2_12_to_f_MC_2_13_right"
@@ -376,7 +376,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_2_13_right"
-        android:name="com.example.hellokotlin.F_MC_2_13_right"
+        android:name="com.hellokotlin.hellokotlin.F_MC_2_13_right"
         android:label="F_MC_2_13_right" >
         <action
             android:id="@+id/action_f_MC_2_13_right_to_t_2_14"
@@ -384,7 +384,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_2_13_wrong"
-        android:name="com.example.hellokotlin.F_MC_2_13_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_MC_2_13_wrong"
         android:label="F_MC_2_13_wrong" >
         <action
             android:id="@+id/action_f_MC_2_13_wrong_to_t_2_14"
@@ -392,7 +392,7 @@
     </fragment>
     <fragment
         android:id="@+id/t_2_14"
-        android:name="com.example.hellokotlin.T_2_14"
+        android:name="com.hellokotlin.hellokotlin.T_2_14"
         android:label="T_2_14" >
         <action
             android:id="@+id/action_t_2_14_to_f_T_2_15_right"
@@ -403,7 +403,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_2_15_right"
-        android:name="com.example.hellokotlin.F_T_2_15_right"
+        android:name="com.hellokotlin.hellokotlin.F_T_2_15_right"
         android:label="F_T_2_15_right" >
         <action
             android:id="@+id/action_f_T_2_15_right_to_finish_2_16"
@@ -411,7 +411,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_2_15_wrong"
-        android:name="com.example.hellokotlin.F_T_2_15_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_T_2_15_wrong"
         android:label="F_T_2_15_wrong" >
         <action
             android:id="@+id/action_f_T_2_15_wrong_to_finish_2_16"
@@ -419,7 +419,7 @@
     </fragment>
     <fragment
         android:id="@+id/finish_2_16"
-        android:name="com.example.hellokotlin.Finish_2_16"
+        android:name="com.hellokotlin.hellokotlin.Finish_2_16"
         android:label="Finish_2_16" >
         <action
             android:id="@+id/action_finish_2_16_to_FirstFragment"
@@ -427,7 +427,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_3_1"
-        android:name="com.example.hellokotlin.I_3_1"
+        android:name="com.hellokotlin.hellokotlin.I_3_1"
         android:label="I_3_1" >
         <action
             android:id="@+id/action_i_3_1_to_i_3_2"
@@ -435,7 +435,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_3_2"
-        android:name="com.example.hellokotlin.I_3_2"
+        android:name="com.hellokotlin.hellokotlin.I_3_2"
         android:label="I_3_2" >
         <action
             android:id="@+id/action_i_3_2_to_DD_3_3"
@@ -443,7 +443,7 @@
     </fragment>
     <fragment
         android:id="@+id/DD_3_3"
-        android:name="com.example.hellokotlin.DD_3_3"
+        android:name="com.hellokotlin.hellokotlin.DD_3_3"
         android:label="DD_3_3" >
         <action
             android:id="@+id/action_DD_3_3_to_f_DD_3_4_right"
@@ -454,7 +454,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_3_4_right"
-        android:name="com.example.hellokotlin.F_DD_3_4_right"
+        android:name="com.hellokotlin.hellokotlin.F_DD_3_4_right"
         android:label="F_DD_3_4_right" >
         <action
             android:id="@+id/action_f_DD_3_4_right_to_i_3_5"
@@ -462,7 +462,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_3_4_wrong"
-        android:name="com.example.hellokotlin.F_DD_3_4_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_DD_3_4_wrong"
         android:label="F_DD_3_4_wrong" >
         <action
             android:id="@+id/action_f_DD_3_4_wrong_to_i_3_5"
@@ -470,7 +470,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_3_5"
-        android:name="com.example.hellokotlin.I_3_5"
+        android:name="com.hellokotlin.hellokotlin.I_3_5"
         android:label="I_3_5" >
         <action
             android:id="@+id/action_i_3_5_to_MC_3_6"
@@ -478,7 +478,7 @@
     </fragment>
     <fragment
         android:id="@+id/MC_3_6"
-        android:name="com.example.hellokotlin.MC_3_6"
+        android:name="com.hellokotlin.hellokotlin.MC_3_6"
         android:label="MC_3_6" >
         <action
             android:id="@+id/action_MC_3_6_to_f_MC_3_7_right"
@@ -489,7 +489,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_3_7_right"
-        android:name="com.example.hellokotlin.F_MC_3_7_right"
+        android:name="com.hellokotlin.hellokotlin.F_MC_3_7_right"
         android:label="F_MC_3_7_right" >
         <action
             android:id="@+id/action_f_MC_3_7_right_to_i_3_8"
@@ -497,7 +497,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_3_7_wrong"
-        android:name="com.example.hellokotlin.F_MC_3_7_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_MC_3_7_wrong"
         android:label="F_MC_3_7_wrong" >
         <action
             android:id="@+id/action_f_MC_3_7_wrong_to_i_3_8"
@@ -505,7 +505,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_3_8"
-        android:name="com.example.hellokotlin.I_3_8"
+        android:name="com.hellokotlin.hellokotlin.I_3_8"
         android:label="I_3_8" >
         <action
             android:id="@+id/action_i_3_8_to_MC_3_9"
@@ -513,7 +513,7 @@
     </fragment>
     <fragment
         android:id="@+id/MC_3_9"
-        android:name="com.example.hellokotlin.MC_3_9"
+        android:name="com.hellokotlin.hellokotlin.MC_3_9"
         android:label="MC_3_9" >
         <action
             android:id="@+id/action_MC_3_9_to_f_MC_3_10_right"
@@ -524,7 +524,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_3_10_right"
-        android:name="com.example.hellokotlin.F_MC_3_10_right"
+        android:name="com.hellokotlin.hellokotlin.F_MC_3_10_right"
         android:label="F_MC_3_10_right" >
         <action
             android:id="@+id/action_f_MC_3_10_right_to_DD_3_11"
@@ -532,7 +532,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_3_10_wrong"
-        android:name="com.example.hellokotlin.F_MC_3_10_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_MC_3_10_wrong"
         android:label="F_MC_3_10_wrong" >
         <action
             android:id="@+id/action_f_MC_3_10_wrong_to_DD_3_11"
@@ -540,7 +540,7 @@
     </fragment>
     <fragment
         android:id="@+id/DD_3_11"
-        android:name="com.example.hellokotlin.DD_3_11"
+        android:name="com.hellokotlin.hellokotlin.DD_3_11"
         android:label="DD_3_11" >
         <action
             android:id="@+id/action_DD_3_11_to_f_DD_3_12_right"
@@ -551,7 +551,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_3_12_right"
-        android:name="com.example.hellokotlin.F_DD_3_12_right"
+        android:name="com.hellokotlin.hellokotlin.F_DD_3_12_right"
         android:label="F_DD_3_12_right" >
         <action
             android:id="@+id/action_f_DD_3_12_right_to_finish_3_13"
@@ -559,7 +559,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_3_12_wrong"
-        android:name="com.example.hellokotlin.F_DD_3_12_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_DD_3_12_wrong"
         android:label="F_DD_3_12_wrong" >
         <action
             android:id="@+id/action_f_DD_3_12_wrong_to_finish_3_13"
@@ -567,7 +567,7 @@
     </fragment>
     <fragment
         android:id="@+id/finish_3_13"
-        android:name="com.example.hellokotlin.Finish_3_13"
+        android:name="com.hellokotlin.hellokotlin.Finish_3_13"
         android:label="Finish_3_13" >
         <action
             android:id="@+id/action_finish_3_13_to_FirstFragment"
@@ -575,7 +575,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_4_1"
-        android:name="com.example.hellokotlin.I_4_1"
+        android:name="com.hellokotlin.hellokotlin.I_4_1"
         android:label="I_4_1" >
         <action
             android:id="@+id/action_i_4_1_to_i_4_2"
@@ -583,7 +583,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_4_2"
-        android:name="com.example.hellokotlin.I_4_2"
+        android:name="com.hellokotlin.hellokotlin.I_4_2"
         android:label="I_4_2" >
         <action
             android:id="@+id/action_i_4_2_to_MC_4_3"
@@ -591,7 +591,7 @@
     </fragment>
     <fragment
         android:id="@+id/MC_4_3"
-        android:name="com.example.hellokotlin.MC_4_3"
+        android:name="com.hellokotlin.hellokotlin.MC_4_3"
         android:label="MC_4_3" >
         <action
             android:id="@+id/action_MC_4_3_to_f_MC_4_4_right"
@@ -602,7 +602,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_4_4_right"
-        android:name="com.example.hellokotlin.F_MC_4_4_right"
+        android:name="com.hellokotlin.hellokotlin.F_MC_4_4_right"
         android:label="F_MC_4_4_right" >
         <action
             android:id="@+id/action_f_MC_4_4_right_to_i_4_5"
@@ -610,7 +610,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_4_4_wrong"
-        android:name="com.example.hellokotlin.F_MC_4_4_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_MC_4_4_wrong"
         android:label="F_MC_4_4_wrong" >
         <action
             android:id="@+id/action_f_MC_4_4_wrong_to_i_4_5"
@@ -618,7 +618,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_4_5"
-        android:name="com.example.hellokotlin.I_4_5"
+        android:name="com.hellokotlin.hellokotlin.I_4_5"
         android:label="I_4_5" >
         <action
             android:id="@+id/action_i_4_5_to_DD_4_6"
@@ -626,7 +626,7 @@
     </fragment>
     <fragment
         android:id="@+id/DD_4_6"
-        android:name="com.example.hellokotlin.DD_4_6"
+        android:name="com.hellokotlin.hellokotlin.DD_4_6"
         android:label="DD_4_6" >
         <action
             android:id="@+id/action_DD_4_6_to_f_DD_4_7_right"
@@ -637,7 +637,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_4_7_right"
-        android:name="com.example.hellokotlin.F_DD_4_7_right"
+        android:name="com.hellokotlin.hellokotlin.F_DD_4_7_right"
         android:label="F_DD_4_7_right" >
         <action
             android:id="@+id/action_f_DD_4_7_right_to_MC_4_8"
@@ -645,7 +645,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_4_7_wrong"
-        android:name="com.example.hellokotlin.F_DD_4_7_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_DD_4_7_wrong"
         android:label="F_DD_4_7_wrong" >
         <action
             android:id="@+id/action_f_DD_4_7_wrong_to_MC_4_8"
@@ -653,7 +653,7 @@
     </fragment>
     <fragment
         android:id="@+id/MC_4_8"
-        android:name="com.example.hellokotlin.MC_4_8"
+        android:name="com.hellokotlin.hellokotlin.MC_4_8"
         android:label="MC_4_8" >
         <action
             android:id="@+id/action_MC_4_8_to_f_MC_4_9_right"
@@ -664,7 +664,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_4_9_right"
-        android:name="com.example.hellokotlin.F_MC_4_9_right"
+        android:name="com.hellokotlin.hellokotlin.F_MC_4_9_right"
         android:label="F_MC_4_9_right" >
         <action
             android:id="@+id/action_f_MC_4_9_right_to_i_4_10"
@@ -672,7 +672,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_4_9_wrong"
-        android:name="com.example.hellokotlin.F_MC_4_9_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_MC_4_9_wrong"
         android:label="F_MC_4_9_wrong" >
         <action
             android:id="@+id/action_f_MC_4_9_wrong_to_i_4_10"
@@ -680,7 +680,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_4_10"
-        android:name="com.example.hellokotlin.I_4_10"
+        android:name="com.hellokotlin.hellokotlin.I_4_10"
         android:label="I_4_10" >
         <action
             android:id="@+id/action_i_4_10_to_t_4_11"
@@ -688,7 +688,7 @@
     </fragment>
     <fragment
         android:id="@+id/t_4_11"
-        android:name="com.example.hellokotlin.T_4_11"
+        android:name="com.hellokotlin.hellokotlin.T_4_11"
         android:label="T_4_11" >
         <action
             android:id="@+id/action_t_4_11_to_f_T_4_12_right"
@@ -699,7 +699,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_4_12_right"
-        android:name="com.example.hellokotlin.F_T_4_12_right"
+        android:name="com.hellokotlin.hellokotlin.F_T_4_12_right"
         android:label="F_T_4_12_right" >
         <action
             android:id="@+id/action_f_T_4_12_right_to_i_4_13"
@@ -707,7 +707,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_4_12_wrong"
-        android:name="com.example.hellokotlin.F_T_4_12_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_T_4_12_wrong"
         android:label="F_T_4_12_wrong" >
         <action
             android:id="@+id/action_f_T_4_12_wrong_to_i_4_13"
@@ -715,7 +715,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_4_13"
-        android:name="com.example.hellokotlin.I_4_13"
+        android:name="com.hellokotlin.hellokotlin.I_4_13"
         android:label="I_4_13" >
         <action
             android:id="@+id/action_i_4_13_to_t_4_14"
@@ -723,7 +723,7 @@
     </fragment>
     <fragment
         android:id="@+id/t_4_14"
-        android:name="com.example.hellokotlin.T_4_14"
+        android:name="com.hellokotlin.hellokotlin.T_4_14"
         android:label="T_4_14" >
         <action
             android:id="@+id/action_t_4_14_to_f_T_4_15_right2"
@@ -734,7 +734,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_4_15_right2"
-        android:name="com.example.hellokotlin.F_T_4_15_right"
+        android:name="com.hellokotlin.hellokotlin.F_T_4_15_right"
         android:label="F_T_4_15_right" >
         <action
             android:id="@+id/action_f_T_4_15_right2_to_finish_4_16"
@@ -742,7 +742,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_4_15_wrong"
-        android:name="com.example.hellokotlin.F_T_4_15_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_T_4_15_wrong"
         android:label="F_T_4_15_wrong" >
         <action
             android:id="@+id/action_f_T_4_15_wrong_to_finish_4_16"
@@ -750,7 +750,7 @@
     </fragment>
     <fragment
         android:id="@+id/finish_4_16"
-        android:name="com.example.hellokotlin.Finish_4_16"
+        android:name="com.hellokotlin.hellokotlin.Finish_4_16"
         android:label="Finish_4_16" >
         <action
             android:id="@+id/action_finish_4_16_to_FirstFragment"
@@ -758,7 +758,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_5_1"
-        android:name="com.example.hellokotlin.I_5_1"
+        android:name="com.hellokotlin.hellokotlin.I_5_1"
         android:label="I_5_1" >
         <action
             android:id="@+id/action_i_5_1_to_t_5_2"
@@ -766,7 +766,7 @@
     </fragment>
     <fragment
         android:id="@+id/t_5_2"
-        android:name="com.example.hellokotlin.T_5_2"
+        android:name="com.hellokotlin.hellokotlin.T_5_2"
         android:label="T_5_2" >
         <action
             android:id="@+id/action_t_5_2_to_f_T_5_3_right"
@@ -777,7 +777,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_5_3_right"
-        android:name="com.example.hellokotlin.F_T_5_3_right"
+        android:name="com.hellokotlin.hellokotlin.F_T_5_3_right"
         android:label="F_T_5_3_right" >
         <action
             android:id="@+id/action_f_T_5_3_right_to_i_5_4"
@@ -785,7 +785,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_5_3_wrong"
-        android:name="com.example.hellokotlin.F_T_5_3_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_T_5_3_wrong"
         android:label="F_T_5_3_wrong" >
         <action
             android:id="@+id/action_f_T_5_3_wrong_to_i_5_4"
@@ -793,7 +793,7 @@
     </fragment>
     <fragment
         android:id="@+id/MC_5_4"
-        android:name="com.example.hellokotlin.MC_5_5"
+        android:name="com.hellokotlin.hellokotlin.MC_5_5"
         android:label="MC_5_4" >
         <action
             android:id="@+id/action_MC_5_4_to_f_MC_5_6_right"
@@ -804,7 +804,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_5_4"
-        android:name="com.example.hellokotlin.I_5_4"
+        android:name="com.hellokotlin.hellokotlin.I_5_4"
         android:label="I_5_4" >
         <action
             android:id="@+id/action_i_5_4_to_MC_5_4"
@@ -812,7 +812,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_5_6_right"
-        android:name="com.example.hellokotlin.F_MC_5_6_right"
+        android:name="com.hellokotlin.hellokotlin.F_MC_5_6_right"
         android:label="F_MC_5_6_right" >
         <action
             android:id="@+id/action_f_MC_5_6_right_to_i_5_7"
@@ -820,7 +820,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_5_6_wrong"
-        android:name="com.example.hellokotlin.F_MC_5_6_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_MC_5_6_wrong"
         android:label="F_MC_5_6_wrong" >
         <action
             android:id="@+id/action_f_MC_5_6_wrong_to_i_5_7"
@@ -828,7 +828,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_5_7"
-        android:name="com.example.hellokotlin.I_5_7"
+        android:name="com.hellokotlin.hellokotlin.I_5_7"
         android:label="I_5_7" >
         <action
             android:id="@+id/action_i_5_7_to_t_5_8"
@@ -836,7 +836,7 @@
     </fragment>
     <fragment
         android:id="@+id/t_5_8"
-        android:name="com.example.hellokotlin.T_5_8"
+        android:name="com.hellokotlin.hellokotlin.T_5_8"
         android:label="T_5_8" >
         <action
             android:id="@+id/action_t_5_8_to_f_T_5_9_right"
@@ -847,7 +847,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_5_9_right"
-        android:name="com.example.hellokotlin.F_T_5_9_right"
+        android:name="com.hellokotlin.hellokotlin.F_T_5_9_right"
         android:label="F_T_5_9_right" >
         <action
             android:id="@+id/action_f_T_5_9_right_to_i_5_10"
@@ -855,7 +855,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_5_9_wrong"
-        android:name="com.example.hellokotlin.F_T_5_9_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_T_5_9_wrong"
         android:label="F_T_5_9_wrong" >
         <action
             android:id="@+id/action_f_T_5_9_wrong_to_i_5_10"
@@ -863,7 +863,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_5_10"
-        android:name="com.example.hellokotlin.I_5_10"
+        android:name="com.hellokotlin.hellokotlin.I_5_10"
         android:label="I_5_10" >
         <action
             android:id="@+id/action_i_5_10_to_DD_5_11"
@@ -871,7 +871,7 @@
     </fragment>
     <fragment
         android:id="@+id/DD_5_11"
-        android:name="com.example.hellokotlin.DD_5_11"
+        android:name="com.hellokotlin.hellokotlin.DD_5_11"
         android:label="DD_5_11" >
         <action
             android:id="@+id/action_DD_5_11_to_f_DD_5_12_right"
@@ -882,7 +882,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_5_12_right"
-        android:name="com.example.hellokotlin.F_DD_5_12_right"
+        android:name="com.hellokotlin.hellokotlin.F_DD_5_12_right"
         android:label="F_DD_5_12_right" >
         <action
             android:id="@+id/action_f_DD_5_12_right_to_t_5_13"
@@ -890,7 +890,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_5_12_wrong"
-        android:name="com.example.hellokotlin.F_DD_5_12_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_DD_5_12_wrong"
         android:label="F_DD_5_12_wrong" >
         <action
             android:id="@+id/action_f_DD_5_12_wrong_to_t_5_13"
@@ -898,7 +898,7 @@
     </fragment>
     <fragment
         android:id="@+id/t_5_13"
-        android:name="com.example.hellokotlin.T_5_13"
+        android:name="com.hellokotlin.hellokotlin.T_5_13"
         android:label="T_5_13" >
         <action
             android:id="@+id/action_t_5_13_to_f_T_5_14_right"
@@ -909,7 +909,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_5_14_right"
-        android:name="com.example.hellokotlin.F_T_5_14_right"
+        android:name="com.hellokotlin.hellokotlin.F_T_5_14_right"
         android:label="F_T_5_14_right" >
         <action
             android:id="@+id/action_f_T_5_14_right_to_finish_5_15"
@@ -917,7 +917,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_5_14_wrong"
-        android:name="com.example.hellokotlin.F_T_5_14_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_T_5_14_wrong"
         android:label="F_T_5_14_wrong" >
         <action
             android:id="@+id/action_f_T_5_14_wrong_to_finish_5_15"
@@ -925,7 +925,7 @@
     </fragment>
     <fragment
         android:id="@+id/finish_5_15"
-        android:name="com.example.hellokotlin.Finish_5_15"
+        android:name="com.hellokotlin.hellokotlin.Finish_5_15"
         android:label="Finish_5_15" >
         <action
             android:id="@+id/action_finish_5_15_to_FirstFragment"
@@ -933,7 +933,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_6_1"
-        android:name="com.example.hellokotlin.I_6_1"
+        android:name="com.hellokotlin.hellokotlin.I_6_1"
         android:label="I_6_1" >
         <action
             android:id="@+id/action_i_6_1_to_t_6_2"
@@ -941,7 +941,7 @@
     </fragment>
     <fragment
         android:id="@+id/t_6_2"
-        android:name="com.example.hellokotlin.T_6_2"
+        android:name="com.hellokotlin.hellokotlin.T_6_2"
         android:label="T_6_2" >
         <action
             android:id="@+id/action_t_6_2_to_f_T_6_3_right"
@@ -952,7 +952,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_6_3_right"
-        android:name="com.example.hellokotlin.F_T_6_3_right"
+        android:name="com.hellokotlin.hellokotlin.F_T_6_3_right"
         android:label="F_T_6_3_right" >
         <action
             android:id="@+id/action_f_T_6_3_right_to_t_6_4"
@@ -960,7 +960,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_6_3_wrong"
-        android:name="com.example.hellokotlin.F_T_6_3_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_T_6_3_wrong"
         android:label="F_T_6_3_wrong" >
         <action
             android:id="@+id/action_f_T_6_3_wrong_to_t_6_4"
@@ -968,7 +968,7 @@
     </fragment>
     <fragment
         android:id="@+id/t_6_4"
-        android:name="com.example.hellokotlin.T_6_4"
+        android:name="com.hellokotlin.hellokotlin.T_6_4"
         android:label="T_6_4" >
         <action
             android:id="@+id/action_t_6_4_to_f_T_6_5_right"
@@ -979,7 +979,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_6_5_right"
-        android:name="com.example.hellokotlin.F_T_6_5_right"
+        android:name="com.hellokotlin.hellokotlin.F_T_6_5_right"
         android:label="F_T_6_5_right" >
         <action
             android:id="@+id/action_f_T_6_5_right_to_i_6_6"
@@ -987,7 +987,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_6_5_wrong"
-        android:name="com.example.hellokotlin.F_T_6_5_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_T_6_5_wrong"
         android:label="F_T_6_5_wrong" >
         <action
             android:id="@+id/action_f_T_6_5_wrong_to_i_6_6"
@@ -995,7 +995,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_6_6"
-        android:name="com.example.hellokotlin.I_6_6"
+        android:name="com.hellokotlin.hellokotlin.I_6_6"
         android:label="I_6_6" >
         <action
             android:id="@+id/action_i_6_6_to_MC_6_7"
@@ -1003,7 +1003,7 @@
     </fragment>
     <fragment
         android:id="@+id/MC_6_7"
-        android:name="com.example.hellokotlin.MC_6_7"
+        android:name="com.hellokotlin.hellokotlin.MC_6_7"
         android:label="MC_6_7" >
         <action
             android:id="@+id/action_MC_6_7_to_f_MC_6_8_right"
@@ -1014,7 +1014,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_6_8_right"
-        android:name="com.example.hellokotlin.F_MC_6_8_right"
+        android:name="com.hellokotlin.hellokotlin.F_MC_6_8_right"
         android:label="F_MC_6_8_right" >
         <action
             android:id="@+id/action_f_MC_6_8_right_to_DD_6_9"
@@ -1022,7 +1022,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_6_8_wrong"
-        android:name="com.example.hellokotlin.F_MC_6_8_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_MC_6_8_wrong"
         android:label="F_MC_6_8_wrong" >
         <action
             android:id="@+id/action_f_MC_6_8_wrong_to_DD_6_9"
@@ -1030,7 +1030,7 @@
     </fragment>
     <fragment
         android:id="@+id/DD_6_9"
-        android:name="com.example.hellokotlin.DD_6_9"
+        android:name="com.hellokotlin.hellokotlin.DD_6_9"
         android:label="DD_6_9" >
         <action
             android:id="@+id/action_DD_6_9_to_f_DD_6_10_right"
@@ -1041,7 +1041,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_6_10_right"
-        android:name="com.example.hellokotlin.F_DD_6_10_right"
+        android:name="com.hellokotlin.hellokotlin.F_DD_6_10_right"
         android:label="F_DD_6_10_right" >
         <action
             android:id="@+id/action_f_DD_6_10_right_to_t_6_11"
@@ -1049,7 +1049,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_6_10_wrong"
-        android:name="com.example.hellokotlin.F_DD_6_10_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_DD_6_10_wrong"
         android:label="F_DD_6_10_wrong" >
         <action
             android:id="@+id/action_f_DD_6_10_wrong_to_t_6_11"
@@ -1057,7 +1057,7 @@
     </fragment>
     <fragment
         android:id="@+id/t_6_11"
-        android:name="com.example.hellokotlin.T_6_11"
+        android:name="com.hellokotlin.hellokotlin.T_6_11"
         android:label="T_6_11" >
         <action
             android:id="@+id/action_t_6_11_to_f_T_6_12_right"
@@ -1068,7 +1068,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_6_12_right"
-        android:name="com.example.hellokotlin.F_T_6_12_right"
+        android:name="com.hellokotlin.hellokotlin.F_T_6_12_right"
         android:label="F_T_6_12_right" >
         <action
             android:id="@+id/action_f_T_6_12_right_to_t_6_13"
@@ -1076,7 +1076,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_6_12_wrong"
-        android:name="com.example.hellokotlin.F_T_6_12_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_T_6_12_wrong"
         android:label="F_T_6_12_wrong" >
         <action
             android:id="@+id/action_f_T_6_12_wrong_to_t_6_13"
@@ -1084,7 +1084,7 @@
     </fragment>
     <fragment
         android:id="@+id/t_6_13"
-        android:name="com.example.hellokotlin.T_6_13"
+        android:name="com.hellokotlin.hellokotlin.T_6_13"
         android:label="T_6_13" >
         <action
             android:id="@+id/action_t_6_13_to_f_T_6_14_right"
@@ -1095,7 +1095,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_6_14_right"
-        android:name="com.example.hellokotlin.F_T_6_14_right"
+        android:name="com.hellokotlin.hellokotlin.F_T_6_14_right"
         android:label="F_T_6_14_right" >
         <action
             android:id="@+id/action_f_T_6_14_right_to_finish_6_15"
@@ -1103,7 +1103,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_6_14_wrong"
-        android:name="com.example.hellokotlin.F_T_6_14_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_T_6_14_wrong"
         android:label="F_T_6_14_wrong" >
         <action
             android:id="@+id/action_f_T_6_14_wrong_to_finish_6_15"
@@ -1111,7 +1111,7 @@
     </fragment>
     <fragment
         android:id="@+id/finish_6_15"
-        android:name="com.example.hellokotlin.Finish_6_15"
+        android:name="com.hellokotlin.hellokotlin.Finish_6_15"
         android:label="Finish_6_15" >
         <action
             android:id="@+id/action_finish_6_15_to_FirstFragment"
@@ -1119,7 +1119,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_7_1"
-        android:name="com.example.hellokotlin.I_7_1"
+        android:name="com.hellokotlin.hellokotlin.I_7_1"
         android:label="I_7_1" >
         <action
             android:id="@+id/action_i_7_1_to_t_7_2"
@@ -1127,7 +1127,7 @@
     </fragment>
     <fragment
         android:id="@+id/t_7_2"
-        android:name="com.example.hellokotlin.T_7_2"
+        android:name="com.hellokotlin.hellokotlin.T_7_2"
         android:label="T_7_2" >
         <action
             android:id="@+id/action_t_7_2_to_f_T_7_3_right"
@@ -1138,7 +1138,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_7_3_right"
-        android:name="com.example.hellokotlin.F_T_7_3_right"
+        android:name="com.hellokotlin.hellokotlin.F_T_7_3_right"
         android:label="F_T_7_3_right" >
         <action
             android:id="@+id/action_f_T_7_3_right_to_MC_7_4"
@@ -1146,7 +1146,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_7_3_wrong"
-        android:name="com.example.hellokotlin.F_T_7_3_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_T_7_3_wrong"
         android:label="F_T_7_3_wrong" >
         <action
             android:id="@+id/action_f_T_7_3_wrong_to_MC_7_4"
@@ -1154,7 +1154,7 @@
     </fragment>
     <fragment
         android:id="@+id/MC_7_4"
-        android:name="com.example.hellokotlin.MC_7_4"
+        android:name="com.hellokotlin.hellokotlin.MC_7_4"
         android:label="MC_7_4" >
         <action
             android:id="@+id/action_MC_7_4_to_f_MC_7_5_right"
@@ -1165,7 +1165,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_7_5_right"
-        android:name="com.example.hellokotlin.F_MC_7_5_right"
+        android:name="com.hellokotlin.hellokotlin.F_MC_7_5_right"
         android:label="F_MC_7_5_right" >
         <action
             android:id="@+id/action_f_MC_7_5_right_to_i_7_6"
@@ -1173,7 +1173,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_MC_7_5_wrong"
-        android:name="com.example.hellokotlin.F_MC_7_5_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_MC_7_5_wrong"
         android:label="F_MC_7_5_wrong" >
         <action
             android:id="@+id/action_f_MC_7_5_wrong_to_i_7_6"
@@ -1181,7 +1181,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_7_6"
-        android:name="com.example.hellokotlin.I_7_6"
+        android:name="com.hellokotlin.hellokotlin.I_7_6"
         android:label="I_7_6" >
         <action
             android:id="@+id/action_i_7_6_to_i_7_7"
@@ -1189,7 +1189,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_7_7"
-        android:name="com.example.hellokotlin.I_7_7"
+        android:name="com.hellokotlin.hellokotlin.I_7_7"
         android:label="I_7_7" >
         <action
             android:id="@+id/action_i_7_7_to_t_7_8"
@@ -1197,7 +1197,7 @@
     </fragment>
     <fragment
         android:id="@+id/t_7_8"
-        android:name="com.example.hellokotlin.T_7_8"
+        android:name="com.hellokotlin.hellokotlin.T_7_8"
         android:label="T_7_8" >
         <action
             android:id="@+id/action_t_7_8_to_f_T_7_9_right"
@@ -1208,7 +1208,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_7_9_right"
-        android:name="com.example.hellokotlin.F_T_7_9_right"
+        android:name="com.hellokotlin.hellokotlin.F_T_7_9_right"
         android:label="F_T_7_9_right" >
         <action
             android:id="@+id/action_f_T_7_9_right_to_t_7_10"
@@ -1216,7 +1216,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_7_9_wrong"
-        android:name="com.example.hellokotlin.F_T_7_9_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_T_7_9_wrong"
         android:label="F_T_7_9_wrong" >
         <action
             android:id="@+id/action_f_T_7_9_wrong_to_t_7_10"
@@ -1224,7 +1224,7 @@
     </fragment>
     <fragment
         android:id="@+id/t_7_10"
-        android:name="com.example.hellokotlin.T_7_10"
+        android:name="com.hellokotlin.hellokotlin.T_7_10"
         android:label="T_7_10" >
         <action
             android:id="@+id/action_t_7_10_to_f_T_7_11_right"
@@ -1235,7 +1235,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_7_11_right"
-        android:name="com.example.hellokotlin.F_T_7_11_right"
+        android:name="com.hellokotlin.hellokotlin.F_T_7_11_right"
         android:label="F_T_7_11_right" >
         <action
             android:id="@+id/action_f_T_7_11_right_to_DD_7_12"
@@ -1243,7 +1243,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_7_11_wrong"
-        android:name="com.example.hellokotlin.F_T_7_11_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_T_7_11_wrong"
         android:label="F_T_7_11_wrong" >
         <action
             android:id="@+id/action_f_T_7_11_wrong_to_DD_7_12"
@@ -1251,7 +1251,7 @@
     </fragment>
     <fragment
         android:id="@+id/DD_7_12"
-        android:name="com.example.hellokotlin.DD_7_12"
+        android:name="com.hellokotlin.hellokotlin.DD_7_12"
         android:label="DD_7_12" >
         <action
             android:id="@+id/action_DD_7_12_to_f_DD_7_13_right"
@@ -1262,7 +1262,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_7_13_right"
-        android:name="com.example.hellokotlin.F_DD_7_13_right"
+        android:name="com.hellokotlin.hellokotlin.F_DD_7_13_right"
         android:label="F_DD_7_13_right" >
         <action
             android:id="@+id/action_f_DD_7_13_right_to_t_7_14"
@@ -1270,7 +1270,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_DD_7_13_wrong"
-        android:name="com.example.hellokotlin.F_DD_7_13_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_DD_7_13_wrong"
         android:label="F_DD_7_13_wrong" >
         <action
             android:id="@+id/action_f_DD_7_13_wrong_to_t_7_14"
@@ -1278,7 +1278,7 @@
     </fragment>
     <fragment
         android:id="@+id/t_7_14"
-        android:name="com.example.hellokotlin.T_7_14"
+        android:name="com.hellokotlin.hellokotlin.T_7_14"
         android:label="T_7_14" >
         <action
             android:id="@+id/action_t_7_14_to_f_T_7_15_right"
@@ -1289,15 +1289,15 @@
     </fragment>
     <fragment
         android:id="@+id/info_about"
-        android:name="com.example.hellokotlin.Info_about"
+        android:name="com.hellokotlin.hellokotlin.Info_about"
         android:label="Info_about" />
     <fragment
         android:id="@+id/info_usage"
-        android:name="com.example.hellokotlin.Info_usage"
+        android:name="com.hellokotlin.hellokotlin.Info_usage"
         android:label="Info_usage" />
     <fragment
         android:id="@+id/task_Overview"
-        android:name="com.example.hellokotlin.Task_Overview"
+        android:name="com.hellokotlin.hellokotlin.Task_Overview"
         android:label="Task_Overview" >
         <action
             android:id="@+id/action_task_Overview_to_task_one"
@@ -1311,7 +1311,7 @@
     </fragment>
     <fragment
         android:id="@+id/task_one"
-        android:name="com.example.hellokotlin.Task_one"
+        android:name="com.hellokotlin.hellokotlin.Task_one"
         android:label="Task_one" >
         <action
             android:id="@+id/action_task_one_to_task_one_tipp"
@@ -1322,15 +1322,15 @@
     </fragment>
     <fragment
         android:id="@+id/task_one_loesung"
-        android:name="com.example.hellokotlin.Task_one_loesung"
+        android:name="com.hellokotlin.hellokotlin.Task_one_loesung"
         android:label="Task_one_loesung" />
     <fragment
         android:id="@+id/task_one_tipp"
-        android:name="com.example.hellokotlin.Task_one_tipp"
+        android:name="com.hellokotlin.hellokotlin.Task_one_tipp"
         android:label="Task_one_tipp" />
     <fragment
         android:id="@+id/task_two"
-        android:name="com.example.hellokotlin.Task_two"
+        android:name="com.hellokotlin.hellokotlin.Task_two"
         android:label="Task_two" >
         <action
             android:id="@+id/action_task_two_to_task_two_tipp"
@@ -1341,15 +1341,15 @@
     </fragment>
     <fragment
         android:id="@+id/task_two_tipp"
-        android:name="com.example.hellokotlin.Task_two_tipp"
+        android:name="com.hellokotlin.hellokotlin.Task_two_tipp"
         android:label="Task_two_tipp" />
     <fragment
         android:id="@+id/task_two_loesung"
-        android:name="com.example.hellokotlin.Task_two_loesung"
+        android:name="com.hellokotlin.hellokotlin.Task_two_loesung"
         android:label="Task_two_loesung" />
     <fragment
         android:id="@+id/task_three"
-        android:name="com.example.hellokotlin.Task_three"
+        android:name="com.hellokotlin.hellokotlin.Task_three"
         android:label="Task_three" >
         <action
             android:id="@+id/action_task_three_to_task_three_tipps"
@@ -1360,15 +1360,15 @@
     </fragment>
     <fragment
         android:id="@+id/task_three_tipps"
-        android:name="com.example.hellokotlin.Task_three_tipps"
+        android:name="com.hellokotlin.hellokotlin.Task_three_tipps"
         android:label="Task_three_tipps" />
     <fragment
         android:id="@+id/task_three_loesung"
-        android:name="com.example.hellokotlin.Task_three_loesung"
+        android:name="com.hellokotlin.hellokotlin.Task_three_loesung"
         android:label="Task_three_loesung" />
     <fragment
         android:id="@+id/f_T_7_15_right"
-        android:name="com.example.hellokotlin.F_T_7_15_right"
+        android:name="com.hellokotlin.hellokotlin.F_T_7_15_right"
         android:label="F_T_7_15_right" >
         <action
             android:id="@+id/action_f_T_7_15_right_to_finish_7_16"
@@ -1376,7 +1376,7 @@
     </fragment>
     <fragment
         android:id="@+id/f_T_7_15_wrong"
-        android:name="com.example.hellokotlin.F_T_7_15_wrong"
+        android:name="com.hellokotlin.hellokotlin.F_T_7_15_wrong"
         android:label="F_T_7_15_wrong" >
         <action
             android:id="@+id/action_f_T_7_15_wrong_to_finish_7_16"
@@ -1384,7 +1384,7 @@
     </fragment>
     <fragment
         android:id="@+id/finish_7_16"
-        android:name="com.example.hellokotlin.Finish_7_16"
+        android:name="com.hellokotlin.hellokotlin.Finish_7_16"
         android:label="Finish_7_16" >
         <action
             android:id="@+id/action_finish_7_16_to_FirstFragment"
@@ -1392,7 +1392,7 @@
     </fragment>
     <fragment
         android:id="@+id/i_1_0"
-        android:name="com.example.hellokotlin.I_1_0"
+        android:name="com.hellokotlin.hellokotlin.I_1_0"
         android:label="I_1_0" >
         <action
             android:id="@+id/action_i_1_0_to_instruction1_1"
