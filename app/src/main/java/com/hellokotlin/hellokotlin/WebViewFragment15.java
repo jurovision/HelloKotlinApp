@@ -19,6 +19,7 @@ public class WebViewFragment15 extends Fragment {
         webView = (WebView) view.findViewById(R.id.webView);
         webView.setWebViewClient(new WebViewClient());
         webView.getSettings().setJavaScriptEnabled(true);
+        // Url für Seite
         webView.loadUrl("https://play.kotlinlang.org");
         return view;
     }
